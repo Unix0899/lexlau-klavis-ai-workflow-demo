@@ -1,0 +1,47 @@
+table DimAIProvider
+	lineageTag: 7600c5ce-eb5c-5e02-8723-8370c3b7a538
+
+	column provider_id
+		dataType: int64
+		isHidden
+		isKey
+		lineageTag: d5f675c0-eba4-5fe2-bd08-ea3851598f7f
+		summarizeBy: none
+		sourceColumn: provider_id
+
+	column provider_name
+		dataType: string
+		lineageTag: 6d54d725-7367-5831-84c3-d5baffe50f11
+		summarizeBy: none
+		sourceColumn: provider_name
+
+	column provider_role
+		dataType: string
+		lineageTag: 709bcc65-27f7-5346-9359-846fc5a74a3d
+		summarizeBy: none
+		sourceColumn: provider_role
+
+	column is_external
+		dataType: int64
+		isHidden
+		lineageTag: 0bd1285c-5cf0-5ed9-8b2d-7be593e1daf1
+		summarizeBy: none
+		sourceColumn: is_external
+
+	column description
+		dataType: string
+		lineageTag: bf100d7b-a8b9-5672-9a8b-153465173692
+		summarizeBy: none
+		sourceColumn: description
+
+	partition DimAIProvider = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "DimAIProvider.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"provider_id", Int64.Type}, {"provider_name", type text}, {"provider_role", type text}, {"is_external", Int64.Type}, {"description", type text}}, "en-US")
+				in
+				    Typed
+

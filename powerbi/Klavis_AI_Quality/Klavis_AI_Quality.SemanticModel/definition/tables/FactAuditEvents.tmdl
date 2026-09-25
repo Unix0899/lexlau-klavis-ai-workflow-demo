@@ -1,0 +1,75 @@
+table FactAuditEvents
+	lineageTag: dce11069-6266-56b1-9acd-40401fbd84c1
+
+	measure 'Audit Events' = COUNTROWS ( FactAuditEvents )
+		formatString: #,0
+		displayFolder: 4 Human review
+		lineageTag: 66cdcaf7-5bc4-5925-98e6-50bdda5b93a2
+
+	/// Invalid or oversized uploads refused before any AI run.
+	measure 'Files Rejected' = CALCULATE ( COUNTROWS ( FactAuditEvents ), FactAuditEvents[event_type] = "file_rejected" )
+		formatString: #,0
+		displayFolder: 4 Human review
+		lineageTag: ab9b0d1d-8372-514e-8750-a7ec990002da
+
+	/// Duplicate case blocked + repeated submission ignored.
+	measure 'Duplicates Blocked' = CALCULATE ( COUNTROWS ( FactAuditEvents ), FactAuditEvents[event_group] = "Duplicate prevention" )
+		formatString: #,0
+		displayFolder: 4 Human review
+		lineageTag: d95e688b-fba3-5702-9056-91f3a6d965ec
+
+	column event_id
+		dataType: int64
+		isHidden
+		lineageTag: 0c9c8749-c315-550e-a56c-262e3aa5c398
+		summarizeBy: none
+		sourceColumn: event_id
+
+	column date_key
+		dataType: int64
+		isHidden
+		lineageTag: 58d56be0-c68b-5984-b028-1b590a1d97c3
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column event_type
+		dataType: string
+		lineageTag: cc9397c8-497e-55c1-9989-a56e065aaa7d
+		summarizeBy: none
+		sourceColumn: event_type
+
+	column event_group
+		dataType: string
+		lineageTag: 481cc6b5-419b-5527-933f-2a9a00d012a2
+		summarizeBy: none
+		sourceColumn: event_group
+
+	column entity_type
+		dataType: string
+		lineageTag: 0a5367e6-c328-54f5-a4c8-f567f4cb13f1
+		summarizeBy: none
+		sourceColumn: entity_type
+
+	column processing_status
+		dataType: string
+		lineageTag: 2d7f0dd3-148f-5bf8-a5c3-3a70fa0ba3fd
+		summarizeBy: none
+		sourceColumn: processing_status
+
+	column error_code
+		dataType: string
+		lineageTag: 1bc29c80-c9be-510e-96f4-31ff01f2cdee
+		summarizeBy: none
+		sourceColumn: error_code
+
+	partition FactAuditEvents = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "FactAuditEvents.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"event_id", Int64.Type}, {"date_key", Int64.Type}, {"event_type", type text}, {"event_group", type text}, {"entity_type", type text}, {"processing_status", type text}, {"error_code", type text}}, "en-US")
+				in
+				    Typed
+

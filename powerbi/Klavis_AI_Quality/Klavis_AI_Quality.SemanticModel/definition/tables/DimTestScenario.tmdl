@@ -1,0 +1,60 @@
+table DimTestScenario
+	lineageTag: ad7b3c31-4862-528d-b57e-0514d36f3e1f
+
+	column scenario_code
+		dataType: string
+		isKey
+		lineageTag: bcbe8e8e-505b-509a-8bab-f85389f4e0b1
+		summarizeBy: none
+		sourceColumn: scenario_code
+
+	column scenario_number
+		dataType: int64
+		isHidden
+		lineageTag: cfe9ab38-2ecb-5c4c-afa1-42d0550fc134
+		summarizeBy: none
+		sourceColumn: scenario_number
+
+	column scenario_name
+		dataType: string
+		lineageTag: 3adab2e4-4533-5fdc-bd29-b9f6dc78c70e
+		summarizeBy: none
+		sourceColumn: scenario_name
+		sortByColumn: scenario_number
+
+	column scenario_label
+		dataType: string
+		lineageTag: 9ee391a2-95d7-5008-be2d-9fc6e993c266
+		summarizeBy: none
+		sourceColumn: scenario_label
+		sortByColumn: scenario_number
+
+	column document_format
+		dataType: string
+		lineageTag: f9e41a17-9628-5dbf-80ec-ac8415764d80
+		summarizeBy: none
+		sourceColumn: document_format
+
+	column expected
+		dataType: string
+		lineageTag: 07e963ea-3039-5a60-9a3f-acfd3d621cda
+		summarizeBy: none
+		sourceColumn: expected
+
+	column guarded_risk
+		dataType: string
+		lineageTag: 72e536d6-c37d-5c73-a87d-fdd97d2fc9c2
+		summarizeBy: none
+		sourceColumn: guarded_risk
+
+	partition DimTestScenario = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "DimTestScenario.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"scenario_code", type text}, {"scenario_number", Int64.Type}, {"scenario_name", type text}, {"scenario_label", type text}, {"document_format", type text}, {"expected", type text}, {"guarded_risk", type text}}, "en-US")
+				in
+				    Typed
+

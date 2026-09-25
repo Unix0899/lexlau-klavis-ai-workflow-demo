@@ -1,0 +1,146 @@
+table FactTestResults
+	lineageTag: c147a3ec-d2a3-5ea2-837b-da3711bf09db
+
+	measure 'Tests Executed' = COUNTROWS ( FactTestResults )
+		formatString: #,0
+		displayFolder: 3 Testing
+		lineageTag: d631f7bd-320e-511d-b53b-91abc0a88e61
+
+	measure 'Tests Passed' = SUM ( FactTestResults[is_pass] )
+		formatString: #,0
+		displayFolder: 3 Testing
+		lineageTag: 5cb5cf69-b549-5699-a8cc-df1cfad6a09b
+
+	measure 'Tests Failed' = SUM ( FactTestResults[is_fail] )
+		formatString: #,0
+		displayFolder: 3 Testing
+		lineageTag: 8f9d42b6-ead2-5ccb-89e0-f705dae88572
+
+	measure 'Test Pass Rate %' = DIVIDE ( [Tests Passed], [Tests Executed] )
+		formatString: 0.0%
+		displayFolder: 3 Testing
+		lineageTag: b5d8e141-227a-5f91-a1d7-57c0781acece
+
+	/// A scenario that passed in the previous run and fails now.
+	measure 'Regression Failures' = SUM ( FactTestResults[is_regression] )
+		formatString: #,0
+		displayFolder: 3 Testing
+		lineageTag: b29541ef-c123-577d-8454-0c96790211bb
+
+	/// Pass rate of the most recent test run (use on cards).
+	measure 'Latest Test Pass Rate %' =
+			VAR LastRun = CALCULATE ( MAX ( FactTestResults[run_order] ), ALL ( FactTestResults ) )
+			RETURN
+			    CALCULATE ( [Test Pass Rate %], FactTestResults[run_order] = LastRun )
+		formatString: 0.0%
+		displayFolder: 3 Testing
+		lineageTag: 211067fd-e3d4-5dbf-8951-6c1dc8056da4
+
+	measure 'Test Runs' = DISTINCTCOUNT ( FactTestResults[test_run_id] )
+		formatString: #,0
+		displayFolder: 3 Testing
+		lineageTag: d27f2b2e-59dc-5418-a811-e4408ccb7587
+
+	column result_id
+		dataType: int64
+		isHidden
+		lineageTag: b90e5d52-8ac2-55cd-aaed-290da3869c10
+		summarizeBy: none
+		sourceColumn: result_id
+
+	column test_run_id
+		dataType: int64
+		isHidden
+		lineageTag: f1dfb2aa-aca2-5c32-a83b-376a692994e1
+		summarizeBy: none
+		sourceColumn: test_run_id
+
+	column run_label
+		dataType: string
+		lineageTag: 4bafe848-38e4-553b-af48-0cc3f51e68b9
+		summarizeBy: none
+		sourceColumn: run_label
+		sortByColumn: run_order
+
+	column run_description
+		dataType: string
+		lineageTag: 2e0d33fa-94c4-5f2a-a5a4-3acf788893ae
+		summarizeBy: none
+		sourceColumn: run_description
+
+	column run_order
+		dataType: int64
+		isHidden
+		lineageTag: dc3501dd-b53e-53f4-9194-4534e1927f7d
+		summarizeBy: none
+		sourceColumn: run_order
+
+	column date_key
+		dataType: int64
+		isHidden
+		lineageTag: 75ff7936-dfe4-582f-a79d-7cc27b20e00c
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column scenario_code
+		dataType: string
+		lineageTag: a9949981-58f8-54aa-aad0-71ad6fce8be5
+		summarizeBy: none
+		sourceColumn: scenario_code
+
+	column status
+		dataType: string
+		lineageTag: 8055414e-6be4-5566-859d-6dc109beeb01
+		summarizeBy: none
+		sourceColumn: status
+
+	column is_pass
+		dataType: int64
+		isHidden
+		lineageTag: dab6d56a-60a8-5b9a-8748-7e884e214aed
+		summarizeBy: none
+		sourceColumn: is_pass
+
+	column is_fail
+		dataType: int64
+		isHidden
+		lineageTag: 4ff5e84a-e41c-5c92-9630-8f143e3a1430
+		summarizeBy: none
+		sourceColumn: is_fail
+
+	column is_regression
+		dataType: int64
+		isHidden
+		lineageTag: e3b861b5-e41d-531b-9a36-e6c2f2fde55d
+		summarizeBy: none
+		sourceColumn: is_regression
+
+	column failure_category
+		dataType: string
+		lineageTag: f77de1bb-f813-516d-a51d-06923b2d74ee
+		summarizeBy: none
+		sourceColumn: failure_category
+
+	column bug_replay
+		dataType: string
+		lineageTag: 32209633-1732-5716-bd45-b76abb08db55
+		summarizeBy: none
+		sourceColumn: bug_replay
+
+	column duration_ms
+		dataType: double
+		lineageTag: dcdc9625-1ee2-5061-80bd-849bf29aa062
+		summarizeBy: sum
+		sourceColumn: duration_ms
+
+	partition FactTestResults = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "FactTestResults.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"result_id", Int64.Type}, {"test_run_id", Int64.Type}, {"run_label", type text}, {"run_description", type text}, {"run_order", Int64.Type}, {"date_key", Int64.Type}, {"scenario_code", type text}, {"status", type text}, {"is_pass", Int64.Type}, {"is_fail", Int64.Type}, {"is_regression", Int64.Type}, {"failure_category", type text}, {"bug_replay", type text}, {"duration_ms", type number}}, "en-US")
+				in
+				    Typed
+

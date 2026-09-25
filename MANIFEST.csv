@@ -1,0 +1,475 @@
+path,bytes,role
+.env.example,852,project file
+.gitignore,310,project file
+ai/__init__.py,0,AI layer
+ai/assistant.py,968,AI layer
+ai/bug_replay.py,1894,AI layer
+ai/category_suggestion.py,2253,AI layer
+ai/config.py,2216,AI layer
+ai/evaluation.py,1668,AI layer
+ai/external_providers.py,5664,AI layer
+ai/extraction.py,5810,AI layer
+ai/fallback.py,2901,AI layer
+ai/ingestion.py,5526,AI layer
+ai/mock_provider.py,17736,AI layer
+ai/provider_interface.py,4451,AI layer
+ai/registry.py,734,AI layer
+ai/safe_logging.py,2603,AI layer
+ai/summarisation.py,880,AI layer
+app/__init__.py,0,project file
+app/backend/__init__.py,0,backend
+app/backend/server.py,14503,backend
+app/backend/services.py,29769,backend
+app/frontend/app.js,44516,frontend
+app/frontend/index.html,1783,frontend
+app/frontend/styles.css,11228,frontend
+data/ground_truth.json,329414,synthetic dataset
+data/synthetic_ai_runs.csv,121081,synthetic dataset
+data/synthetic_cases.csv,170018,synthetic dataset
+data/synthetic_documents/clean/DOC-0001_formal_notice.png,24144,synthetic document
+data/synthetic_documents/clean/DOC-0004_employment_termination_letter.pdf,1753,synthetic document
+data/synthetic_documents/clean/DOC-0006_formal_notice.png,25998,synthetic document
+data/synthetic_documents/clean/DOC-0009_administrative_decision.docx,1449,synthetic document
+data/synthetic_documents/clean/DOC-0010_employment_termination_letter.pdf,1695,synthetic document
+data/synthetic_documents/clean/DOC-0012_shareholder_letter.pdf,1711,synthetic document
+data/synthetic_documents/clean/DOC-0016_employment_termination_letter.pdf,1731,synthetic document
+data/synthetic_documents/clean/DOC-0017_formal_notice.pdf,1877,synthetic document
+data/synthetic_documents/clean/DOC-0018_formal_notice.docx,1425,synthetic document
+data/synthetic_documents/clean/DOC-0019_formal_notice.docx,1494,synthetic document
+data/synthetic_documents/clean/DOC-0024_formal_notice.png,26298,synthetic document
+data/synthetic_documents/clean/DOC-0026_formal_notice.docx,1497,synthetic document
+data/synthetic_documents/clean/DOC-0027_administrative_decision.pdf,1789,synthetic document
+data/synthetic_documents/clean/DOC-0028_invoice_dispute_letter.docx,1495,synthetic document
+data/synthetic_documents/clean/DOC-0029_employment_termination_letter.png,23806,synthetic document
+data/synthetic_documents/clean/DOC-0030_court_summons.pdf,1820,synthetic document
+data/synthetic_documents/clean/DOC-0031_formal_notice.docx,1443,synthetic document
+data/synthetic_documents/clean/DOC-0033_formal_notice.pdf,1824,synthetic document
+data/synthetic_documents/clean/DOC-0038_formal_notice.jpg,67442,synthetic document
+data/synthetic_documents/clean/DOC-0039_employment_termination_letter.docx,1440,synthetic document
+data/synthetic_documents/clean/DOC-0041_court_summons.docx,1500,synthetic document
+data/synthetic_documents/clean/DOC-0042_invoice_dispute_letter.pdf,1733,synthetic document
+data/synthetic_documents/clean/DOC-0043_formal_notice.jpg,64992,synthetic document
+data/synthetic_documents/clean/DOC-0044_invoice_dispute_letter.docx,1475,synthetic document
+data/synthetic_documents/clean/DOC-0045_formal_notice.docx,1482,synthetic document
+data/synthetic_documents/clean/DOC-0046_formal_notice.docx,1449,synthetic document
+data/synthetic_documents/clean/DOC-0047_court_summons.pdf,1721,synthetic document
+data/synthetic_documents/clean/DOC-0048_court_summons.pdf,1786,synthetic document
+data/synthetic_documents/clean/DOC-0049_invoice_dispute_letter.pdf,1772,synthetic document
+data/synthetic_documents/clean/DOC-0052_formal_notice.docx,1458,synthetic document
+data/synthetic_documents/clean/DOC-0053_formal_notice.pdf,1748,synthetic document
+data/synthetic_documents/clean/DOC-0054_formal_notice.pdf,1758,synthetic document
+data/synthetic_documents/clean/DOC-0055_court_summons.pdf,1770,synthetic document
+data/synthetic_documents/clean/DOC-0056_formal_notice.docx,1459,synthetic document
+data/synthetic_documents/clean/DOC-0058_formal_notice.docx,1446,synthetic document
+data/synthetic_documents/clean/DOC-0060_administrative_decision.docx,1473,synthetic document
+data/synthetic_documents/clean/DOC-0061_shareholder_letter.docx,1466,synthetic document
+data/synthetic_documents/clean/DOC-0064_court_summons.png,24468,synthetic document
+data/synthetic_documents/clean/DOC-0067_formal_notice.pdf,1776,synthetic document
+data/synthetic_documents/clean/DOC-0069_shareholder_letter.png,25019,synthetic document
+data/synthetic_documents/clean/DOC-0072_formal_notice.pdf,1773,synthetic document
+data/synthetic_documents/clean/DOC-0074_formal_notice.pdf,1790,synthetic document
+data/synthetic_documents/clean/DOC-0076_employment_termination_letter.pdf,1759,synthetic document
+data/synthetic_documents/clean/DOC-0078_invoice_dispute_letter.png,26148,synthetic document
+data/synthetic_documents/clean/DOC-0081_court_summons.pdf,1945,synthetic document
+data/synthetic_documents/clean/DOC-0082_employment_termination_letter.docx,1447,synthetic document
+data/synthetic_documents/clean/DOC-0083_formal_notice.docx,1443,synthetic document
+data/synthetic_documents/clean/DOC-0084_court_summons.pdf,1713,synthetic document
+data/synthetic_documents/clean/DOC-0085_formal_notice.docx,1446,synthetic document
+data/synthetic_documents/clean/DOC-0087_employment_termination_letter.png,25075,synthetic document
+data/synthetic_documents/clean/DOC-0088_formal_notice.pdf,1884,synthetic document
+data/synthetic_documents/clean/DOC-0089_formal_notice.png,21899,synthetic document
+data/synthetic_documents/clean/DOC-0092_invoice_dispute_letter.png,25549,synthetic document
+data/synthetic_documents/clean/DOC-0095_formal_notice.png,27018,synthetic document
+data/synthetic_documents/clean/DOC-0096_shareholder_letter.pdf,1753,synthetic document
+data/synthetic_documents/clean/DOC-0097_formal_notice.docx,1384,synthetic document
+data/synthetic_documents/clean/DOC-0099_formal_notice.jpg,65965,synthetic document
+data/synthetic_documents/clean/DOC-0104_invoice_dispute_letter.pdf,1887,synthetic document
+data/synthetic_documents/clean/DOC-0106_court_summons.pdf,1750,synthetic document
+data/synthetic_documents/clean/DOC-0107_court_summons.pdf,1771,synthetic document
+data/synthetic_documents/clean/DOC-0110_formal_notice.docx,1433,synthetic document
+data/synthetic_documents/clean/DOC-0111_employment_termination_letter.docx,1453,synthetic document
+data/synthetic_documents/clean/DOC-0115_formal_notice.docx,1461,synthetic document
+data/synthetic_documents/clean/DOC-0118_formal_notice.pdf,1781,synthetic document
+data/synthetic_documents/clean/DOC-0119_court_summons.docx,1501,synthetic document
+data/synthetic_documents/clean/DOC-0121_court_summons.png,24494,synthetic document
+data/synthetic_documents/clean/DOC-0124_employment_termination_letter.docx,1449,synthetic document
+data/synthetic_documents/clean/DOC-0125_formal_notice.pdf,1738,synthetic document
+data/synthetic_documents/clean/DOC-0127_invoice_dispute_letter.docx,1464,synthetic document
+data/synthetic_documents/clean/DOC-0129_formal_notice.docx,1434,synthetic document
+data/synthetic_documents/clean/DOC-0131_formal_notice.pdf,1761,synthetic document
+data/synthetic_documents/clean/DOC-0134_court_summons.pdf,1872,synthetic document
+data/synthetic_documents/clean/DOC-0137_formal_notice.docx,1482,synthetic document
+data/synthetic_documents/clean/DOC-0138_employment_termination_letter.pdf,1819,synthetic document
+data/synthetic_documents/clean/DOC-0139_invoice_dispute_letter.docx,1462,synthetic document
+data/synthetic_documents/clean/DOC-0140_employment_termination_letter.png,26211,synthetic document
+data/synthetic_documents/clean/DOC-0141_formal_notice.docx,1439,synthetic document
+data/synthetic_documents/clean/DOC-0142_formal_notice.docx,1383,synthetic document
+data/synthetic_documents/clean/DOC-0143_formal_notice.pdf,1572,synthetic document
+data/synthetic_documents/clean/DOC-0144_invoice_dispute_letter.pdf,1777,synthetic document
+data/synthetic_documents/clean/DOC-0145_court_summons.docx,1483,synthetic document
+data/synthetic_documents/clean/DOC-0147_employment_termination_letter.pdf,1761,synthetic document
+data/synthetic_documents/clean/DOC-0148_invoice_dispute_letter.docx,1462,synthetic document
+data/synthetic_documents/clean/DOC-0149_formal_notice.jpg,65085,synthetic document
+data/synthetic_documents/clean/DOC-0150_court_summons.docx,1487,synthetic document
+data/synthetic_documents/clean/DOC-0151_administrative_decision.jpg,66117,synthetic document
+data/synthetic_documents/clean/DOC-0152_court_summons.pdf,1845,synthetic document
+data/synthetic_documents/clean/DOC-0155_court_summons.docx,1509,synthetic document
+data/synthetic_documents/clean/DOC-0157_formal_notice.png,24312,synthetic document
+data/synthetic_documents/clean/DOC-0160_employment_termination_letter.pdf,1783,synthetic document
+data/synthetic_documents/clean/DOC-0161_invoice_dispute_letter.pdf,1879,synthetic document
+data/synthetic_documents/clean/DOC-0163_formal_notice.docx,1482,synthetic document
+data/synthetic_documents/clean/DOC-0166_shareholder_letter.docx,1444,synthetic document
+data/synthetic_documents/clean/DOC-0167_formal_notice.docx,1501,synthetic document
+data/synthetic_documents/clean/DOC-0169_formal_notice.png,25348,synthetic document
+data/synthetic_documents/clean/DOC-0170_administrative_decision.pdf,1771,synthetic document
+data/synthetic_documents/clean/DOC-0171_formal_notice.png,22256,synthetic document
+data/synthetic_documents/clean/DOC-0172_court_summons.pdf,1807,synthetic document
+data/synthetic_documents/clean/DOC-0174_formal_notice.docx,1465,synthetic document
+data/synthetic_documents/clean/DOC-0175_invoice_dispute_letter.pdf,1758,synthetic document
+data/synthetic_documents/clean/DOC-0177_invoice_dispute_letter.docx,1441,synthetic document
+data/synthetic_documents/clean/DOC-0179_formal_notice.docx,1505,synthetic document
+data/synthetic_documents/clean/DOC-0180_formal_notice.pdf,1839,synthetic document
+data/synthetic_documents/clean/DOC-0181_formal_notice.pdf,1734,synthetic document
+data/synthetic_documents/clean/DOC-0182_invoice_dispute_letter.docx,1493,synthetic document
+data/synthetic_documents/clean/DOC-0185_formal_notice.docx,1444,synthetic document
+data/synthetic_documents/clean/DOC-0188_employment_termination_letter.pdf,1704,synthetic document
+data/synthetic_documents/clean/DOC-0190_court_summons.pdf,1874,synthetic document
+data/synthetic_documents/clean/DOC-0191_formal_notice.pdf,1932,synthetic document
+data/synthetic_documents/clean/DOC-0192_employment_termination_letter.docx,1461,synthetic document
+data/synthetic_documents/clean/DOC-0194_formal_notice.docx,1435,synthetic document
+data/synthetic_documents/clean/DOC-0195_court_summons.pdf,1808,synthetic document
+data/synthetic_documents/clean/DOC-0197_court_summons.docx,1468,synthetic document
+data/synthetic_documents/clean/DOC-0198_administrative_decision.png,24631,synthetic document
+data/synthetic_documents/clean/DOC-0199_formal_notice.docx,1433,synthetic document
+data/synthetic_documents/clean/DOC-0200_court_summons.pdf,1898,synthetic document
+data/synthetic_documents/clean/DOC-0202_court_summons.docx,1532,synthetic document
+data/synthetic_documents/clean/DOC-0203_formal_notice.pdf,1724,synthetic document
+data/synthetic_documents/clean/DOC-0204_formal_notice.pdf,1758,synthetic document
+data/synthetic_documents/clean/DOC-0205_invoice_dispute_letter.docx,1460,synthetic document
+data/synthetic_documents/clean/DOC-0207_invoice_dispute_letter.png,25381,synthetic document
+data/synthetic_documents/clean/DOC-0208_formal_notice.pdf,1734,synthetic document
+data/synthetic_documents/clean/DOC-0210_employment_termination_letter.pdf,1756,synthetic document
+data/synthetic_documents/clean/DOC-0211_invoice_dispute_letter.jpg,65194,synthetic document
+data/synthetic_documents/clean/DOC-0213_court_summons.docx,1463,synthetic document
+data/synthetic_documents/clean/DOC-0216_administrative_decision.docx,1444,synthetic document
+data/synthetic_documents/clean/DOC-0217_invoice_dispute_letter.pdf,1699,synthetic document
+data/synthetic_documents/clean/DOC-0218_invoice_dispute_letter.png,24502,synthetic document
+data/synthetic_documents/clean/DOC-0219_shareholder_letter.png,24507,synthetic document
+data/synthetic_documents/clean/DOC-0220_formal_notice.pdf,1692,synthetic document
+data/synthetic_documents/clean/DOC-0221_formal_notice.pdf,1821,synthetic document
+data/synthetic_documents/clean/DOC-0226_formal_notice.docx,1463,synthetic document
+data/synthetic_documents/clean/DOC-0227_formal_notice.png,24464,synthetic document
+data/synthetic_documents/clean/DOC-0228_formal_notice.pdf,1749,synthetic document
+data/synthetic_documents/clean/DOC-0229_administrative_decision.docx,1468,synthetic document
+data/synthetic_documents/clean/DOC-0230_formal_notice.docx,1423,synthetic document
+data/synthetic_documents/clean/DOC-0231_shareholder_letter.docx,1466,synthetic document
+data/synthetic_documents/clean/DOC-0233_invoice_dispute_letter.pdf,1799,synthetic document
+data/synthetic_documents/clean/DOC-0234_administrative_decision.pdf,1751,synthetic document
+data/synthetic_documents/clean/DOC-0235_formal_notice.docx,1457,synthetic document
+data/synthetic_documents/clean/DOC-0237_shareholder_letter.png,24598,synthetic document
+data/synthetic_documents/clean/DOC-0239_court_summons.pdf,1924,synthetic document
+data/synthetic_documents/clean/DOC-0240_invoice_dispute_letter.pdf,1757,synthetic document
+data/synthetic_documents/clean/DOC-0241_formal_notice.docx,1426,synthetic document
+data/synthetic_documents/clean/DOC-0242_invoice_dispute_letter.jpg,62918,synthetic document
+data/synthetic_documents/clean/DOC-0243_court_summons.pdf,1777,synthetic document
+data/synthetic_documents/clean/DOC-0244_formal_notice.docx,1435,synthetic document
+data/synthetic_documents/clean/DOC-0245_court_summons.png,26403,synthetic document
+data/synthetic_documents/clean/DOC-0246_shareholder_letter.docx,1472,synthetic document
+data/synthetic_documents/clean/DOC-0247_formal_notice.docx,1391,synthetic document
+data/synthetic_documents/clean/DOC-0249_formal_notice.png,23399,synthetic document
+data/synthetic_documents/clean/DOC-0251_formal_notice.pdf,1782,synthetic document
+data/synthetic_documents/clean/DOC-0252_court_summons.pdf,1904,synthetic document
+data/synthetic_documents/clean/DOC-0254_formal_notice.pdf,1820,synthetic document
+data/synthetic_documents/clean/DOC-0255_formal_notice.jpg,64354,synthetic document
+data/synthetic_documents/clean/DOC-0258_formal_notice.docx,1471,synthetic document
+data/synthetic_documents/contradictory/DOC-0008_employment_termination_letter.docx,1485,synthetic document
+data/synthetic_documents/contradictory/DOC-0035_shareholder_letter.docx,1510,synthetic document
+data/synthetic_documents/contradictory/DOC-0040_court_summons.docx,1510,synthetic document
+data/synthetic_documents/contradictory/DOC-0057_shareholder_letter.docx,1476,synthetic document
+data/synthetic_documents/contradictory/DOC-0062_administrative_decision.docx,1482,synthetic document
+data/synthetic_documents/contradictory/DOC-0075_formal_notice.docx,1452,synthetic document
+data/synthetic_documents/contradictory/DOC-0077_employment_termination_letter.docx,1474,synthetic document
+data/synthetic_documents/contradictory/DOC-0091_court_summons.docx,1478,synthetic document
+data/synthetic_documents/contradictory/DOC-0098_court_summons.docx,1524,synthetic document
+data/synthetic_documents/contradictory/DOC-0100_invoice_dispute_letter.pdf,1795,synthetic document
+data/synthetic_documents/contradictory/DOC-0102_administrative_decision.pdf,1842,synthetic document
+data/synthetic_documents/contradictory/DOC-0103_invoice_dispute_letter.docx,1488,synthetic document
+data/synthetic_documents/contradictory/DOC-0112_formal_notice.docx,1500,synthetic document
+data/synthetic_documents/contradictory/DOC-0123_formal_notice.pdf,1827,synthetic document
+data/synthetic_documents/contradictory/DOC-0159_formal_notice.pdf,1829,synthetic document
+data/synthetic_documents/contradictory/DOC-0164_invoice_dispute_letter.pdf,1848,synthetic document
+data/synthetic_documents/contradictory/DOC-0173_court_summons.pdf,1971,synthetic document
+data/synthetic_documents/contradictory/DOC-0209_formal_notice.pdf,1682,synthetic document
+data/synthetic_documents/contradictory/DOC-0222_court_summons.docx,1493,synthetic document
+data/synthetic_documents/degraded/DOC-0002_employment_termination_letter.jpg,47266,synthetic document
+data/synthetic_documents/degraded/DOC-0003_employment_termination_letter.pdf,1731,synthetic document
+data/synthetic_documents/degraded/DOC-0014_formal_notice.png,62725,synthetic document
+data/synthetic_documents/degraded/DOC-0021_shareholder_letter.pdf,1788,synthetic document
+data/synthetic_documents/degraded/DOC-0025_formal_notice.pdf,1710,synthetic document
+data/synthetic_documents/degraded/DOC-0032_formal_notice.jpg,47304,synthetic document
+data/synthetic_documents/degraded/DOC-0059_formal_notice.pdf,1757,synthetic document
+data/synthetic_documents/degraded/DOC-0065_formal_notice.pdf,1770,synthetic document
+data/synthetic_documents/degraded/DOC-0071_formal_notice.pdf,1728,synthetic document
+data/synthetic_documents/degraded/DOC-0073_administrative_decision.png,80273,synthetic document
+data/synthetic_documents/degraded/DOC-0079_court_summons.jpg,47816,synthetic document
+data/synthetic_documents/degraded/DOC-0090_formal_notice.pdf,1926,synthetic document
+data/synthetic_documents/degraded/DOC-0094_formal_notice.pdf,1724,synthetic document
+data/synthetic_documents/degraded/DOC-0101_employment_termination_letter.pdf,1712,synthetic document
+data/synthetic_documents/degraded/DOC-0105_invoice_dispute_letter.pdf,1862,synthetic document
+data/synthetic_documents/degraded/DOC-0109_formal_notice.jpg,44613,synthetic document
+data/synthetic_documents/degraded/DOC-0113_invoice_dispute_letter.jpg,48352,synthetic document
+data/synthetic_documents/degraded/DOC-0117_administrative_decision.pdf,1744,synthetic document
+data/synthetic_documents/degraded/DOC-0120_invoice_dispute_letter.pdf,1780,synthetic document
+data/synthetic_documents/degraded/DOC-0122_court_summons.jpg,47619,synthetic document
+data/synthetic_documents/degraded/DOC-0128_court_summons.pdf,1783,synthetic document
+data/synthetic_documents/degraded/DOC-0136_invoice_dispute_letter.pdf,1745,synthetic document
+data/synthetic_documents/degraded/DOC-0146_administrative_decision.pdf,1764,synthetic document
+data/synthetic_documents/degraded/DOC-0158_formal_notice.pdf,1726,synthetic document
+data/synthetic_documents/degraded/DOC-0162_court_summons.jpg,48270,synthetic document
+data/synthetic_documents/degraded/DOC-0165_administrative_decision.jpg,47100,synthetic document
+data/synthetic_documents/degraded/DOC-0176_formal_notice.pdf,1712,synthetic document
+data/synthetic_documents/degraded/DOC-0178_formal_notice.jpg,46153,synthetic document
+data/synthetic_documents/degraded/DOC-0183_formal_notice.jpg,43769,synthetic document
+data/synthetic_documents/degraded/DOC-0184_formal_notice.pdf,1720,synthetic document
+data/synthetic_documents/degraded/DOC-0186_employment_termination_letter.png,81073,synthetic document
+data/synthetic_documents/degraded/DOC-0193_formal_notice.png,66125,synthetic document
+data/synthetic_documents/degraded/DOC-0212_formal_notice.pdf,1862,synthetic document
+data/synthetic_documents/degraded/DOC-0214_employment_termination_letter.jpg,47670,synthetic document
+data/synthetic_documents/degraded/DOC-0215_formal_notice.png,79830,synthetic document
+data/synthetic_documents/degraded/DOC-0225_formal_notice.png,80128,synthetic document
+data/synthetic_documents/degraded/DOC-0232_court_summons.pdf,1756,synthetic document
+data/synthetic_documents/degraded/DOC-0236_court_summons.pdf,1764,synthetic document
+data/synthetic_documents/degraded/DOC-0238_shareholder_letter.pdf,1842,synthetic document
+data/synthetic_documents/degraded/DOC-0248_employment_termination_letter.pdf,1708,synthetic document
+data/synthetic_documents/degraded/DOC-0250_formal_notice.png,77852,synthetic document
+data/synthetic_documents/missing_fields/DOC-0005_employment_termination_letter.png,22430,synthetic document
+data/synthetic_documents/missing_fields/DOC-0007_court_summons.docx,1462,synthetic document
+data/synthetic_documents/missing_fields/DOC-0011_formal_notice.docx,1431,synthetic document
+data/synthetic_documents/missing_fields/DOC-0013_court_summons.pdf,1871,synthetic document
+data/synthetic_documents/missing_fields/DOC-0015_employment_termination_letter.pdf,1655,synthetic document
+data/synthetic_documents/missing_fields/DOC-0022_formal_notice.docx,1406,synthetic document
+data/synthetic_documents/missing_fields/DOC-0051_invoice_dispute_letter.pdf,1801,synthetic document
+data/synthetic_documents/missing_fields/DOC-0063_invoice_dispute_letter.pdf,1710,synthetic document
+data/synthetic_documents/missing_fields/DOC-0068_employment_termination_letter.pdf,1706,synthetic document
+data/synthetic_documents/missing_fields/DOC-0070_employment_termination_letter.docx,1423,synthetic document
+data/synthetic_documents/missing_fields/DOC-0093_formal_notice.docx,1426,synthetic document
+data/synthetic_documents/missing_fields/DOC-0114_court_summons.docx,1471,synthetic document
+data/synthetic_documents/missing_fields/DOC-0130_formal_notice.docx,1474,synthetic document
+data/synthetic_documents/missing_fields/DOC-0133_invoice_dispute_letter.docx,1453,synthetic document
+data/synthetic_documents/missing_fields/DOC-0153_formal_notice.pdf,1674,synthetic document
+data/synthetic_documents/missing_fields/DOC-0156_court_summons.docx,1468,synthetic document
+data/synthetic_documents/missing_fields/DOC-0168_formal_notice.pdf,1516,synthetic document
+data/synthetic_documents/missing_fields/DOC-0187_administrative_decision.docx,1448,synthetic document
+data/synthetic_documents/missing_fields/DOC-0189_formal_notice.pdf,1518,synthetic document
+data/synthetic_documents/missing_fields/DOC-0201_court_summons.docx,1462,synthetic document
+data/synthetic_documents/missing_fields/DOC-0206_court_summons.pdf,1776,synthetic document
+data/synthetic_documents/missing_fields/DOC-0223_formal_notice.png,26461,synthetic document
+data/synthetic_documents/missing_fields/DOC-0224_administrative_decision.png,23300,synthetic document
+data/synthetic_documents/missing_fields/DOC-0253_formal_notice.docx,1422,synthetic document
+data/synthetic_documents/missing_fields/DOC-0256_invoice_dispute_letter.docx,1443,synthetic document
+data/synthetic_documents/missing_fields/DOC-0257_employment_termination_letter.docx,1434,synthetic document
+data/synthetic_documents/missing_fields/DOC-0260_shareholder_letter.docx,1440,synthetic document
+data/synthetic_documents/multipage/DOC-0020_formal_notice.pdf,2501,synthetic document
+data/synthetic_documents/multipage/DOC-0023_administrative_decision.pdf,2437,synthetic document
+data/synthetic_documents/multipage/DOC-0034_administrative_decision.pdf,2439,synthetic document
+data/synthetic_documents/multipage/DOC-0036_court_summons.pdf,2515,synthetic document
+data/synthetic_documents/multipage/DOC-0037_invoice_dispute_letter.pdf,2431,synthetic document
+data/synthetic_documents/multipage/DOC-0050_formal_notice.pdf,2322,synthetic document
+data/synthetic_documents/multipage/DOC-0066_court_summons.pdf,2484,synthetic document
+data/synthetic_documents/multipage/DOC-0080_administrative_decision.pdf,2399,synthetic document
+data/synthetic_documents/multipage/DOC-0086_court_summons.pdf,2412,synthetic document
+data/synthetic_documents/multipage/DOC-0108_formal_notice.pdf,2335,synthetic document
+data/synthetic_documents/multipage/DOC-0116_invoice_dispute_letter.pdf,2338,synthetic document
+data/synthetic_documents/multipage/DOC-0126_invoice_dispute_letter.pdf,2399,synthetic document
+data/synthetic_documents/multipage/DOC-0132_formal_notice.pdf,2388,synthetic document
+data/synthetic_documents/multipage/DOC-0135_invoice_dispute_letter.pdf,2448,synthetic document
+data/synthetic_documents/multipage/DOC-0154_formal_notice.pdf,2209,synthetic document
+data/synthetic_documents/multipage/DOC-0196_invoice_dispute_letter.pdf,2461,synthetic document
+data/synthetic_documents/multipage/DOC-0259_employment_termination_letter.pdf,2326,synthetic document
+data/synthetic_documents/samples/01_clean_formal_notice.pdf,1774,synthetic document
+data/synthetic_documents/samples/02_employment_letter.docx,1428,synthetic document
+data/synthetic_documents/samples/03_clean_scanned_contract_letter.png,26760,synthetic document
+data/synthetic_documents/samples/04_degraded_phone_photo.jpg,46831,synthetic document
+data/synthetic_documents/samples/05_missing_fields_notice.pdf,1608,synthetic document
+data/synthetic_documents/samples/06_multiple_dates_summons.docx,1342,synthetic document
+data/synthetic_documents/samples/07_multipage_contract_dispute.pdf,2463,synthetic document
+data/synthetic_documents/samples/08_contradictory_amounts.docx,1545,synthetic document
+data/synthetic_documents/samples/09_cardboard_invoice_dispute.pdf,1749,synthetic document
+data/synthetic_documents/supporting/DOC-0001-S_formal_notice.docx,1444,synthetic document
+data/synthetic_documents/supporting/DOC-0006-S_formal_notice.pdf,1858,synthetic document
+data/synthetic_documents/supporting/DOC-0010-S_formal_notice.pdf,1670,synthetic document
+data/synthetic_documents/supporting/DOC-0014-S_invoice_dispute_letter.jpg,44237,synthetic document
+data/synthetic_documents/supporting/DOC-0032-S_court_summons.pdf,1761,synthetic document
+data/synthetic_documents/supporting/DOC-0058-S_invoice_dispute_letter.docx,1448,synthetic document
+data/synthetic_documents/supporting/DOC-0063-S_invoice_dispute_letter.pdf,1817,synthetic document
+data/synthetic_documents/supporting/DOC-0074-S_invoice_dispute_letter.pdf,1796,synthetic document
+data/synthetic_documents/supporting/DOC-0079-S_formal_notice.pdf,1880,synthetic document
+data/synthetic_documents/supporting/DOC-0080-S_formal_notice.docx,1459,synthetic document
+data/synthetic_documents/supporting/DOC-0081-S_invoice_dispute_letter.pdf,1954,synthetic document
+data/synthetic_documents/supporting/DOC-0092-S_invoice_dispute_letter.jpg,66221,synthetic document
+data/synthetic_documents/supporting/DOC-0096-S_formal_notice.jpg,46696,synthetic document
+data/synthetic_documents/supporting/DOC-0097-S_court_summons.pdf,1594,synthetic document
+data/synthetic_documents/supporting/DOC-0100-S_court_summons.docx,1431,synthetic document
+data/synthetic_documents/supporting/DOC-0108-S_court_summons.jpg,60098,synthetic document
+data/synthetic_documents/supporting/DOC-0110-S_formal_notice.jpg,46978,synthetic document
+data/synthetic_documents/supporting/DOC-0113-S_invoice_dispute_letter.pdf,1828,synthetic document
+data/synthetic_documents/supporting/DOC-0115-S_invoice_dispute_letter.pdf,1770,synthetic document
+data/synthetic_documents/supporting/DOC-0122-S_formal_notice.pdf,1800,synthetic document
+data/synthetic_documents/supporting/DOC-0129-S_formal_notice.pdf,1726,synthetic document
+data/synthetic_documents/supporting/DOC-0131-S_court_summons.jpg,63974,synthetic document
+data/synthetic_documents/supporting/DOC-0140-S_invoice_dispute_letter.pdf,1812,synthetic document
+data/synthetic_documents/supporting/DOC-0141-S_invoice_dispute_letter.pdf,1709,synthetic document
+data/synthetic_documents/supporting/DOC-0167-S_court_summons.pdf,1874,synthetic document
+data/synthetic_documents/supporting/DOC-0174-S_invoice_dispute_letter.pdf,1764,synthetic document
+data/synthetic_documents/supporting/DOC-0177-S_court_summons.jpg,62041,synthetic document
+data/synthetic_documents/supporting/DOC-0178-S_formal_notice.jpg,61239,synthetic document
+data/synthetic_documents/supporting/DOC-0181-S_court_summons.pdf,1734,synthetic document
+data/synthetic_documents/supporting/DOC-0188-S_court_summons.jpg,45831,synthetic document
+data/synthetic_documents/supporting/DOC-0189-S_formal_notice.docx,1370,synthetic document
+data/synthetic_documents/supporting/DOC-0191-S_invoice_dispute_letter.jpg,72089,synthetic document
+data/synthetic_documents/supporting/DOC-0192-S_court_summons.jpg,62450,synthetic document
+data/synthetic_documents/supporting/DOC-0197-S_invoice_dispute_letter.pdf,1795,synthetic document
+data/synthetic_documents/supporting/DOC-0198-S_invoice_dispute_letter.pdf,1700,synthetic document
+data/synthetic_documents/supporting/DOC-0199-S_formal_notice.jpg,61042,synthetic document
+data/synthetic_documents/supporting/DOC-0208-S_formal_notice.docx,1445,synthetic document
+data/synthetic_documents/supporting/DOC-0214-S_invoice_dispute_letter.jpg,62794,synthetic document
+data/synthetic_documents/supporting/DOC-0216-S_invoice_dispute_letter.jpg,46807,synthetic document
+data/synthetic_documents/supporting/DOC-0227-S_formal_notice.pdf,1712,synthetic document
+data/synthetic_documents/supporting/DOC-0229-S_invoice_dispute_letter.docx,1477,synthetic document
+data/synthetic_documents/supporting/DOC-0231-S_formal_notice.pdf,1751,synthetic document
+data/synthetic_documents/supporting/DOC-0233-S_court_summons.docx,1458,synthetic document
+data/synthetic_documents/supporting/DOC-0235-S_court_summons.docx,1458,synthetic document
+data/synthetic_documents/supporting/DOC-0242-S_invoice_dispute_letter.jpg,62918,synthetic document
+data/synthetic_documents/supporting/DOC-0244-S_formal_notice.docx,1435,synthetic document
+data/synthetic_documents/supporting/DOC-0245-S_court_summons.jpg,70710,synthetic document
+data/synthetic_documents/supporting/DOC-0247-S_invoice_dispute_letter.docx,1399,synthetic document
+data/synthetic_documents/supporting/DOC-0250-S_invoice_dispute_letter.docx,1462,synthetic document
+data/synthetic_documents/supporting/DOC-0256-S_formal_notice.docx,1460,synthetic document
+data/synthetic_test_results.csv,28385,synthetic dataset
+database/klavis_ai_demo.sqlite,1691648,SQLite database
+docs/AI_QUALITY_FRAMEWORK.md,4673,documentation
+docs/ARCHITECTURE.md,6398,documentation
+docs/AUDIT_EXISTANT.md,2301,documentation
+docs/BUG_INVESTIGATION_CASES.md,7922,documentation
+docs/CTO_REVIEW_WORKFLOW.md,4321,documentation
+docs/DATA_DICTIONARY.md,6326,documentation
+docs/DATA_PRIVACY.md,3967,documentation
+docs/FINAL_QA.md,6663,documentation
+docs/INSIGHTS.md,4393,documentation
+docs/POWERBI_SQL_RECONCILIATION.md,5751,documentation
+docs/RECRUITER_GUIDE.md,4253,documentation
+docs/SECURITY_SCAN.md,1714,documentation
+docs/SQL_ANALYSIS_RESULTS.md,19315,documentation
+docs/TEST_REPORT.md,6925,documentation
+docs/TEST_STRATEGY.md,5143,documentation
+MANIFEST.csv,36424,project file
+portfolio/case-study-assets/app_ai_quality_page.jpg,302882,portfolio asset
+portfolio/case-study-assets/app_dashboard.jpg,243431,portfolio asset
+portfolio/case-study-assets/powerbi_01_ai_quality_overview.jpg,128302,portfolio asset
+portfolio/case-study-assets/powerbi_02_document_extraction.jpg,128973,portfolio asset
+portfolio/case-study-assets/powerbi_03_field_quality.jpg,111503,portfolio asset
+portfolio/case-study-assets/powerbi_04_testing_reliability.jpg,108587,portfolio asset
+portfolio/case-study-assets/powerbi_05_human_review_data_quality.jpg,115981,portfolio asset
+portfolio/case-study-assets/proof_01_ai_extraction.jpg,234207,portfolio asset
+portfolio/case-study-assets/proof_02_human_validation.jpg,197966,portfolio asset
+portfolio/case-study-assets/proof_03_data_model.jpg,180179,portfolio asset
+portfolio/case-study-assets/proof_04_test_suite.jpg,311629,portfolio asset
+portfolio/case-study-assets/proof_05_bug_investigation.jpg,195320,portfolio asset
+portfolio/case-study-assets/proof_06_ai_quality_dashboard.jpg,128302,portfolio asset
+portfolio/case-study-assets/proof_07_sql_analysis.jpg,178332,portfolio asset
+portfolio/case-study-assets/proof_08_audit_log.jpg,188347,portfolio asset
+portfolio/case-study-assets/thumb_dashboard.jpg,120998,portfolio asset
+powerbi/DASHBOARD_SPEC.md,4541,Power BI
+powerbi/data/DimAIProvider.csv,240,Power BI
+powerbi/data/DimDate.csv,11093,Power BI
+powerbi/data/DimDocumentType.csv,682,Power BI
+powerbi/data/DimTestScenario.csv,1584,Power BI
+powerbi/data/FactAIRuns.csv,87590,Power BI
+powerbi/data/FactAuditEvents.csv,97099,Power BI
+powerbi/data/FactFieldExtraction.csv,191856,Power BI
+powerbi/data/FactHumanReview.csv,29485,Power BI
+powerbi/data/FactTestResults.csv,17138,Power BI
+powerbi/DATA_MODEL.md,4048,Power BI
+powerbi/DAX_MEASURES.md,9460,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.pbip,296,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.Report/definition.pbir,251,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.Report/report.json,183485,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/database.tmdl,37,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/expressions.tmdl,332,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/model.tmdl,572,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/relationships.tmdl,1440,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/DimAIProvider.tmdl,1482,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/DimDate.tmdl,1994,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/DimDocumentType.tmdl,1949,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/DimTestScenario.tmdl,1915,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/FactAIRuns.tmdl,8945,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/FactAuditEvents.tmdl,2568,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/FactFieldExtraction.tmdl,5979,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/FactHumanReview.tmdl,4117,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition/tables/FactTestResults.tmdl,4561,Power BI
+powerbi/Klavis_AI_Quality/Klavis_AI_Quality.SemanticModel/definition.pbism,199,Power BI
+powerbi/screenshots/powerbi_01_ai_quality_overview.png,99059,Power BI
+powerbi/screenshots/powerbi_02_document_extraction.png,96621,Power BI
+powerbi/screenshots/powerbi_03_field_quality.png,91105,Power BI
+powerbi/screenshots/powerbi_04_testing_reliability.png,85575,Power BI
+powerbi/screenshots/powerbi_05_human_review_data_quality.png,94466,Power BI
+powerbi/tmdl_measures_script.tmdl,7889,Power BI
+proofs/app_ai_quality_page.png,261100,proof
+proofs/app_dashboard.png,682071,proof
+proofs/proof_01_ai_extraction.png,303305,proof
+proofs/proof_02_human_validation.png,776556,proof
+proofs/proof_03_data_model.png,222799,proof
+proofs/proof_04_test_suite.png,267337,proof
+proofs/proof_05_bug_investigation.png,586274,proof
+proofs/proof_06_ai_quality_dashboard.png,99059,proof
+proofs/proof_07_sql_analysis.png,551475,proof
+proofs/proof_08_audit_log.png,184200,proof
+README.md,16505,project file
+requirements.txt,359,project file
+run_pipeline.py,1648,project file
+scripts/build_dataset.py,19061,pipeline script
+scripts/build_manifest.py,1318,pipeline script
+scripts/build_powerbi_project.py,29574,pipeline script
+scripts/export_powerbi_data.py,11876,pipeline script
+scripts/make_proofs.py,22614,pipeline script
+scripts/powerbi_report.py,8556,pipeline script
+scripts/reconcile_powerbi_sql.py,10379,pipeline script
+scripts/run_sql_analysis.py,2327,pipeline script
+scripts/run_tests.py,3086,pipeline script
+scripts/security_scan.py,6826,pipeline script
+scripts/synthetic_documents.py,21880,pipeline script
+scripts/validate_powerbi_model.py,3511,pipeline script
+sql/analysis_queries.sql,9715,SQL
+sql/full_database_dump.sql,1637744,SQL
+sql/schema.sql,10552,SQL
+sql/views.sql,9296,SQL
+tests/__init__.py,0,tests
+tests/e2e/__init__.py,0,tests
+tests/e2e/scenarios.py,14738,tests
+tests/e2e/test_http_api.py,6891,tests
+tests/e2e/test_scenarios.py,1170,tests
+tests/fixtures/__init__.py,0,test fixture
+tests/fixtures/build_fixtures.py,5978,test fixture
+tests/fixtures/cardboard_commercial.pdf,1749,test fixture
+tests/fixtures/clean_letter.docx,1428,test fixture
+tests/fixtures/clean_notice.pdf,1774,test fixture
+tests/fixtures/clean_scan.png,26760,test fixture
+tests/fixtures/contradictory.docx,1545,test fixture
+tests/fixtures/degraded_photo.jpg,46831,test fixture
+tests/fixtures/expected.json,13984,test fixture
+tests/fixtures/invalid_file.pdf,2048,test fixture
+tests/fixtures/missing_fields.pdf,1608,test fixture
+tests/fixtures/mixed_same_case.docx,1440,test fixture
+tests/fixtures/mixed_same_case.pdf,1723,test fixture
+tests/fixtures/mixed_same_case.png,23982,test fixture
+tests/fixtures/multipage_contract.pdf,2463,test fixture
+tests/fixtures/multiple_dates.docx,1342,test fixture
+tests/fixtures/renamed_executable.docx,1024,test fixture
+tests/integration/__init__.py,0,tests
+tests/integration/test_reference_dataset.py,3764,tests
+tests/integration/test_workflow_db.py,8257,tests
+tests/unit/__init__.py,0,tests
+tests/unit/test_ai_services.py,6081,tests
+tests/unit/test_ingestion.py,3591,tests
+tests/unit/test_normalisation.py,5332,tests
+tests/unit/test_safe_logging.py,1869,tests

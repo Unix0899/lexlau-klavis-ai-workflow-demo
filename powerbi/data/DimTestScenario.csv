@@ -1,0 +1,15 @@
+scenario_code,scenario_number,scenario_name,scenario_label,document_format,expected,guarded_risk
+TEST 001,1,Clean PDF,TEST 001 Clean PDF,pdf,All required fields extracted,extraction accuracy
+TEST 002,2,DOCX,TEST 002 DOCX,docx,Text correctly extracted,document routing
+TEST 003,3,Clean image,TEST 003 Clean image,png,OCR / vision processing succeeds,ocr processing
+TEST 004,4,Degraded image,TEST 004 Degraded image,jpg,Lower confidence but no crash,robustness
+TEST 005,5,Missing field,TEST 005 Missing field,pdf,"Field appears in missing_fields (null, not 0)",missing field handling
+TEST 006,6,Multiple dates,TEST 006 Multiple dates,docx,Dates structured correctly (label + ISO),date normalisation
+TEST 007,7,Provider failure,TEST 007 Provider failure,pdf,Fallback invoked and recorded,provider fallback
+TEST 008,8,Both providers fail,TEST 008 Both providers fail,pdf,"Controlled error, nothing saved",error handling
+TEST 009,9,Duplicate submission,TEST 009 Duplicate submission,pdf,No duplicate case created,duplicate prevention
+TEST 010,10,Human correction,TEST 010 Human correction,jpg,Corrected value persisted,human review persistence
+TEST 011,11,Invalid file,TEST 011 Invalid file,invalid,"Rejected safely, no AI run",input validation
+TEST 012,12,Oversized file,TEST 012 Oversized file,pdf,Controlled rejection,input validation
+TEST 013,13,Mixed document formats,TEST 013 Mixed document formats,mixed,PDF / DOCX / image processed consistently,document routing
+TEST 014,14,Regression suite,TEST 014 Regression suite,mixed,Previously working workflows remain functional,regression

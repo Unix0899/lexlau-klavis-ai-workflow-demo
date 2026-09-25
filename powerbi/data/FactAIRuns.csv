@@ -1,0 +1,893 @@
+ai_run_id,date_key,document_type_id,provider_id,task,document_role,status,is_success,is_error,error_stage,error_code,fallback_used,fallback_reason,confidence_score,confidence_band,intake_status,needs_review,missing_count,conflict_count,processing_ms,latency_is_simulated,is_retry,case_id
+1,20260105,11,1,extraction,primary,success,1,0,,,0,,0.92,5. >= 0.90,Complete,0,0,0,1840.8,1,0,1
+2,20260105,11,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.7,3. 0.70-0.79,,0,,,6198.0,1,0,1
+3,20260105,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,1
+4,20260106,10,1,extraction,primary,success,1,0,,,0,,0.81,4. 0.80-0.89,Complete,0,0,0,4077.1,1,0,2
+5,20260106,10,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,303.1,1,0,2
+6,20260106,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,2
+7,20260106,3,1,extraction,primary,success,1,0,,,0,,0.657,2. 0.60-0.69,Missing Information,1,3,0,1905.0,1,0,3
+8,20260106,3,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,296.0,1,0,3
+9,20260106,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,3
+10,20260106,1,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,952.2,1,0,4
+11,20260106,1,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,214.3,1,0,4
+12,20260107,13,1,extraction,primary,success,1,0,,,0,,0.731,3. 0.70-0.79,Missing Information,1,2,0,2580.6,1,0,5
+13,20260107,13,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,311.3,1,0,5
+14,20260107,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2268.2,1,0,6
+15,20260107,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,239.5,1,0,6
+16,20260107,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,1.4,0,0,6
+17,20260107,7,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,810.2,1,0,
+18,20260107,8,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,6797.1,1,0,
+19,20260108,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,632.5,1,0,
+20,20260109,1,1,extraction,primary,success,1,0,,,0,,0.937,5. >= 0.90,Complete,0,0,0,829.1,1,0,7
+21,20260109,1,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6298.2,1,0,7
+22,20260109,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,7
+23,20260109,7,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,1449.4,1,0,
+24,20260109,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,7
+25,20260109,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1090.3,1,0,8
+26,20260109,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,211.2,1,0,8
+27,20260109,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,8
+28,20260109,4,1,extraction,primary,success,1,0,,,0,,0.898,4. 0.80-0.89,Missing Information,1,1,0,1024.3,1,0,9
+29,20260109,4,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,211.1,1,0,9
+30,20260109,4,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,9
+31,20260110,3,2,extraction,supporting,success,1,0,,,1,PROVIDER_TIMEOUT,0.705,3. 0.70-0.79,Missing Information,1,1,0,7472.2,1,0,6
+32,20260110,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,260.8,1,0,6
+33,20260112,12,3,extraction,primary,error,0,1,ai provider,AI_UNAVAILABLE,1,PROVIDER_ERROR,,0. no output (error),,0,,,3785.3,1,0,
+34,20260112,6,3,extraction,supporting,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,567.4,1,0,1
+35,20260112,12,1,extraction,primary,success,1,0,,,0,,0.727,3. 0.70-0.79,Missing Information,1,1,0,4025.3,1,1,10
+36,20260112,12,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.4,1. < 0.60,,0,,,6222.0,1,0,10
+37,20260112,12,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,10
+38,20260113,4,1,extraction,primary,success,1,0,,,0,,0.829,4. 0.80-0.89,Missing Information,1,1,0,943.2,1,0,11
+39,20260113,4,1,category suggestion,primary,success,1,0,,,0,,0.83,4. 0.80-0.89,,0,,,290.5,1,0,11
+40,20260113,10,1,extraction,supporting,success,1,0,,,0,,0.897,4. 0.80-0.89,Complete,0,0,0,2850.7,1,0,10
+41,20260113,10,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,389.2,1,0,10
+42,20260113,4,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,11
+43,20260114,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1089.9,1,0,12
+44,20260114,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,188.3,1,0,12
+45,20260114,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,964.7,1,0,13
+46,20260114,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,404.0,1,0,13
+47,20260114,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,12
+48,20260114,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,13
+49,20260114,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,647.9,1,0,
+50,20260116,3,1,extraction,supporting,success,1,0,,,0,,0.755,3. 0.70-0.79,Missing Information,1,1,0,1739.5,1,0,7
+51,20260116,3,1,category suggestion,supporting,success,1,0,,,0,,0.85,4. 0.80-0.89,,0,,,293.8,1,0,7
+52,20260116,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,516.4,1,0,
+53,20260116,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2142.6,1,0,14
+54,20260116,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,350.2,1,0,14
+55,20260116,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,14
+56,20260116,3,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,1933.6,1,0,15
+57,20260116,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,328.2,1,0,15
+58,20260116,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,15
+59,20260119,7,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,693.2,1,0,
+60,20260119,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1330.1,1,0,16
+61,20260119,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,282.2,1,0,16
+62,20260119,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2219.8,1,0,17
+63,20260119,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,238.9,1,0,17
+64,20260120,3,1,extraction,primary,success,1,0,,,0,,0.912,5. >= 0.90,Complete,0,0,0,2100.3,1,0,18
+65,20260120,3,1,category suggestion,primary,success,1,0,,,0,,0.88,4. 0.80-0.89,,0,,,306.9,1,0,18
+66,20260120,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,18
+67,20260120,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,615.9,1,0,
+68,20260121,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,906.4,1,0,19
+69,20260121,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,334.2,1,0,19
+70,20260121,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,527.9,1,0,
+71,20260121,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,19
+72,20260121,11,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,1865.9,1,0,20
+73,20260121,11,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,379.4,1,0,20
+74,20260121,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,20
+75,20260121,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,20
+76,20260122,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,879.5,1,0,21
+77,20260122,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,415.3,1,0,21
+78,20260122,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,21
+79,20260122,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,501.6,1,0,
+80,20260122,10,1,extraction,primary,success,1,0,,,0,,0.814,4. 0.80-0.89,Missing Information,1,1,0,3066.9,1,0,22
+81,20260122,10,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,261.4,1,0,22
+82,20260122,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,22
+83,20260123,1,1,extraction,primary,success,1,0,,,0,,0.937,5. >= 0.90,Complete,0,0,0,924.1,1,0,23
+84,20260123,1,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6237.5,1,0,23
+85,20260123,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.3,0,0,23
+86,20260123,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,23
+87,20260126,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2151.5,1,0,24
+88,20260126,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,261.9,1,0,24
+89,20260127,8,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,817.4,1,0,
+90,20260127,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1887.6,1,0,25
+91,20260127,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,205.2,1,0,25
+92,20260127,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,25
+93,20260128,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2037.1,1,0,26
+94,20260128,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,246.1,1,0,26
+95,20260128,2,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,26
+96,20260128,2,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,26
+97,20260128,9,3,extraction,primary,error,0,1,ai provider,AI_UNAVAILABLE,1,PROVIDER_ERROR,,0. no output (error),,0,,,4022.2,1,0,
+98,20260128,9,1,extraction,primary,success,1,0,,,0,,0.922,5. >= 0.90,Complete,0,0,0,2272.2,1,1,27
+99,20260128,9,1,category suggestion,primary,success,1,0,,,0,,0.72,3. 0.70-0.79,,0,,,258.1,1,0,27
+100,20260128,9,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,27
+101,20260129,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,744.2,1,0,
+102,20260130,8,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,2000.0,1,0,
+103,20260130,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,548.1,1,0,
+104,20260130,1,1,extraction,primary,success,1,0,,,0,,0.924,5. >= 0.90,Complete,0,0,0,876.2,1,0,28
+105,20260130,1,1,category suggestion,primary,success,1,0,,,0,,0.74,3. 0.70-0.79,,0,,,241.1,1,0,28
+106,20260130,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,28
+107,20260131,3,1,extraction,supporting,success,1,0,,,0,,0.816,4. 0.80-0.89,Complete,0,0,0,1698.3,1,0,22
+108,20260131,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,298.6,1,0,22
+109,20260203,9,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.861,4. 0.80-0.89,Complete,0,0,0,8143.5,1,0,29
+110,20260203,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,375.2,1,0,29
+111,20260203,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,664.6,1,0,
+112,20260203,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,791.0,1,0,
+113,20260204,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,756.3,1,0,
+114,20260204,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,861.6,1,0,30
+115,20260204,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,362.7,1,0,30
+116,20260204,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,30
+117,20260204,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,873.5,1,0,31
+118,20260204,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,390.3,1,0,31
+119,20260204,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,31
+120,20260205,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,1100.1,1,0,32
+121,20260205,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,203.0,1,0,32
+122,20260205,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,32
+123,20260205,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,32
+124,20260206,2,2,extraction,primary,success,1,0,,,1,PROVIDER_ERROR,0.856,4. 0.80-0.89,Complete,0,0,0,2029.5,1,0,33
+125,20260206,2,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,348.3,1,0,33
+126,20260206,4,1,extraction,primary,success,1,0,,,0,,0.769,3. 0.70-0.79,Missing Information,1,1,0,1009.6,1,0,34
+127,20260206,4,1,category suggestion,primary,success,1,0,,,0,,0.74,3. 0.70-0.79,,0,,,347.8,1,0,34
+128,20260206,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,641.0,1,0,
+129,20260206,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1071.2,1,0,35
+130,20260206,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,294.3,1,0,35
+131,20260206,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,35
+132,20260206,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1084.1,1,0,36
+133,20260206,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,206.3,1,0,36
+134,20260206,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,35
+135,20260209,1,1,extraction,primary,success,1,0,,,0,,0.914,5. >= 0.90,Complete,0,0,0,805.9,1,0,37
+136,20260209,1,1,category suggestion,primary,success,1,0,,,0,,0.92,5. >= 0.90,,0,,,275.1,1,0,37
+137,20260209,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,37
+138,20260209,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,655.8,1,0,
+139,20260210,8,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,1800.6,1,0,
+140,20260210,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,652.0,1,0,
+141,20260210,3,1,extraction,primary,success,1,0,,,0,,0.722,3. 0.70-0.79,Missing Information,1,2,0,1566.7,1,0,38
+142,20260210,3,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6410.6,1,0,38
+143,20260210,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,38
+144,20260210,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,38
+145,20260211,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,672.8,1,0,
+146,20260212,6,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,672.9,1,0,
+147,20260213,8,3,extraction,primary,error,0,1,text extraction,PARSE_ERROR,0,,,0. no output (error),,0,,,713.6,1,0,
+148,20260213,4,1,extraction,primary,success,1,0,,,0,,0.842,4. 0.80-0.89,Missing Information,1,2,0,902.1,1,0,39
+149,20260213,4,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,326.0,1,0,39
+150,20260216,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1941.7,1,0,40
+151,20260216,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,339.0,1,0,40
+152,20260216,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,569.4,1,1,41
+153,20260216,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,374.7,1,0,41
+154,20260216,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,41
+155,20260216,7,1,extraction,primary,success,1,0,,,0,,0.891,4. 0.80-0.89,Missing Information,1,1,0,814.9,1,1,42
+156,20260216,7,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,347.8,1,0,42
+157,20260216,8,1,extraction,primary,success,1,0,,,0,,0.906,5. >= 0.90,Needs Review,1,0,1,806.5,1,1,43
+158,20260216,8,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,232.0,1,0,43
+159,20260216,7,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,42
+160,20260216,8,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,43
+161,20260216,6,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,766.4,1,1,44
+162,20260216,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,197.9,1,0,44
+163,20260216,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,44
+164,20260217,7,1,extraction,primary,success,1,0,,,0,,0.842,4. 0.80-0.89,Missing Information,1,2,0,551.0,1,1,45
+165,20260217,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,266.4,1,0,45
+166,20260217,3,1,extraction,primary,success,1,0,,,0,,0.894,4. 0.80-0.89,Complete,0,0,0,1985.8,1,0,46
+167,20260217,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,240.2,1,0,46
+168,20260217,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,46
+169,20260217,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,574.2,1,1,47
+170,20260217,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,276.0,1,0,47
+171,20260217,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,46
+172,20260217,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,47
+173,20260217,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,2.1,0,0,46
+174,20260217,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,780.0,1,1,48
+175,20260217,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,287.9,1,0,48
+176,20260217,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,48
+177,20260217,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1366.5,1,0,49
+178,20260217,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,342.0,1,0,49
+179,20260217,2,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,49
+180,20260217,2,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,49
+181,20260217,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,633.0,1,1,50
+182,20260217,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,402.9,1,0,50
+183,20260218,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,823.3,1,1,51
+184,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,285.5,1,0,51
+185,20260218,8,1,extraction,primary,success,1,0,,,0,,0.9,5. >= 0.90,Needs Review,1,0,1,680.8,1,1,52
+186,20260218,8,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,398.0,1,0,52
+187,20260218,7,1,extraction,primary,success,1,0,,,0,,0.737,3. 0.70-0.79,Missing Information,1,2,0,536.1,1,1,53
+188,20260218,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,305.4,1,0,53
+189,20260218,6,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,737.9,1,1,54
+190,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,318.1,1,0,54
+191,20260218,8,1,extraction,primary,success,1,0,,,0,,0.906,5. >= 0.90,Needs Review,1,0,1,645.9,1,1,55
+192,20260218,8,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,186.5,1,0,55
+193,20260218,6,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.861,4. 0.80-0.89,Complete,0,0,0,1920.0,1,1,56
+194,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,270.8,1,0,56
+195,20260218,8,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,55
+196,20260218,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,56
+197,20260218,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,591.0,1,1,57
+198,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,257.6,1,0,57
+199,20260218,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,57
+200,20260218,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,500.6,1,1,58
+201,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,239.8,1,0,58
+202,20260218,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,58
+203,20260218,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,661.8,1,1,59
+204,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,305.0,1,0,59
+205,20260218,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,58
+206,20260218,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,59
+207,20260218,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,59
+208,20260218,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,980.4,1,0,60
+209,20260218,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,337.4,1,0,60
+210,20260218,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,59
+211,20260218,8,1,extraction,primary,success,1,0,,,0,,0.876,4. 0.80-0.89,Needs Review,1,0,1,517.1,1,1,61
+212,20260218,8,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,353.5,1,0,61
+213,20260218,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,554.5,1,1,62
+214,20260218,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,222.4,1,0,62
+215,20260219,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,776.3,1,1,63
+216,20260219,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,326.3,1,0,63
+217,20260219,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,717.2,1,1,64
+218,20260219,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,243.9,1,0,64
+219,20260219,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,64
+220,20260219,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,64
+221,20260219,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,711.2,1,1,65
+222,20260219,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,273.0,1,0,65
+223,20260219,8,1,extraction,primary,success,1,0,,,0,,0.906,5. >= 0.90,Needs Review,1,0,1,566.4,1,1,66
+224,20260219,8,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,364.5,1,0,66
+225,20260219,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,786.9,1,1,67
+226,20260219,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,350.8,1,0,67
+227,20260219,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,65
+228,20260219,8,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,66
+229,20260219,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,67
+230,20260219,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,67
+231,20260219,4,1,extraction,primary,success,1,0,,,0,,0.892,4. 0.80-0.89,Needs Review,1,0,0,755.1,1,0,68
+232,20260219,4,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,363.2,1,0,68
+233,20260219,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2398.4,1,0,69
+234,20260219,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,204.2,1,0,69
+235,20260219,4,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,68
+236,20260219,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,69
+237,20260219,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,69
+238,20260219,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,69
+239,20260219,4,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,68
+240,20260219,4,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,68
+241,20260219,7,1,extraction,primary,success,1,0,,,0,,0.837,4. 0.80-0.89,Missing Information,1,1,0,668.4,1,0,70
+242,20260219,7,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,382.7,1,0,70
+243,20260219,3,1,extraction,primary,success,1,0,,,0,,0.83,4. 0.80-0.89,Complete,0,0,0,1572.4,1,0,71
+244,20260219,3,1,category suggestion,primary,success,1,0,,,0,,0.85,4. 0.80-0.89,,0,,,335.1,1,0,71
+245,20260219,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,71
+246,20260220,1,1,extraction,primary,success,1,0,,,0,,0.928,5. >= 0.90,Complete,0,0,0,822.3,1,0,72
+247,20260220,1,1,category suggestion,primary,success,1,0,,,0,,0.77,3. 0.70-0.79,,0,,,319.7,1,0,72
+248,20260223,12,1,extraction,primary,success,1,0,,,0,,0.687,2. 0.60-0.69,Missing Information,1,1,0,3568.6,1,0,73
+249,20260223,12,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,232.6,1,0,73
+250,20260223,1,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,706.4,1,0,39
+251,20260223,1,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,315.6,1,0,39
+252,20260224,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,716.9,1,0,65
+253,20260224,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,291.5,1,0,65
+254,20260225,1,1,extraction,primary,success,1,0,,,0,,0.937,5. >= 0.90,Complete,0,0,0,980.2,1,0,74
+255,20260225,1,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6310.2,1,0,74
+256,20260226,8,1,extraction,primary,success,1,0,,,0,,0.906,5. >= 0.90,Needs Review,1,0,1,534.0,1,0,75
+257,20260226,8,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,305.8,1,0,75
+258,20260227,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1061.8,1,0,76
+259,20260227,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,227.3,1,0,76
+260,20260302,8,1,extraction,primary,success,1,0,,,0,,0.897,4. 0.80-0.89,Needs Review,1,0,1,571.8,1,0,77
+261,20260302,8,1,category suggestion,primary,success,1,0,,,0,,0.87,4. 0.80-0.89,,0,,,293.6,1,0,77
+262,20260302,8,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,77
+263,20260302,11,1,extraction,primary,success,1,0,,,0,,0.92,5. >= 0.90,Complete,0,0,0,1862.9,1,0,78
+264,20260302,11,1,category suggestion,primary,success,1,0,,,0,,0.7,3. 0.70-0.79,,0,,,357.7,1,0,78
+265,20260302,3,1,extraction,supporting,success,1,0,,,0,,0.924,5. >= 0.90,Complete,0,0,0,1988.0,1,0,74
+266,20260302,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,363.5,1,0,74
+267,20260303,10,1,extraction,primary,success,1,0,,,0,,0.791,3. 0.70-0.79,Needs Review,1,0,0,3966.9,1,0,79
+268,20260303,10,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,200.3,1,0,79
+269,20260303,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1342.2,1,0,80
+270,20260303,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,252.6,1,0,80
+271,20260303,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,80
+272,20260303,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,799.6,1,0,81
+273,20260303,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,347.4,1,0,81
+274,20260304,6,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,642.9,1,0,82
+275,20260304,6,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,277.9,1,0,82
+276,20260304,6,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.861,4. 0.80-0.89,Complete,0,0,0,6833.1,1,0,83
+277,20260304,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,208.4,1,0,83
+278,20260304,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,530.0,1,0,
+279,20260304,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,265.1,1,0,
+280,20260305,1,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.861,4. 0.80-0.89,Complete,0,0,0,6875.7,1,0,84
+281,20260305,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,375.7,1,0,84
+282,20260305,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,830.4,1,0,85
+283,20260305,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,219.8,1,0,85
+284,20260305,2,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.767,3. 0.70-0.79,Missing Information,1,1,0,8014.5,1,0,86
+285,20260305,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,211.7,1,0,86
+286,20260305,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,85
+287,20260305,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,85
+288,20260305,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,84
+289,20260305,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,84
+290,20260305,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,86
+291,20260305,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,85
+292,20260305,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,84
+293,20260306,6,1,extraction,supporting,success,1,0,,,0,,0.937,5. >= 0.90,Complete,0,0,0,724.4,1,0,80
+294,20260306,6,2,category suggestion,supporting,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6298.0,1,0,80
+295,20260306,11,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.761,3. 0.70-0.79,Missing Information,1,1,0,8339.3,1,0,87
+296,20260306,11,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,230.5,1,0,87
+297,20260306,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,87
+298,20260306,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1014.8,1,0,88
+299,20260306,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,419.4,1,0,88
+300,20260306,11,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,2233.3,1,0,89
+301,20260306,11,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,401.6,1,0,89
+302,20260306,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,88
+303,20260306,3,1,extraction,primary,success,1,0,,,0,,0.922,5. >= 0.90,Complete,0,0,0,2095.9,1,0,90
+304,20260306,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,245.8,1,0,90
+305,20260306,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,90
+306,20260306,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,90
+307,20260308,1,2,extraction,supporting,success,1,0,,,1,INVALID_OUTPUT,0.858,4. 0.80-0.89,Complete,0,0,0,2311.5,1,0,81
+308,20260308,1,1,category suggestion,supporting,success,1,0,,,0,,0.92,5. >= 0.90,,0,,,355.2,1,0,81
+309,20260309,8,1,extraction,primary,success,1,0,,,0,,0.901,5. >= 0.90,Needs Review,1,0,1,716.8,1,0,91
+310,20260309,8,1,category suggestion,primary,success,1,0,,,0,,0.91,5. >= 0.90,,0,,,392.2,1,0,91
+311,20260309,8,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,91
+312,20260309,8,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,91
+313,20260310,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2988.8,1,0,92
+314,20260310,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,306.5,1,0,92
+315,20260310,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,92
+316,20260310,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,92
+317,20260311,7,1,extraction,primary,success,1,0,,,0,,0.737,3. 0.70-0.79,Missing Information,1,2,0,758.3,1,0,93
+318,20260311,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,217.8,1,0,93
+319,20260311,7,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,93
+320,20260311,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,93
+321,20260311,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,93
+322,20260312,3,1,extraction,primary,success,1,0,,,0,,0.92,5. >= 0.90,Missing Information,1,1,0,1536.9,1,0,94
+323,20260312,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,363.5,1,0,94
+324,20260312,9,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,3061.6,1,0,92
+325,20260312,9,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,241.8,1,0,92
+326,20260312,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,94
+327,20260313,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2711.4,1,0,95
+328,20260313,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,195.3,1,0,95
+329,20260313,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,95
+330,20260313,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1111.0,1,0,96
+331,20260313,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,256.1,1,0,96
+332,20260313,6,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,721.0,1,0,97
+333,20260313,6,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,184.1,1,0,97
+334,20260313,8,1,extraction,primary,success,1,0,,,0,,0.902,5. >= 0.90,Needs Review,1,0,1,749.2,1,0,98
+335,20260313,8,1,category suggestion,primary,success,1,0,,,0,,0.92,5. >= 0.90,,0,,,375.3,1,0,98
+336,20260313,8,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,98
+337,20260313,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,97
+338,20260314,3,1,extraction,supporting,success,1,0,,,0,,0.79,3. 0.70-0.79,Needs Review,1,0,0,1477.9,1,0,79
+339,20260314,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,325.1,1,0,79
+340,20260315,10,3,extraction,supporting,error,0,1,ai provider,AI_UNAVAILABLE,1,PROVIDER_ERROR,,0. no output (error),,0,,,5020.4,1,0,96
+341,20260316,9,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,2861.9,1,0,99
+342,20260316,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,210.5,1,0,99
+343,20260316,5,1,extraction,primary,success,1,0,,,0,,0.906,5. >= 0.90,Needs Review,1,0,1,799.1,1,0,100
+344,20260316,5,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,203.9,1,0,100
+345,20260316,3,1,extraction,primary,success,1,0,,,0,,0.915,5. >= 0.90,Complete,0,0,0,1473.6,1,0,101
+346,20260316,3,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,335.2,1,0,101
+347,20260316,1,1,extraction,supporting,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,807.1,1,0,97
+348,20260316,1,1,category suggestion,supporting,success,1,0,,,0,,0.4,1. < 0.60,,0,,,329.5,1,0,97
+349,20260317,5,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.826,4. 0.80-0.89,Needs Review,1,0,1,2287.9,1,0,102
+350,20260317,5,1,category suggestion,primary,success,1,0,,,0,,0.91,5. >= 0.90,,0,,,216.7,1,0,102
+351,20260317,8,1,extraction,primary,success,1,0,,,0,,0.9,5. >= 0.90,Needs Review,1,0,1,717.6,1,0,103
+352,20260317,8,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,251.5,1,0,103
+353,20260317,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,841.7,1,0,104
+354,20260317,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,214.9,1,0,104
+355,20260317,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,104
+356,20260318,3,1,extraction,primary,success,1,0,,,0,,0.736,3. 0.70-0.79,Missing Information,1,1,0,1920.9,1,0,105
+357,20260318,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,265.5,1,0,105
+358,20260318,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1138.7,1,0,106
+359,20260318,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,252.7,1,0,106
+360,20260318,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,796.1,1,0,107
+361,20260318,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,337.3,1,0,107
+362,20260318,2,1,extraction,primary,success,1,0,,,0,,0.912,5. >= 0.90,Complete,0,0,0,1918.0,1,0,108
+363,20260318,2,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,212.9,1,0,108
+364,20260318,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,108
+365,20260319,10,1,extraction,primary,success,1,0,,,0,,0.65,2. 0.60-0.69,Missing Information,1,1,0,4038.1,1,0,109
+366,20260319,10,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,404.1,1,0,109
+367,20260319,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,109
+368,20260319,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,721.9,1,0,110
+369,20260319,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,200.7,1,0,110
+370,20260319,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,728.1,1,0,111
+371,20260319,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,197.8,1,0,111
+372,20260319,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,111
+373,20260320,8,1,extraction,primary,success,1,0,,,0,,0.9,5. >= 0.90,Needs Review,1,0,1,677.7,1,0,112
+374,20260320,8,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,263.7,1,0,112
+375,20260321,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,571.3,1,0,100
+376,20260321,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,390.7,1,0,100
+377,20260323,10,1,extraction,primary,success,1,0,,,0,,0.898,4. 0.80-0.89,Complete,0,0,0,4021.9,1,0,113
+378,20260323,10,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,270.5,1,0,113
+379,20260323,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,113
+380,20260325,7,1,extraction,primary,success,1,0,,,0,,0.898,4. 0.80-0.89,Missing Information,1,1,0,817.4,1,0,114
+381,20260325,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,380.8,1,0,114
+382,20260325,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,705.8,1,0,115
+383,20260325,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,319.9,1,0,115
+384,20260325,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1854.9,1,0,116
+385,20260325,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,268.1,1,0,116
+386,20260326,3,1,extraction,primary,success,1,0,,,0,,0.897,4. 0.80-0.89,Complete,0,0,0,2202.6,1,0,117
+387,20260326,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,245.9,1,0,117
+388,20260326,1,1,extraction,primary,success,1,0,,,0,,0.941,5. >= 0.90,Complete,0,0,0,1005.2,1,0,118
+389,20260326,1,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,319.0,1,0,118
+390,20260326,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,118
+391,20260327,10,1,extraction,supporting,success,1,0,,,0,,0.82,4. 0.80-0.89,Complete,0,0,0,2850.9,1,0,110
+392,20260327,10,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,308.8,1,0,110
+393,20260327,3,1,extraction,supporting,success,1,0,,,0,,0.79,3. 0.70-0.79,Missing Information,1,1,0,1544.8,1,0,113
+394,20260327,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,261.9,1,0,113
+395,20260327,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,824.9,1,0,119
+396,20260327,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,291.2,1,0,119
+397,20260327,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,119
+398,20260327,3,1,extraction,primary,success,1,0,,,0,,0.768,3. 0.70-0.79,Missing Information,1,1,0,1897.9,1,0,120
+399,20260327,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,335.3,1,0,120
+400,20260327,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,120
+401,20260328,9,1,extraction,supporting,success,1,0,,,0,,0.912,5. >= 0.90,Complete,0,0,0,2904.4,1,0,108
+402,20260328,9,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,205.7,1,0,108
+403,20260330,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2853.6,1,0,121
+404,20260330,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,400.9,1,0,121
+405,20260330,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,121
+406,20260331,10,1,extraction,primary,success,1,0,,,0,,0.735,3. 0.70-0.79,Missing Information,1,2,0,4219.4,1,0,122
+407,20260331,10,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,376.3,1,0,122
+408,20260331,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,122
+409,20260331,5,1,extraction,primary,success,1,0,,,0,,0.9,5. >= 0.90,Needs Review,1,0,1,903.9,1,0,123
+410,20260331,5,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,388.9,1,0,123
+411,20260331,5,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,123
+412,20260401,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,567.7,1,0,124
+413,20260401,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,196.6,1,0,124
+414,20260401,9,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,2452.6,1,0,
+415,20260401,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,308.7,1,0,
+416,20260401,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,124
+417,20260401,1,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.861,4. 0.80-0.89,Complete,0,0,0,1980.5,1,0,125
+418,20260401,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,223.3,1,0,125
+419,20260401,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,125
+420,20260401,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1406.6,1,0,126
+421,20260401,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,284.6,1,0,126
+422,20260401,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,126
+423,20260401,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,806.2,1,0,127
+424,20260401,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,230.9,1,0,127
+425,20260401,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,127
+426,20260402,3,1,extraction,primary,success,1,0,,,0,,0.664,2. 0.60-0.69,Missing Information,1,1,0,2119.2,1,0,128
+427,20260402,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,184.0,1,0,128
+428,20260402,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,128
+429,20260402,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,128
+430,20260402,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,128
+431,20260402,6,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,815.3,1,0,129
+432,20260402,6,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,264.3,1,0,129
+433,20260402,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,129
+434,20260403,7,1,extraction,primary,success,1,0,,,0,,0.898,4. 0.80-0.89,Missing Information,1,1,0,698.6,1,0,130
+435,20260403,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,208.3,1,0,130
+436,20260403,1,2,extraction,primary,success,1,0,,,1,PROVIDER_ERROR,0.856,4. 0.80-0.89,Complete,0,0,0,1275.3,1,0,131
+437,20260403,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,206.3,1,0,131
+438,20260403,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,801.5,1,0,
+439,20260403,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,275.8,1,0,
+440,20260403,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,131
+441,20260403,2,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,1785.0,1,0,132
+442,20260403,2,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,201.6,1,0,132
+443,20260404,1,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1144.3,1,0,129
+444,20260404,1,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,304.4,1,0,129
+445,20260404,9,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,2457.2,1,0,131
+446,20260404,9,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,321.2,1,0,131
+447,20260405,3,1,extraction,supporting,success,1,0,,,0,,0.818,4. 0.80-0.89,Complete,0,0,0,1986.2,1,0,115
+448,20260405,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,385.0,1,0,115
+449,20260406,7,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Missing Information,1,1,0,760.6,1,0,133
+450,20260406,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,190.3,1,0,133
+451,20260406,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,133
+452,20260406,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.6,0,0,133
+453,20260406,1,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,763.1,1,0,122
+454,20260406,1,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,250.4,1,0,122
+455,20260406,1,1,extraction,primary,success,1,0,,,0,,0.937,5. >= 0.90,Complete,0,0,0,914.0,1,0,134
+456,20260406,1,1,category suggestion,primary,success,1,0,,,0,,0.85,4. 0.80-0.89,,0,,,266.6,1,0,134
+457,20260407,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1774.3,1,0,135
+458,20260407,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,222.6,1,0,135
+459,20260407,2,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,135
+460,20260407,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,135
+461,20260407,3,1,extraction,primary,success,1,0,,,0,,0.84,4. 0.80-0.89,Missing Information,1,1,0,2277.9,1,0,136
+462,20260407,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,216.9,1,0,136
+463,20260407,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,790.3,1,0,137
+464,20260407,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,238.5,1,0,137
+465,20260407,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1023.1,1,0,138
+466,20260407,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,361.8,1,0,138
+467,20260407,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,138
+468,20260407,2,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,135
+469,20260407,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,137
+470,20260407,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,740.8,1,0,139
+471,20260407,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,333.8,1,0,139
+472,20260407,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1585.5,1,0,
+473,20260407,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,231.4,1,0,
+474,20260407,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,139
+475,20260408,11,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,2639.1,1,0,140
+476,20260408,11,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,259.7,1,0,140
+477,20260408,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,140
+478,20260409,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,580.8,1,0,141
+479,20260409,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,376.9,1,0,141
+480,20260409,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,141
+481,20260409,6,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,742.5,1,0,142
+482,20260409,6,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,350.3,1,0,142
+483,20260409,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,142
+484,20260410,1,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,998.2,1,0,143
+485,20260410,1,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,255.9,1,0,143
+486,20260410,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,143
+487,20260410,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,143
+488,20260411,1,1,extraction,supporting,success,1,0,,,0,,0.939,5. >= 0.90,Complete,0,0,0,721.0,1,0,140
+489,20260411,1,1,category suggestion,supporting,success,1,0,,,0,,0.87,4. 0.80-0.89,,0,,,284.7,1,0,140
+490,20260413,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,853.0,1,0,144
+491,20260413,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,244.5,1,0,144
+492,20260414,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,569.3,1,0,145
+493,20260414,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,339.3,1,0,145
+494,20260414,3,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.672,2. 0.60-0.69,Missing Information,1,1,0,8340.9,1,0,146
+495,20260414,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,270.8,1,0,146
+496,20260414,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,145
+497,20260414,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,862.9,1,0,147
+498,20260414,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,317.3,1,0,147
+499,20260414,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,146
+500,20260414,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,147
+501,20260414,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,147
+502,20260415,3,1,extraction,supporting,success,1,0,,,0,,0.76,3. 0.70-0.79,Needs Review,1,0,0,2321.9,1,0,141
+503,20260415,3,1,category suggestion,supporting,success,1,0,,,0,,0.87,4. 0.80-0.89,,0,,,286.5,1,0,141
+504,20260415,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,835.3,1,0,148
+505,20260415,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,187.1,1,0,148
+506,20260415,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,148
+507,20260415,9,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2652.2,1,0,149
+508,20260415,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,256.8,1,0,149
+509,20260415,9,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,149
+510,20260415,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,560.2,1,0,150
+511,20260415,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,365.2,1,0,150
+512,20260415,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,150
+513,20260415,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,150
+514,20260416,9,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,2030.0,1,0,151
+515,20260416,9,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,308.9,1,0,151
+516,20260416,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,683.1,1,0,152
+517,20260416,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,266.7,1,0,152
+518,20260416,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,152
+519,20260416,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,152
+520,20260417,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,653.4,1,0,
+521,20260417,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,296.5,1,0,
+522,20260421,4,1,extraction,primary,success,1,0,,,0,,0.757,3. 0.70-0.79,Missing Information,1,1,0,1042.8,1,0,153
+523,20260421,4,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,266.8,1,0,153
+524,20260423,2,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,1417.2,1,0,154
+525,20260423,2,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,376.8,1,0,154
+526,20260423,6,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.861,4. 0.80-0.89,Complete,0,0,0,6683.3,1,0,155
+527,20260423,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,253.1,1,0,155
+528,20260423,7,1,extraction,primary,success,1,0,,,0,,0.842,4. 0.80-0.89,Missing Information,1,1,0,546.6,1,0,156
+529,20260423,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,366.7,1,0,156
+530,20260423,11,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.848,4. 0.80-0.89,Complete,0,0,0,3262.9,1,0,157
+531,20260423,11,1,category suggestion,primary,success,1,0,,,0,,0.83,4. 0.80-0.89,,0,,,374.2,1,0,157
+532,20260423,7,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,156
+533,20260423,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,156
+534,20260423,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,156
+535,20260424,3,1,extraction,primary,success,1,0,,,0,,0.84,4. 0.80-0.89,Complete,0,0,0,2009.8,1,0,158
+536,20260424,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,347.9,1,0,158
+537,20260424,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,158
+538,20260424,5,1,extraction,primary,success,1,0,,,0,,0.9,5. >= 0.90,Needs Review,1,0,1,1036.5,1,0,159
+539,20260424,5,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,343.5,1,0,159
+540,20260424,5,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,159
+541,20260424,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,833.3,1,0,160
+542,20260424,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,223.5,1,0,160
+543,20260424,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,160
+544,20260427,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1045.7,1,0,161
+545,20260427,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,337.1,1,0,161
+546,20260427,10,1,extraction,primary,success,1,0,,,0,,0.84,4. 0.80-0.89,Missing Information,1,2,0,4307.2,1,0,162
+547,20260427,10,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,204.5,1,0,162
+548,20260428,6,1,extraction,primary,success,1,0,,,0,,0.908,5. >= 0.90,Complete,0,0,0,799.2,1,0,163
+549,20260428,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,387.1,1,0,163
+550,20260428,5,2,extraction,primary,success,1,0,,,1,PROVIDER_ERROR,0.821,4. 0.80-0.89,Needs Review,1,0,1,1213.3,1,0,164
+551,20260428,5,1,category suggestion,primary,success,1,0,,,0,,0.87,4. 0.80-0.89,,0,,,287.8,1,0,164
+552,20260428,5,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,164
+553,20260429,10,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.672,2. 0.60-0.69,Missing Information,1,2,0,4073.6,1,0,165
+554,20260429,10,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,417.0,1,0,165
+555,20260429,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,165
+556,20260429,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,721.1,1,0,166
+557,20260429,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,332.4,1,0,166
+558,20260429,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,166
+559,20260429,10,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,165
+560,20260429,10,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,165
+561,20260429,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,166
+562,20260429,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,166
+563,20260430,6,1,extraction,primary,success,1,0,,,0,,0.941,5. >= 0.90,Complete,0,0,0,762.3,1,0,167
+564,20260430,6,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,376.8,1,0,167
+565,20260430,4,1,extraction,primary,success,1,0,,,0,,0.781,3. 0.70-0.79,Missing Information,1,1,0,1078.2,1,0,168
+566,20260430,4,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,409.2,1,0,168
+567,20260430,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1975.4,1,0,169
+568,20260430,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,270.3,1,0,169
+569,20260430,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,169
+570,20260501,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1094.8,1,0,170
+571,20260501,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,369.9,1,0,170
+572,20260501,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,170
+573,20260501,11,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,2620.8,1,0,171
+574,20260501,11,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,365.4,1,0,171
+575,20260501,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,171
+576,20260501,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,171
+577,20260501,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,171
+578,20260503,3,2,extraction,supporting,success,1,0,,,1,PROVIDER_TIMEOUT,0.664,2. 0.60-0.69,Missing Information,1,1,0,7953.7,1,0,167
+579,20260503,3,1,category suggestion,supporting,success,1,0,,,0,,0.88,4. 0.80-0.89,,0,,,400.7,1,0,167
+580,20260505,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1067.3,1,0,172
+581,20260505,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,207.1,1,0,172
+582,20260505,5,1,extraction,primary,success,1,0,,,0,,0.906,5. >= 0.90,Needs Review,1,0,1,1055.8,1,0,173
+583,20260505,5,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,263.8,1,0,173
+584,20260506,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,713.7,1,0,174
+585,20260506,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,294.6,1,0,174
+586,20260506,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,174
+587,20260506,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,767.3,1,0,175
+588,20260506,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,354.7,1,0,175
+589,20260506,3,1,extraction,primary,success,1,0,,,0,,0.811,4. 0.80-0.89,Missing Information,1,1,0,2076.7,1,0,176
+590,20260506,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,309.2,1,0,176
+591,20260506,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,175
+592,20260506,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,553.4,1,0,177
+593,20260506,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,384.0,1,0,177
+594,20260506,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,176
+595,20260506,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,175
+596,20260506,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,175
+597,20260507,10,1,extraction,primary,success,1,0,,,0,,0.782,3. 0.70-0.79,Missing Information,1,1,0,3068.7,1,0,178
+598,20260507,10,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,270.6,1,0,178
+599,20260507,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,530.0,1,0,179
+600,20260507,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,335.8,1,0,179
+601,20260507,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,179
+602,20260508,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,780.3,1,0,180
+603,20260508,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,225.0,1,0,180
+604,20260508,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,180
+605,20260508,9,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,3313.3,1,0,178
+606,20260508,9,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,206.3,1,0,178
+607,20260510,1,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,996.7,1,0,174
+608,20260510,1,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,228.9,1,0,174
+609,20260511,1,2,extraction,primary,success,1,0,,,1,PROVIDER_ERROR,0.851,4. 0.80-0.89,Complete,0,0,0,1506.0,1,0,181
+610,20260511,1,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,258.5,1,0,181
+611,20260511,6,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,548.5,1,0,182
+612,20260511,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,351.0,1,0,182
+613,20260511,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,181
+614,20260511,10,1,extraction,primary,success,1,0,,,0,,0.729,3. 0.70-0.79,Needs Review,1,0,0,4058.8,1,0,183
+615,20260511,10,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,272.1,1,0,183
+616,20260512,3,1,extraction,primary,success,1,0,,,0,,0.803,4. 0.80-0.89,Missing Information,1,1,0,1400.9,1,0,184
+617,20260512,3,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6225.1,1,0,184
+618,20260512,6,1,extraction,primary,success,1,0,,,0,,0.912,5. >= 0.90,Complete,0,0,0,514.6,1,0,185
+619,20260512,6,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,381.1,1,0,185
+620,20260512,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,185
+621,20260512,12,1,extraction,primary,success,1,0,,,0,,0.703,3. 0.70-0.79,Missing Information,1,1,0,3782.3,1,0,186
+622,20260512,12,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,358.3,1,0,186
+623,20260512,12,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,186
+624,20260513,9,2,extraction,supporting,success,1,0,,,1,INVALID_OUTPUT,0.861,4. 0.80-0.89,Complete,0,0,0,3399.9,1,0,177
+625,20260513,9,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,225.0,1,0,177
+626,20260513,7,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Needs Review,1,0,0,748.1,1,0,187
+627,20260513,7,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6284.7,1,0,187
+628,20260513,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,850.4,1,0,188
+629,20260513,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,276.8,1,0,188
+630,20260513,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,188
+631,20260514,4,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.706,3. 0.70-0.79,Missing Information,1,1,0,7030.2,1,0,189
+632,20260514,4,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,264.8,1,0,189
+633,20260514,4,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,189
+634,20260514,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,773.2,1,0,190
+635,20260514,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,336.0,1,0,190
+636,20260514,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1081.1,1,0,191
+637,20260514,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,213.1,1,0,191
+638,20260514,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,191
+639,20260514,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,191
+640,20260514,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,191
+641,20260515,6,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,674.4,1,0,192
+642,20260515,6,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,236.1,1,0,192
+643,20260515,12,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.455,1. < 0.60,Missing Information,1,3,0,8814.3,1,0,193
+644,20260515,12,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,230.9,1,0,193
+645,20260515,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,584.8,1,0,194
+646,20260515,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,285.2,1,0,194
+647,20260515,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,192
+648,20260515,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,1015.6,1,0,195
+649,20260515,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,230.6,1,0,195
+650,20260515,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,195
+651,20260515,5,1,extraction,primary,success,1,0,,,0,,0.9,5. >= 0.90,Needs Review,1,0,1,933.7,1,0,
+652,20260515,5,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,357.4,1,0,
+653,20260515,2,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1738.9,1,0,196
+654,20260515,2,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,281.0,1,0,196
+655,20260515,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,195
+656,20260515,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,196
+657,20260516,6,1,extraction,supporting,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,655.9,1,0,189
+658,20260516,6,1,category suggestion,supporting,success,1,0,,,0,,0.4,1. < 0.60,,0,,,225.2,1,0,189
+659,20260517,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,794.1,1,0,
+660,20260517,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,416.0,1,0,
+661,20260517,1,1,extraction,supporting,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,994.7,1,0,181
+662,20260517,1,1,category suggestion,supporting,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,300.4,1,0,181
+663,20260517,9,1,extraction,supporting,success,1,0,,,0,,0.944,5. >= 0.90,Complete,0,0,0,2015.6,1,0,191
+664,20260517,9,1,category suggestion,supporting,success,1,0,,,0,,0.92,5. >= 0.90,,0,,,305.4,1,0,191
+665,20260519,9,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,2836.6,1,0,192
+666,20260519,9,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,318.5,1,0,192
+667,20260519,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,759.7,1,0,197
+668,20260519,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,289.8,1,0,197
+669,20260519,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,197
+670,20260519,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,3013.8,1,0,198
+671,20260519,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,367.7,1,0,198
+672,20260519,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.2,0,0,198
+673,20260519,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,198
+674,20260520,6,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,825.4,1,0,199
+675,20260520,6,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,399.7,1,0,199
+676,20260520,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,199
+677,20260520,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,869.6,1,0,200
+678,20260520,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,233.8,1,0,200
+679,20260520,7,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.822,4. 0.80-0.89,Missing Information,1,1,0,2056.7,1,0,201
+680,20260520,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,245.7,1,0,201
+681,20260520,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,649.2,1,0,202
+682,20260520,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,198.7,1,0,202
+683,20260520,7,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,201
+684,20260520,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,200
+685,20260520,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,200
+686,20260520,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1008.3,1,0,203
+687,20260520,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,373.6,1,0,203
+688,20260520,1,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.861,4. 0.80-0.89,Complete,0,0,0,6741.6,1,0,204
+689,20260520,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,216.1,1,0,204
+690,20260521,6,2,extraction,primary,success,1,0,,,1,PROVIDER_ERROR,0.767,3. 0.70-0.79,Missing Information,1,1,0,1053.4,1,0,205
+691,20260521,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,241.6,1,0,205
+692,20260522,9,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,2312.8,1,0,199
+693,20260522,9,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,294.3,1,0,199
+694,20260522,4,1,extraction,primary,success,1,0,,,0,,0.842,4. 0.80-0.89,Missing Information,1,1,0,831.2,1,0,206
+695,20260522,4,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,294.8,1,0,206
+696,20260523,3,1,extraction,primary,success,1,0,,,0,,0.811,4. 0.80-0.89,Missing Information,1,1,0,2017.0,1,0,
+697,20260523,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,264.8,1,0,
+698,20260523,10,1,extraction,supporting,success,1,0,,,0,,0.679,2. 0.60-0.69,Missing Information,1,2,0,4115.8,1,0,188
+699,20260523,10,1,category suggestion,supporting,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,375.7,1,0,188
+700,20260525,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2673.9,1,0,207
+701,20260525,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,357.0,1,0,207
+702,20260526,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1118.8,1,0,208
+703,20260526,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,271.7,1,0,208
+704,20260526,5,1,extraction,primary,success,1,0,,,0,,0.844,4. 0.80-0.89,Needs Review,1,0,1,1078.7,1,0,209
+705,20260526,5,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,254.0,1,0,209
+706,20260526,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,749.0,1,0,210
+707,20260526,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,334.7,1,0,210
+708,20260526,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,210
+709,20260526,9,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,3342.8,1,0,211
+710,20260526,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,352.5,1,0,211
+711,20260526,9,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,211
+712,20260526,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,210
+713,20260526,3,1,extraction,primary,success,1,0,,,0,,0.92,5. >= 0.90,Complete,0,0,0,1491.3,1,0,212
+714,20260526,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,190.4,1,0,212
+715,20260526,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,212
+716,20260526,3,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.3,0,0,212
+717,20260527,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,625.4,1,0,213
+718,20260527,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,337.0,1,0,213
+719,20260527,10,1,extraction,primary,success,1,0,,,0,,0.862,4. 0.80-0.89,Complete,0,0,0,2821.2,1,0,214
+720,20260527,10,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,255.3,1,0,214
+721,20260527,10,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,214
+722,20260527,12,1,extraction,primary,success,1,0,,,0,,0.747,3. 0.70-0.79,Needs Review,1,0,0,3981.9,1,0,215
+723,20260527,12,1,category suggestion,primary,success,1,0,,,0,,0.84,4. 0.80-0.89,,0,,,292.7,1,0,215
+724,20260527,12,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,215
+725,20260528,6,1,extraction,primary,success,1,0,,,0,,0.913,5. >= 0.90,Complete,0,0,0,624.8,1,0,216
+726,20260528,6,1,category suggestion,primary,success,1,0,,,0,,0.91,5. >= 0.90,,0,,,245.1,1,0,216
+727,20260528,1,1,extraction,supporting,success,1,0,,,0,,0.943,5. >= 0.90,Complete,0,0,0,791.3,1,0,197
+728,20260528,1,1,category suggestion,supporting,success,1,0,,,0,,0.91,5. >= 0.90,,0,,,416.9,1,0,197
+729,20260528,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,216
+730,20260529,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1113.4,1,0,217
+731,20260529,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,252.2,1,0,217
+732,20260529,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1841.5,1,0,218
+733,20260529,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,330.5,1,0,218
+734,20260529,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,217
+735,20260529,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,217
+736,20260529,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,217
+737,20260529,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,218
+738,20260529,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2780.7,1,0,219
+739,20260529,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,255.9,1,0,219
+740,20260529,3,1,extraction,supporting,success,1,0,,,0,,0.805,4. 0.80-0.89,Missing Information,1,1,0,2058.1,1,0,198
+741,20260529,3,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,194.3,1,0,198
+742,20260531,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,922.0,1,0,
+743,20260531,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,403.6,1,0,
+744,20260601,1,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.856,4. 0.80-0.89,Complete,0,0,0,2078.5,1,0,220
+745,20260601,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,235.6,1,0,220
+746,20260601,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,220
+747,20260601,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,1022.9,1,0,221
+748,20260601,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,188.7,1,0,221
+749,20260601,8,1,extraction,primary,success,1,0,,,0,,0.902,5. >= 0.90,Needs Review,1,0,1,603.7,1,0,222
+750,20260601,8,1,category suggestion,primary,success,1,0,,,0,,0.92,5. >= 0.90,,0,,,416.9,1,0,222
+751,20260602,13,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Missing Information,1,1,0,2329.2,1,0,223
+752,20260602,13,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,407.3,1,0,223
+753,20260602,13,1,extraction,primary,success,1,0,,,0,,0.737,3. 0.70-0.79,Missing Information,1,2,0,2302.4,1,0,224
+754,20260602,13,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,356.6,1,0,224
+755,20260602,13,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,224
+756,20260602,12,1,extraction,primary,success,1,0,,,0,,0.789,3. 0.70-0.79,Missing Information,1,1,0,2614.6,1,0,225
+757,20260602,12,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,297.0,1,0,225
+758,20260602,12,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,225
+759,20260603,11,2,extraction,primary,success,1,0,,,1,PROVIDER_ERROR,0.861,4. 0.80-0.89,Complete,0,0,0,2649.4,1,0,
+760,20260603,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,293.4,1,0,
+761,20260603,9,1,extraction,supporting,success,1,0,,,0,,0.939,5. >= 0.90,Complete,0,0,0,3032.0,1,0,214
+762,20260603,9,1,category suggestion,supporting,success,1,0,,,0,,0.87,4. 0.80-0.89,,0,,,406.5,1,0,214
+763,20260603,6,2,extraction,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.851,4. 0.80-0.89,Complete,0,0,0,6628.2,1,0,226
+764,20260603,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,297.8,1,0,226
+765,20260603,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,226
+766,20260604,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,505.3,1,0,208
+767,20260604,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,242.9,1,0,208
+768,20260604,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2663.4,1,0,227
+769,20260604,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,321.6,1,0,227
+770,20260604,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,227
+771,20260605,10,1,extraction,supporting,success,1,0,,,0,,0.597,1. < 0.60,Missing Information,1,2,0,3687.4,1,0,216
+772,20260605,10,1,category suggestion,supporting,success,1,0,,,0,,0.84,4. 0.80-0.89,,0,,,208.7,1,0,216
+773,20260605,1,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,1112.1,1,0,228
+774,20260605,1,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,349.6,1,0,228
+775,20260605,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,228
+776,20260605,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,742.6,1,0,229
+777,20260605,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,375.1,1,0,229
+778,20260605,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,229
+779,20260609,6,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,666.6,1,0,230
+780,20260609,6,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,285.2,1,0,230
+781,20260609,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,230
+782,20260609,6,3,extraction,primary,error,0,1,ai provider,AI_UNAVAILABLE,1,PROVIDER_ERROR,,0. no output (error),,0,,,1645.9,1,0,
+783,20260609,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,535.7,1,1,231
+784,20260609,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,354.3,1,0,231
+785,20260610,3,1,extraction,primary,success,1,0,,,0,,0.942,5. >= 0.90,Missing Information,1,1,0,1455.5,1,0,232
+786,20260610,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,367.4,1,0,232
+787,20260610,3,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,232
+788,20260610,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,939.8,1,0,233
+789,20260610,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,292.1,1,0,233
+790,20260610,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,233
+791,20260611,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,792.1,1,0,
+792,20260611,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,228.4,1,0,
+793,20260611,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1109.1,1,0,234
+794,20260611,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,276.0,1,0,234
+795,20260611,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,525.5,1,0,235
+796,20260611,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,375.7,1,0,235
+797,20260611,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,235
+798,20260611,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,235
+799,20260611,3,1,extraction,primary,success,1,0,,,0,,0.841,4. 0.80-0.89,Missing Information,1,1,0,1606.1,1,0,236
+800,20260611,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,359.8,1,0,236
+801,20260611,3,1,extraction,supporting,success,1,0,,,0,,0.946,5. >= 0.90,Complete,0,0,0,2130.0,1,0,231
+802,20260611,3,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,237.4,1,0,231
+803,20260611,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1947.2,1,0,237
+804,20260611,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,236.1,1,0,237
+805,20260611,3,1,extraction,primary,success,1,0,,,0,,0.77,3. 0.70-0.79,Missing Information,1,2,0,1879.9,1,0,238
+806,20260611,3,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,194.2,1,0,238
+807,20260611,6,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,235
+808,20260611,11,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,237
+809,20260611,6,1,extraction,supporting,success,1,0,,,0,,0.942,5. >= 0.90,Complete,0,0,0,697.5,1,0,229
+810,20260611,6,1,category suggestion,supporting,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,390.5,1,0,229
+811,20260611,11,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,237
+812,20260615,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,947.3,1,0,239
+813,20260615,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,356.1,1,0,239
+814,20260615,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,239
+815,20260615,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,239
+816,20260615,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,239
+817,20260615,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,775.5,1,0,240
+818,20260615,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,364.9,1,0,240
+819,20260615,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,788.8,1,0,241
+820,20260615,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,374.2,1,0,241
+821,20260615,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,240
+822,20260615,1,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1107.5,1,0,227
+823,20260615,1,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,334.9,1,0,227
+824,20260615,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,581.1,1,0,233
+825,20260615,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,307.8,1,0,233
+826,20260616,9,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2764.8,1,0,242
+827,20260616,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,228.3,1,0,242
+828,20260616,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,758.2,1,0,235
+829,20260616,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,226.4,1,0,235
+830,20260616,9,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,242
+831,20260617,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1092.5,1,0,243
+832,20260617,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,225.5,1,0,243
+833,20260617,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,751.2,1,0,244
+834,20260617,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,290.0,1,0,244
+835,20260618,11,2,extraction,primary,success,1,0,,,1,INVALID_OUTPUT,0.861,4. 0.80-0.89,Complete,0,0,0,4135.1,1,0,245
+836,20260618,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,267.7,1,0,245
+837,20260618,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,693.9,1,0,246
+838,20260618,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,229.3,1,0,246
+839,20260618,6,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,246
+840,20260619,6,1,extraction,primary,success,1,0,,,0,,0.887,4. 0.80-0.89,Complete,0,0,0,665.2,1,0,247
+841,20260619,6,1,category suggestion,primary,success,1,0,,,0,,0.4,1. < 0.60,,0,,,362.2,1,0,247
+842,20260619,3,1,extraction,primary,success,1,0,,,0,,0.731,3. 0.70-0.79,Missing Information,1,1,0,1808.6,1,0,248
+843,20260619,3,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,288.4,1,0,248
+844,20260620,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,615.7,1,0,247
+845,20260620,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,240.2,1,0,247
+846,20260622,11,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2988.1,1,0,249
+847,20260622,11,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,256.5,1,0,249
+848,20260622,12,1,extraction,primary,success,1,0,,,0,,0.808,4. 0.80-0.89,Missing Information,1,1,0,3048.4,1,0,250
+849,20260622,12,1,category suggestion,primary,success,1,0,,,0,,0.89,4. 0.80-0.89,,0,,,354.3,1,0,250
+850,20260622,6,2,extraction,supporting,success,1,0,,,1,INVALID_OUTPUT,0.861,4. 0.80-0.89,Complete,0,0,0,2097.4,1,0,244
+851,20260622,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,274.1,1,0,244
+852,20260623,1,1,extraction,primary,success,1,0,,,0,,0.937,5. >= 0.90,Complete,0,0,0,976.4,1,0,251
+853,20260623,1,2,category suggestion,primary,success,1,0,,,1,PROVIDER_TIMEOUT,0.85,4. 0.80-0.89,,0,,,6410.6,1,0,251
+854,20260623,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,251
+855,20260623,1,1,extraction,primary,success,1,0,,,0,,0.918,5. >= 0.90,Complete,0,0,0,827.1,1,0,252
+856,20260623,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,307.0,1,0,252
+857,20260623,1,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,252
+858,20260625,7,1,extraction,primary,success,1,0,,,0,,0.842,4. 0.80-0.89,Missing Information,1,1,0,645.8,1,0,253
+859,20260625,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,237.7,1,0,253
+860,20260625,7,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,253
+861,20260625,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,904.1,1,0,254
+862,20260625,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,409.7,1,0,254
+863,20260625,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,253
+864,20260625,1,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,254
+865,20260626,9,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,3071.0,1,0,255
+866,20260626,9,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,210.8,1,0,255
+867,20260626,9,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,255
+868,20260626,7,1,extraction,primary,success,1,0,,,0,,0.792,3. 0.70-0.79,Missing Information,1,1,0,521.0,1,0,256
+869,20260626,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,397.0,1,0,256
+870,20260626,7,1,extraction,primary,success,1,0,,,0,,0.837,4. 0.80-0.89,Missing Information,1,1,0,689.5,1,0,257
+871,20260626,7,1,category suggestion,primary,success,1,0,,,0,,0.9,5. >= 0.90,,0,,,351.6,1,0,257
+872,20260626,9,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,255
+873,20260626,7,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,257
+874,20260626,6,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,617.8,1,0,258
+875,20260626,6,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,305.1,1,0,258
+876,20260626,2,1,extraction,primary,success,1,0,,,0,,0.938,5. >= 0.90,Complete,0,0,0,1577.6,1,0,259
+877,20260626,2,1,category suggestion,primary,success,1,0,,,0,,0.86,4. 0.80-0.89,,0,,,382.5,1,0,259
+878,20260626,2,1,summarisation,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,259
+879,20260626,9,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2425.0,1,0,242
+880,20260626,9,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,255.3,1,0,242
+881,20260626,7,1,extraction,primary,success,1,0,,,0,,0.737,3. 0.70-0.79,Missing Information,1,2,0,833.7,1,0,260
+882,20260626,7,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,220.2,1,0,260
+883,20260626,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.0,0,0,260
+884,20260626,7,1,assistant,primary,success,1,0,,,0,,,not applicable,,0,,,0.1,0,0,260
+885,20260627,6,1,extraction,supporting,success,1,0,,,0,,0.939,5. >= 0.90,Complete,0,0,0,778.2,1,0,250
+886,20260627,6,1,category suggestion,supporting,success,1,0,,,0,,0.87,4. 0.80-0.89,,0,,,340.5,1,0,250
+887,20260629,9,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,2819.6,1,0,245
+888,20260629,9,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,297.4,1,0,245
+889,20260630,6,1,extraction,supporting,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,672.8,1,0,256
+890,20260630,6,1,category suggestion,supporting,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,238.9,1,0,256
+891,20260715,1,1,extraction,primary,success,1,0,,,0,,0.948,5. >= 0.90,Complete,0,0,0,1089.4,1,0,
+892,20260715,1,1,category suggestion,primary,success,1,0,,,0,,0.95,5. >= 0.90,,0,,,185.3,1,0,

@@ -1,0 +1,6 @@
+/// Folder that contains the CSV exports (powerbi/data). Change it after cloning the repository.
+expression DataFolder = "C:\Users\USER\Desktop\PORTFOLIO\lexlau-klavis-ai-workflow-demo\powerbi\data\" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 82ca3239-8ae9-57ce-a5ff-8b1f0040159d
+
+	annotation PBI_ResultType = Text
+

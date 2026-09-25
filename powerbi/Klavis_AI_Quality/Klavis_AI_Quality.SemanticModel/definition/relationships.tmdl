@@ -1,0 +1,44 @@
+relationship 765793bb-cc61-5f50-bb8f-fffff49a96f3
+	fromColumn: FactAIRuns.date_key
+	toColumn: DimDate.date_key
+
+relationship a58e30dd-4b68-5737-b35f-73b82b8f403e
+	fromColumn: FactAIRuns.document_type_id
+	toColumn: DimDocumentType.document_type_id
+
+relationship 8baa1259-f135-5a02-9888-be0d42315e3c
+	fromColumn: FactAIRuns.provider_id
+	toColumn: DimAIProvider.provider_id
+
+relationship 0d92aa65-0e05-58eb-b01e-ac1c0aad6946
+	fromColumn: FactFieldExtraction.date_key
+	toColumn: DimDate.date_key
+
+relationship 5c76bc8b-9df6-58da-9cfd-ff5223ae5811
+	fromColumn: FactFieldExtraction.document_type_id
+	toColumn: DimDocumentType.document_type_id
+
+relationship eee03a30-bd8c-525c-8047-40a03b8e4ef4
+	fromColumn: FactFieldExtraction.provider_id
+	toColumn: DimAIProvider.provider_id
+
+relationship e139731f-7753-59f0-88ff-388886a719e5
+	fromColumn: FactHumanReview.date_key
+	toColumn: DimDate.date_key
+
+relationship 260c15e7-ea2f-56eb-94e3-d9b5f11a4640
+	fromColumn: FactHumanReview.document_type_id
+	toColumn: DimDocumentType.document_type_id
+
+relationship 76b91ab9-50ff-5c1e-a749-55905ac657ab
+	fromColumn: FactTestResults.date_key
+	toColumn: DimDate.date_key
+
+relationship f93565a1-8428-53b7-9792-bcee56656f3d
+	fromColumn: FactTestResults.scenario_code
+	toColumn: DimTestScenario.scenario_code
+
+relationship 9d79b788-1b2b-53fd-8603-3c36af52c53d
+	fromColumn: FactAuditEvents.date_key
+	toColumn: DimDate.date_key
+

@@ -1,0 +1,179 @@
+table FactFieldExtraction
+	lineageTag: 24656cc5-091e-543b-bbef-c54783d44740
+
+	/// Fields compared with the ground truth.
+	measure 'Scored Fields' = SUM ( FactFieldExtraction[is_scored] )
+		formatString: #,0
+		displayFolder: 2 Field quality
+		lineageTag: da6153c7-e862-5b11-b39a-90ff0fbce857
+
+	measure 'Correct Fields' = SUM ( FactFieldExtraction[is_correct] )
+		formatString: #,0
+		displayFolder: 2 Field quality
+		lineageTag: 1ddd10cc-a9e3-5b00-b049-b37f97edb6bf
+
+	/// Correct fields / scored fields (null = null counts as correct).
+	measure 'Field Accuracy %' = DIVIDE ( [Correct Fields], [Scored Fields] )
+		formatString: 0.0%
+		displayFolder: 2 Field quality
+		lineageTag: 9ee4ed74-62af-5f14-8b07-4ac011a591a1
+
+	/// Share of the fields present in the document that the extraction found.
+	measure 'Completeness %' = DIVIDE ( SUM ( FactFieldExtraction[found_when_present] ), SUM ( FactFieldExtraction[expected_present] ) )
+		formatString: 0.0%
+		displayFolder: 2 Field quality
+		lineageTag: 93c9fac7-3462-508b-be8c-6a4393237080
+
+	/// Fields reported missing (absent from the document or not found).
+	measure 'Missing Fields' = SUM ( FactFieldExtraction[is_missing] )
+		formatString: #,0
+		displayFolder: 2 Field quality
+		lineageTag: fb81ecb2-09ea-5237-805b-56cb46a66150
+
+	measure 'Missing Rate %' = DIVIDE ( [Missing Fields], COUNTROWS ( FactFieldExtraction ) )
+		formatString: 0.0%
+		displayFolder: 2 Field quality
+		lineageTag: 446f9a1b-00cf-5611-b666-a694fbbdcc65
+
+	/// Fields with contradictory values in the document.
+	measure 'Conflicting Fields' = SUM ( FactFieldExtraction[has_conflict] )
+		formatString: #,0
+		displayFolder: 2 Field quality
+		lineageTag: e8d36ba3-6fa9-5921-a71f-cd485843fdda
+
+	/// Average confidence of the fields that were found.
+	measure 'Avg Field Confidence' = CALCULATE ( AVERAGE ( FactFieldExtraction[confidence] ), FactFieldExtraction[is_missing] = 0 )
+		formatString: 0.00
+		displayFolder: 2 Field quality
+		lineageTag: 4eeba76d-87ca-515b-ba14-a4279ce7f4ba
+
+	/// Fields changed by the reviewer before the case was created.
+	measure 'Manual Corrections' = SUM ( FactFieldExtraction[was_corrected] )
+		formatString: #,0
+		displayFolder: 2 Field quality
+		lineageTag: 5a550191-db94-5eb9-81ec-3206c8d1e7da
+
+	measure 'Manual Correction Rate %' = DIVIDE ( [Manual Corrections], SUM ( FactFieldExtraction[is_reviewed] ) )
+		formatString: 0.0%
+		displayFolder: 2 Field quality
+		lineageTag: 7f1b6fd4-f097-5940-b4cc-e4c2c10c6b5b
+
+	column field_id
+		dataType: int64
+		isHidden
+		lineageTag: 80cdce98-047b-5aff-bff0-f185bc2898ec
+		summarizeBy: none
+		sourceColumn: field_id
+
+	column ai_run_id
+		dataType: int64
+		isHidden
+		lineageTag: 5c4fa07b-a24a-5b92-a0ee-e3029bca5152
+		summarizeBy: none
+		sourceColumn: ai_run_id
+
+	column date_key
+		dataType: int64
+		isHidden
+		lineageTag: 846e7d09-c01b-5630-b728-de0c3c7bd0b3
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column document_type_id
+		dataType: int64
+		isHidden
+		lineageTag: cc6964a3-6153-58fd-9e06-01a46cea5e81
+		summarizeBy: none
+		sourceColumn: document_type_id
+
+	column provider_id
+		dataType: int64
+		isHidden
+		lineageTag: b388228d-5ef2-5e90-a441-8fa79f867bc6
+		summarizeBy: none
+		sourceColumn: provider_id
+
+	column field_name
+		dataType: string
+		lineageTag: edfb4fa4-7919-5bda-b2bc-2e027b72de29
+		summarizeBy: none
+		sourceColumn: field_name
+
+	column field_label
+		dataType: string
+		lineageTag: 1a7b7ab2-803e-514f-8209-b83b01fa2518
+		summarizeBy: none
+		sourceColumn: field_label
+
+	column confidence
+		dataType: double
+		lineageTag: c03748ac-abf1-547c-b54d-76fbb65c3ed3
+		summarizeBy: sum
+		sourceColumn: confidence
+
+	column is_missing
+		dataType: int64
+		isHidden
+		lineageTag: 1e7b3d03-c39d-5f65-ba77-a09a05ccdf39
+		summarizeBy: none
+		sourceColumn: is_missing
+
+	column has_conflict
+		dataType: int64
+		isHidden
+		lineageTag: f0d81fac-099f-52dd-bb33-897e25e41731
+		summarizeBy: none
+		sourceColumn: has_conflict
+
+	column expected_present
+		dataType: int64
+		isHidden
+		lineageTag: e62e37b8-b209-579d-84ec-4f8d4116cdef
+		summarizeBy: none
+		sourceColumn: expected_present
+
+	column found_when_present
+		dataType: int64
+		isHidden
+		lineageTag: 07fe5707-9e3d-5e6c-9c3b-ad23ee8710ba
+		summarizeBy: none
+		sourceColumn: found_when_present
+
+	column is_scored
+		dataType: int64
+		isHidden
+		lineageTag: c5a6c9ab-75c2-52b9-8f28-4683b138b942
+		summarizeBy: none
+		sourceColumn: is_scored
+
+	column is_correct
+		dataType: int64
+		isHidden
+		lineageTag: 970cb719-b3c2-5581-9e15-1ef7091706de
+		summarizeBy: none
+		sourceColumn: is_correct
+
+	column is_reviewed
+		dataType: int64
+		isHidden
+		lineageTag: 05c42b49-f0cc-5939-8bcd-86fdb8de45cb
+		summarizeBy: none
+		sourceColumn: is_reviewed
+
+	column was_corrected
+		dataType: int64
+		lineageTag: 3a5e37aa-53e4-5c60-87aa-63c352a66ec9
+		summarizeBy: none
+		sourceColumn: was_corrected
+
+	partition FactFieldExtraction = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "FactFieldExtraction.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"field_id", Int64.Type}, {"ai_run_id", Int64.Type}, {"date_key", Int64.Type}, {"document_type_id", Int64.Type}, {"provider_id", Int64.Type}, {"field_name", type text}, {"field_label", type text}, {"confidence", type number}, {"is_missing", Int64.Type}, {"has_conflict", Int64.Type}, {"expected_present", Int64.Type}, {"found_when_present", Int64.Type}, {"is_scored", Int64.Type}, {"is_correct", Int64.Type}, {"is_reviewed", Int64.Type}, {"was_corrected", Int64.Type}}, "en-US")
+				in
+				    Typed
+

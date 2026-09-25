@@ -1,0 +1,14 @@
+document_type_id,document_type,file_family,family_order,detected_format,sample_variant,variant_order
+1,PDF - clean,PDF,1,pdf,clean,0
+2,PDF - multipage,PDF,1,pdf,multipage,1
+3,PDF - degraded,PDF,1,pdf,degraded,2
+4,PDF - missing fields,PDF,1,pdf,missing_fields,3
+5,PDF - contradictory,PDF,1,pdf,contradictory,4
+6,DOCX - clean,DOCX,2,docx,clean,0
+7,DOCX - missing fields,DOCX,2,docx,missing_fields,3
+8,DOCX - contradictory,DOCX,2,docx,contradictory,4
+9,Image JPG - clean,Image,3,jpg,clean,0
+10,Image JPG - degraded,Image,3,jpg,degraded,2
+11,Image PNG - clean,Image,3,png,clean,0
+12,Image PNG - degraded,Image,3,png,degraded,2
+13,Image PNG - missing fields,Image,3,png,missing_fields,3

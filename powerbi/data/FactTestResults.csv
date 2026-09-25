@@ -1,0 +1,113 @@
+result_id,test_run_id,run_label,run_description,run_order,date_key,scenario_code,status,is_pass,is_fail,is_regression,failure_category,bug_replay,duration_ms
+1,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 001,PASS,1,0,0,extraction accuracy,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",259.3
+2,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 002,FAIL,0,1,0,document routing,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",281.0
+3,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 003,PASS,1,0,0,ocr processing,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",202.1
+4,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 004,PASS,1,0,0,robustness,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",245.2
+5,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 005,FAIL,0,1,0,missing field handling,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",243.0
+6,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 006,FAIL,0,1,0,date normalisation,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",250.1
+7,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 007,FAIL,0,1,0,provider fallback,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",217.5
+8,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 008,PASS,1,0,0,error handling,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",216.7
+9,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 009,FAIL,0,1,0,duplicate prevention,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",259.3
+10,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 010,PASS,1,0,0,human review persistence,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",251.9
+11,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 011,PASS,1,0,0,input validation,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",227.7
+12,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 012,PASS,1,0,0,input validation,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",260.2
+13,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 013,FAIL,0,1,0,document routing,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",603.5
+14,1,#1 0.4.0,v0.4 baseline - bug replay (5 synthetic bugs),1,20260212,TEST 014,FAIL,0,1,0,regression,"category_substring,docx_routing,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",288.9
+15,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 001,PASS,1,0,0,extraction accuracy,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",204.4
+16,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 002,PASS,1,0,0,document routing,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",208.8
+17,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 003,PASS,1,0,0,ocr processing,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",247.0
+18,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 004,PASS,1,0,0,robustness,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",220.9
+19,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 005,FAIL,0,1,0,missing field handling,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",256.8
+20,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 006,PASS,1,0,0,date normalisation,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",205.0
+21,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 007,FAIL,0,1,0,provider fallback,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",205.1
+22,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 008,PASS,1,0,0,error handling,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",231.7
+23,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 009,FAIL,0,1,0,duplicate prevention,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",272.6
+24,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 010,PASS,1,0,0,human review persistence,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",219.4
+25,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 011,PASS,1,0,0,input validation,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",208.3
+26,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 012,PASS,1,0,0,input validation,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",219.4
+27,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 013,PASS,1,0,0,document routing,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",240.2
+28,2,#2 0.4.1,fix/docx-content-routing,2,20260216,TEST 014,FAIL,0,1,0,regression,"category_substring,duplicate_no_idempotency,fallback_mislabel,missing_as_zero",330.2
+29,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 001,PASS,1,0,0,extraction accuracy,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",211.0
+30,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 002,PASS,1,0,0,document routing,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",201.4
+31,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 003,PASS,1,0,0,ocr processing,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",206.1
+32,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 004,PASS,1,0,0,robustness,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",217.8
+33,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 005,FAIL,0,1,0,missing field handling,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",241.5
+34,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 006,PASS,1,0,0,date normalisation,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",225.7
+35,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 007,FAIL,0,1,0,provider fallback,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",572.2
+36,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 008,PASS,1,0,0,error handling,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",274.2
+37,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 009,FAIL,0,1,0,duplicate prevention,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",282.4
+38,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 010,PASS,1,0,0,human review persistence,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",216.6
+39,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 011,PASS,1,0,0,input validation,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",221.6
+40,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 012,PASS,1,0,0,input validation,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",257.4
+41,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 013,PASS,1,0,0,document routing,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",282.9
+42,3,#3 0.4.2,fix/category-word-boundary,3,20260309,TEST 014,PASS,1,0,0,regression,"duplicate_no_idempotency,fallback_mislabel,missing_as_zero",361.3
+43,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 001,PASS,1,0,0,extraction accuracy,"duplicate_no_idempotency,fallback_mislabel",248.0
+44,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 002,PASS,1,0,0,document routing,"duplicate_no_idempotency,fallback_mislabel",242.5
+45,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 003,PASS,1,0,0,ocr processing,"duplicate_no_idempotency,fallback_mislabel",224.4
+46,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 004,PASS,1,0,0,robustness,"duplicate_no_idempotency,fallback_mislabel",271.2
+47,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 005,PASS,1,0,0,missing field handling,"duplicate_no_idempotency,fallback_mislabel",233.4
+48,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 006,PASS,1,0,0,date normalisation,"duplicate_no_idempotency,fallback_mislabel",205.9
+49,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 007,FAIL,0,1,0,provider fallback,"duplicate_no_idempotency,fallback_mislabel",206.2
+50,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 008,PASS,1,0,0,error handling,"duplicate_no_idempotency,fallback_mislabel",233.6
+51,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 009,FAIL,0,1,0,duplicate prevention,"duplicate_no_idempotency,fallback_mislabel",298.0
+52,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 010,PASS,1,0,0,human review persistence,"duplicate_no_idempotency,fallback_mislabel",251.0
+53,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 011,PASS,1,0,0,input validation,"duplicate_no_idempotency,fallback_mislabel",242.6
+54,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 012,PASS,1,0,0,input validation,"duplicate_no_idempotency,fallback_mislabel",228.8
+55,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 013,PASS,1,0,0,document routing,"duplicate_no_idempotency,fallback_mislabel",254.6
+56,4,#4 0.5.0,fix/missing-field-null,4,20260330,TEST 014,PASS,1,0,0,regression,"duplicate_no_idempotency,fallback_mislabel",706.5
+57,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 001,PASS,1,0,0,extraction accuracy,"docx_routing,duplicate_no_idempotency,fallback_mislabel",230.4
+58,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 002,FAIL,0,1,1,document routing,"docx_routing,duplicate_no_idempotency,fallback_mislabel",221.6
+59,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 003,PASS,1,0,0,ocr processing,"docx_routing,duplicate_no_idempotency,fallback_mislabel",247.2
+60,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 004,PASS,1,0,0,robustness,"docx_routing,duplicate_no_idempotency,fallback_mislabel",375.9
+61,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 005,PASS,1,0,0,missing field handling,"docx_routing,duplicate_no_idempotency,fallback_mislabel",229.3
+62,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 006,FAIL,0,1,1,date normalisation,"docx_routing,duplicate_no_idempotency,fallback_mislabel",223.6
+63,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 007,FAIL,0,1,0,provider fallback,"docx_routing,duplicate_no_idempotency,fallback_mislabel",293.4
+64,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 008,PASS,1,0,0,error handling,"docx_routing,duplicate_no_idempotency,fallback_mislabel",317.9
+65,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 009,FAIL,0,1,0,duplicate prevention,"docx_routing,duplicate_no_idempotency,fallback_mislabel",518.0
+66,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 010,PASS,1,0,0,human review persistence,"docx_routing,duplicate_no_idempotency,fallback_mislabel",238.0
+67,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 011,PASS,1,0,0,input validation,"docx_routing,duplicate_no_idempotency,fallback_mislabel",209.2
+68,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 012,PASS,1,0,0,input validation,"docx_routing,duplicate_no_idempotency,fallback_mislabel",283.3
+69,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 013,FAIL,0,1,1,document routing,"docx_routing,duplicate_no_idempotency,fallback_mislabel",255.6
+70,5,#5 0.6.0-rc1,merge feature/assistant-intents (regression caught),5,20260414,TEST 014,FAIL,0,1,1,regression,"docx_routing,duplicate_no_idempotency,fallback_mislabel",325.7
+71,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 001,PASS,1,0,0,extraction accuracy,duplicate_no_idempotency,287.9
+72,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 002,PASS,1,0,0,document routing,duplicate_no_idempotency,219.1
+73,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 003,PASS,1,0,0,ocr processing,duplicate_no_idempotency,234.6
+74,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 004,PASS,1,0,0,robustness,duplicate_no_idempotency,274.5
+75,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 005,PASS,1,0,0,missing field handling,duplicate_no_idempotency,405.9
+76,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 006,PASS,1,0,0,date normalisation,duplicate_no_idempotency,262.3
+77,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 007,PASS,1,0,0,provider fallback,duplicate_no_idempotency,217.9
+78,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 008,PASS,1,0,0,error handling,duplicate_no_idempotency,225.8
+79,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 009,FAIL,0,1,0,duplicate prevention,duplicate_no_idempotency,350.2
+80,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 010,PASS,1,0,0,human review persistence,duplicate_no_idempotency,339.2
+81,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 011,PASS,1,0,0,input validation,duplicate_no_idempotency,249.5
+82,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 012,PASS,1,0,0,input validation,duplicate_no_idempotency,310.3
+83,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 013,PASS,1,0,0,document routing,duplicate_no_idempotency,331.5
+84,6,#6 0.6.0,revert routing + fix/fallback-provider-label,6,20260420,TEST 014,PASS,1,0,0,regression,duplicate_no_idempotency,345.0
+85,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 001,PASS,1,0,0,extraction accuracy,none,204.5
+86,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 002,PASS,1,0,0,document routing,none,235.3
+87,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 003,PASS,1,0,0,ocr processing,none,217.4
+88,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 004,PASS,1,0,0,robustness,none,255.5
+89,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 005,PASS,1,0,0,missing field handling,none,236.4
+90,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 006,PASS,1,0,0,date normalisation,none,236.2
+91,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 007,PASS,1,0,0,provider fallback,none,245.7
+92,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 008,PASS,1,0,0,error handling,none,215.3
+93,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 009,PASS,1,0,0,duplicate prevention,none,293.7
+94,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 010,PASS,1,0,0,human review persistence,none,229.3
+95,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 011,PASS,1,0,0,input validation,none,487.7
+96,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 012,PASS,1,0,0,input validation,none,283.4
+97,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 013,PASS,1,0,0,document routing,none,251.1
+98,7,#7 0.7.0,fix/idempotent-case-creation,7,20260512,TEST 014,PASS,1,0,0,regression,none,357.2
+99,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 001,PASS,1,0,0,extraction accuracy,none,416.8
+100,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 002,PASS,1,0,0,document routing,none,239.5
+101,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 003,PASS,1,0,0,ocr processing,none,216.9
+102,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 004,PASS,1,0,0,robustness,none,233.7
+103,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 005,PASS,1,0,0,missing field handling,none,217.5
+104,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 006,PASS,1,0,0,date normalisation,none,204.8
+105,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 007,PASS,1,0,0,provider fallback,none,224.4
+106,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 008,PASS,1,0,0,error handling,none,229.9
+107,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 009,PASS,1,0,0,duplicate prevention,none,275.0
+108,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 010,PASS,1,0,0,human review persistence,none,225.9
+109,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 011,PASS,1,0,0,input validation,none,212.8
+110,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 012,PASS,1,0,0,input validation,none,245.3
+111,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 013,PASS,1,0,0,document routing,none,239.7
+112,8,#8 1.0.0,release candidate v1.0 - full regression,8,20260626,TEST 014,PASS,1,0,0,regression,none,374.9

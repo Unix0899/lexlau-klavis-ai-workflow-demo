@@ -1,0 +1,28 @@
+/// Synthetic demonstration data. No real client, legal-case or confidential LexLau/Klavis data is included.
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation Disclosure = Synthetic data - public reconstruction, not Klavis production data
+
+annotation PBI_QueryOrder = ["DimDate","DimDocumentType","DimAIProvider","DimTestScenario","FactAIRuns","FactFieldExtraction","FactHumanReview","FactTestResults","FactAuditEvents","DataFolder"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["MCP-PBIModeling","DevMode"]
+
+ref table DimDate
+ref table DimDocumentType
+ref table DimAIProvider
+ref table DimTestScenario
+ref table FactAIRuns
+ref table FactFieldExtraction
+ref table FactHumanReview
+ref table FactTestResults
+ref table FactAuditEvents
+

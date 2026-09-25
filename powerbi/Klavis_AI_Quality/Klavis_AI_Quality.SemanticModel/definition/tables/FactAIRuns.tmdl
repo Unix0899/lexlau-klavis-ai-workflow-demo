@@ -1,0 +1,254 @@
+table FactAIRuns
+	lineageTag: f52bcdae-ea85-5635-866e-75cfa8959a1b
+
+	/// All AI runs: extraction, category suggestion, summarisation, assistant.
+	measure 'Total AI Runs' = COUNTROWS ( FactAIRuns )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: 5c852bd0-a098-5a57-a36a-f6678eb1cd84
+
+	measure 'Successful AI Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[status] = "success" )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: 57d5da34-fa63-59ab-8ac1-deb80571e89d
+
+	/// Runs that ended in a structured error.
+	measure 'Failed AI Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[status] = "error" )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: 919a7516-db84-5b3c-a092-0219a991b899
+
+	/// Successful / all AI runs in context.
+	measure 'AI Success Rate %' = DIVIDE ( [Successful AI Runs], [Total AI Runs] )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: ca02a3d9-f7d9-5189-87f9-08515ebb8359
+
+	measure 'Extraction Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[task] = "extraction" )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: c3856d0c-d7ab-586c-9e0f-a5faaf5be8f1
+
+	measure 'Successful Extractions' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[task] = "extraction", FactAIRuns[status] = "success" )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: e9909da8-d663-53e6-a5c5-2345d6d42040
+
+	/// Document success rate: extraction runs processed without error (same as the app KPI).
+	measure 'Extraction Success Rate %' = DIVIDE ( [Successful Extractions], [Extraction Runs] )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: d83dd1d1-21a5-527f-ac80-73aec63fcce3
+
+	/// Mean overall confidence of successful extractions (demonstration metric).
+	measure 'Average Confidence' = CALCULATE ( AVERAGE ( FactAIRuns[confidence_score] ), FactAIRuns[task] = "extraction", FactAIRuns[status] = "success" )
+		formatString: 0.00
+		displayFolder: 1 AI runs
+		lineageTag: 14ec4091-06a7-534f-b300-44dc0ff7a5b9
+
+	/// Milliseconds. Latency of extraction runs. In the synthetic dataset it comes from a latency model (flagged per run).
+	measure 'Average Processing Time' = CALCULATE ( AVERAGE ( FactAIRuns[processing_ms] ), FactAIRuns[task] = "extraction" )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: c229c864-a148-5a0b-9840-6cb27913fdfc
+
+	/// Extraction runs where the primary provider failed and the fallback was invoked.
+	measure 'Fallback Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[task] = "extraction", FactAIRuns[fallback_used] = 1 )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: ef6b3bf4-1b50-5ba5-a728-912c5f3c7b55
+
+	measure 'Fallback Rate %' = DIVIDE ( [Fallback Runs], [Extraction Runs] )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: 2d3f0e7b-c554-5afb-9082-a809fc779097
+
+	/// Extraction runs ended in error.
+	measure 'Error Rate %' = DIVIDE ( CALCULATE ( [Failed AI Runs], FactAIRuns[task] = "extraction" ), [Extraction Runs] )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: d2805e87-4c29-52da-9c0f-d64c6a6817bb
+
+	/// Successful extractions flagged Needs Review or Missing Information.
+	measure 'Human Review Cases' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[needs_review] = 1 )
+		formatString: #,0
+		displayFolder: 1 AI runs
+		lineageTag: 3164beb3-81e5-5322-8497-f7e8bbaf6ea2
+
+	measure 'Human Review Rate %' = DIVIDE ( [Human Review Cases], [Successful Extractions] )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: 7927409a-e9ca-5837-b70e-8087a0eef5c0
+
+	measure 'PDF Success Rate %' = CALCULATE ( [Extraction Success Rate %], DimDocumentType[file_family] = "PDF" )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: e74682cb-51bc-5204-a43b-5ce935f14a85
+
+	measure 'DOCX Success Rate %' = CALCULATE ( [Extraction Success Rate %], DimDocumentType[file_family] = "DOCX" )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: ac8a1917-0268-5823-93d7-493427fe3a35
+
+	measure 'Image Success Rate %' = CALCULATE ( [Extraction Success Rate %], DimDocumentType[file_family] = "Image" )
+		formatString: 0.0%
+		displayFolder: 1 AI runs
+		lineageTag: 69cb4aa1-7fe5-5dd0-a507-db1abcffcd57
+
+	column ai_run_id
+		dataType: int64
+		isHidden
+		lineageTag: 6288dbfc-8b24-5fe6-bef6-7217d51ff411
+		summarizeBy: none
+		sourceColumn: ai_run_id
+
+	column date_key
+		dataType: int64
+		isHidden
+		lineageTag: 3566a4dc-e518-5081-b14d-949f106d3303
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column document_type_id
+		dataType: int64
+		isHidden
+		lineageTag: 75811698-47fa-55d7-bdd5-beed72171150
+		summarizeBy: none
+		sourceColumn: document_type_id
+
+	column provider_id
+		dataType: int64
+		isHidden
+		lineageTag: a3aa6c82-51d4-521c-9fd2-8cc60dc1dd2c
+		summarizeBy: none
+		sourceColumn: provider_id
+
+	column task
+		dataType: string
+		lineageTag: a557ea63-0a93-56d4-893e-eeed782ee496
+		summarizeBy: none
+		sourceColumn: task
+
+	column document_role
+		dataType: string
+		lineageTag: 9e8a3b68-76ae-5f5a-8c4b-a8d15d7709e8
+		summarizeBy: none
+		sourceColumn: document_role
+
+	column status
+		dataType: string
+		lineageTag: 443c8133-cab8-516b-9573-e624ba40b074
+		summarizeBy: none
+		sourceColumn: status
+
+	column is_success
+		dataType: int64
+		isHidden
+		lineageTag: 893d7f83-e403-56ab-a77d-f1df89af622b
+		summarizeBy: none
+		sourceColumn: is_success
+
+	column is_error
+		dataType: int64
+		isHidden
+		lineageTag: ed3df45d-e2e1-560f-84cc-3c31e7afde7f
+		summarizeBy: none
+		sourceColumn: is_error
+
+	column error_stage
+		dataType: string
+		lineageTag: d3dad537-c1ba-5f6b-9b66-85625d4dc428
+		summarizeBy: none
+		sourceColumn: error_stage
+
+	column error_code
+		dataType: string
+		lineageTag: 80fc81e3-22cc-5285-a722-dd74a7ef9305
+		summarizeBy: none
+		sourceColumn: error_code
+
+	column fallback_used
+		dataType: int64
+		lineageTag: 8b0a2097-019a-5476-a1d8-01dec56c9080
+		summarizeBy: none
+		sourceColumn: fallback_used
+
+	column fallback_reason
+		dataType: string
+		lineageTag: 82961496-d901-5878-9b88-4ff23754f0b4
+		summarizeBy: none
+		sourceColumn: fallback_reason
+
+	column confidence_score
+		dataType: double
+		lineageTag: 10ff7abb-8a6c-5474-bc89-d524089adc74
+		summarizeBy: sum
+		sourceColumn: confidence_score
+
+	column confidence_band
+		dataType: string
+		lineageTag: 2365a790-9355-526f-9c00-180ec0b6ee79
+		summarizeBy: none
+		sourceColumn: confidence_band
+
+	column intake_status
+		dataType: string
+		lineageTag: c566269b-f22d-57a8-9c09-87eb5b812738
+		summarizeBy: none
+		sourceColumn: intake_status
+
+	column needs_review
+		dataType: int64
+		lineageTag: 3aba2778-c590-5c83-a644-df0f2519f70b
+		summarizeBy: none
+		sourceColumn: needs_review
+
+	column missing_count
+		dataType: int64
+		lineageTag: d5d71fc1-1844-5f83-b4df-98323916484d
+		summarizeBy: none
+		sourceColumn: missing_count
+
+	column conflict_count
+		dataType: int64
+		lineageTag: de3ed4ea-9ff4-5715-a405-e765fc183eaf
+		summarizeBy: none
+		sourceColumn: conflict_count
+
+	column processing_ms
+		dataType: double
+		lineageTag: f1c0bbe8-a002-5997-b4f8-e866c9702e5d
+		summarizeBy: sum
+		sourceColumn: processing_ms
+
+	column latency_is_simulated
+		dataType: int64
+		lineageTag: 29e38918-7862-5cd6-8fef-57a6f8df2092
+		summarizeBy: none
+		sourceColumn: latency_is_simulated
+
+	column is_retry
+		dataType: int64
+		isHidden
+		lineageTag: 36427304-16d4-5ebb-b07c-b3fda8406312
+		summarizeBy: none
+		sourceColumn: is_retry
+
+	column case_id
+		dataType: int64
+		isHidden
+		lineageTag: eeca3606-b2da-51fa-a5db-b34112f7c48c
+		summarizeBy: none
+		sourceColumn: case_id
+
+	partition FactAIRuns = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "FactAIRuns.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"ai_run_id", Int64.Type}, {"date_key", Int64.Type}, {"document_type_id", Int64.Type}, {"provider_id", Int64.Type}, {"task", type text}, {"document_role", type text}, {"status", type text}, {"is_success", Int64.Type}, {"is_error", Int64.Type}, {"error_stage", type text}, {"error_code", type text}, {"fallback_used", Int64.Type}, {"fallback_reason", type text}, {"confidence_score", type number}, {"confidence_band", type text}, {"intake_status", type text}, {"needs_review", Int64.Type}, {"missing_count", Int64.Type}, {"conflict_count", Int64.Type}, {"processing_ms", type number}, {"latency_is_simulated", Int64.Type}, {"is_retry", Int64.Type}, {"case_id", Int64.Type}}, "en-US")
+				in
+				    Typed
+

@@ -1,0 +1,19 @@
+# secrets - never commit
+.env
+.env.*
+!.env.example
+
+# runtime state of the demo (the reference database is committed)
+database/app_runtime.sqlite
+app_uploads/
+logs/
+
+# Python / tools
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Power BI local caches
+powerbi/**/.pbi/localSettings.json
+powerbi/**/.pbi/cache.abf

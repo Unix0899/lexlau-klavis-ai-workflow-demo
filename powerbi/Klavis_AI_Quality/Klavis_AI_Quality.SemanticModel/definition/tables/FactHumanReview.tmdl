@@ -1,0 +1,124 @@
+table FactHumanReview
+	lineageTag: bd6a8e9c-768d-55e3-b3bf-1f380ac1f7e9
+
+	/// Intake validations (one per created case).
+	measure Reviews = CALCULATE ( COUNTROWS ( FactHumanReview ), FactHumanReview[review_type] = "intake validation" )
+		formatString: #,0
+		displayFolder: 4 Human review
+		lineageTag: 5758a646-cb93-5732-b49d-c3cb6b8fe256
+
+	measure 'Reviews With Corrections' = CALCULATE ( [Reviews], FactHumanReview[decision] = "Approved with corrections" )
+		formatString: #,0
+		displayFolder: 4 Human review
+		lineageTag: 5877dd1a-7dc7-5daa-bd6c-b8ca2859eeca
+
+	measure 'Reviews With Corrections %' = DIVIDE ( [Reviews With Corrections], [Reviews] )
+		formatString: 0.0%
+		displayFolder: 4 Human review
+		lineageTag: 6b51b3b6-a82f-5cf8-9550-7ef178d68cf9
+
+	/// Seconds. Simulated reviewers in the synthetic dataset.
+	measure 'Avg Review Time' = CALCULATE ( AVERAGE ( FactHumanReview[review_seconds] ), FactHumanReview[review_type] = "intake validation" )
+		formatString: 0
+		displayFolder: 4 Human review
+		lineageTag: 9ea8abca-ef35-5f1d-a9b1-3fee8bb61f05
+
+	measure 'Category Changes' = SUM ( FactHumanReview[category_changed] )
+		formatString: #,0
+		displayFolder: 4 Human review
+		lineageTag: 6196f112-db95-5765-8233-fca82e0c8d3c
+
+	column review_id
+		dataType: int64
+		isHidden
+		lineageTag: f5852980-fe43-5012-bd1c-9ce8b8fac3df
+		summarizeBy: none
+		sourceColumn: review_id
+
+	column case_id
+		dataType: int64
+		isHidden
+		lineageTag: 86e75497-f4bc-5bb5-bbbb-4c1c393d72f8
+		summarizeBy: none
+		sourceColumn: case_id
+
+	column date_key
+		dataType: int64
+		isHidden
+		lineageTag: ba2dd2a9-98ba-5e51-82f9-c1bdbb467278
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column document_type_id
+		dataType: int64
+		isHidden
+		lineageTag: 765dd867-5d2a-57eb-aac5-cce10716572c
+		summarizeBy: none
+		sourceColumn: document_type_id
+
+	column reviewer
+		dataType: string
+		lineageTag: 41586650-8410-5d82-9f6d-c7364968f0a3
+		summarizeBy: none
+		sourceColumn: reviewer
+
+	column review_type
+		dataType: string
+		lineageTag: 088ad100-7b01-575a-8afd-56ece2b84173
+		summarizeBy: none
+		sourceColumn: review_type
+
+	column decision
+		dataType: string
+		lineageTag: 87ac66fd-4bec-5c3b-bee0-927348b8b814
+		summarizeBy: none
+		sourceColumn: decision
+
+	column intake_status
+		dataType: string
+		lineageTag: 480d4cbe-c5b1-5c86-9911-1c9d473011cd
+		summarizeBy: none
+		sourceColumn: intake_status
+
+	column fields_reviewed
+		dataType: int64
+		lineageTag: 0bc372d9-59fa-5b6f-9ea0-20d98660e3d3
+		summarizeBy: none
+		sourceColumn: fields_reviewed
+
+	column fields_corrected
+		dataType: int64
+		lineageTag: d26f62e1-c1bd-516d-bc17-b1af29a71f22
+		summarizeBy: none
+		sourceColumn: fields_corrected
+
+	column category_changed
+		dataType: int64
+		lineageTag: eb74a047-90df-5937-84a1-805ad7d32b1c
+		summarizeBy: none
+		sourceColumn: category_changed
+
+	column review_seconds
+		dataType: int64
+		lineageTag: 5630114d-ff87-5bdc-ba01-81ebf24e5c72
+		summarizeBy: none
+		sourceColumn: review_seconds
+
+	column is_simulated
+		dataType: int64
+		isHidden
+		lineageTag: aaa26e1c-bb42-5bfe-845b-ecc72b7b8d4b
+		summarizeBy: none
+		sourceColumn: is_simulated
+
+	partition FactHumanReview = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "FactHumanReview.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"review_id", Int64.Type}, {"case_id", Int64.Type}, {"date_key", Int64.Type}, {"document_type_id", Int64.Type}, {"reviewer", type text}, {"review_type", type text}, {"decision", type text}, {"intake_status", type text}, {"fields_reviewed", Int64.Type}, {"fields_corrected", Int64.Type}, {"category_changed", Int64.Type}, {"review_seconds", Int64.Type}, {"is_simulated", Int64.Type}}, "en-US")
+				in
+				    Typed
+

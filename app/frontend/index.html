@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klavis AI Workflow Demo</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f2340'/%3E%3Cpath d='M9 8v16M9 16l9-8M12 14l8 10' stroke='%232dd4bf' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="#/dashboard">
+      <span class="brand-mark">K</span>
+      <span><strong>Klavis AI</strong><small>Workflow Demo</small></span>
+    </a>
+    <nav id="nav">
+      <a href="#/dashboard" data-page="dashboard">Dashboard</a>
+      <a href="#/new" data-page="new">New Case</a>
+      <a href="#/extraction" data-page="extraction">AI Extraction</a>
+      <a href="#/cases" data-page="cases">Cases</a>
+      <a href="#/tests" data-page="tests">AI Tests</a>
+      <a href="#/quality" data-page="quality">AI Quality</a>
+      <a href="#/audit" data-page="audit">Audit</a>
+    </nav>
+    <div class="side-foot">
+      <span id="chain">AI chain: mock-primary &rarr; mock-fallback</span>
+      <span>No API key required</span>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="disclosure" role="note">
+      <strong>Synthetic demonstration data.</strong>
+      No real client, legal-case or confidential LexLau/Klavis data is included.
+      <span class="muted">Independent public reconstruction &mdash; not the Klavis production system.</span>
+    </div>
+    <main id="view" tabindex="-1"><p class="muted">Loading&hellip;</p></main>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

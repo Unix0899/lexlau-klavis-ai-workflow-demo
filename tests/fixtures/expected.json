@@ -1,0 +1,467 @@
+{
+  "generated": "2026-09-24",
+  "disclosure": "Synthetic demonstration data. No real client, legal-case or confidential LexLau/Klavis data is included.",
+  "fixtures": {
+    "clean_notice.pdf": {
+      "note": "TEST 001 / 014 - clean PDF, all required fields present",
+      "expected": {
+        "case_title": "Unpaid invoices for office furniture",
+        "case_reference": "SYN-26-90001",
+        "client_name": "Thornlea Packaging NV",
+        "opposing_party": "Aldenmere Digital SA",
+        "document_type": "Invoice dispute letter",
+        "jurisdiction": "Antwerp Enterprise Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2026-03-27",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-05-16",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-06-06",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 10861.5
+          },
+          {
+            "label": "late_interest",
+            "value": 778.74
+          }
+        ],
+        "case_category": "Commercial dispute"
+      }
+    },
+    "clean_letter.docx": {
+      "note": "TEST 002 / 014 - DOCX",
+      "expected": {
+        "case_title": "Notice period dispute",
+        "case_reference": "SYN-26-90002",
+        "client_name": "Ines Moreau-Lint",
+        "opposing_party": "Calloway Vale Retail SRL",
+        "document_type": "Formal notice",
+        "jurisdiction": "Liege Labour Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2026-01-15",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-03-12",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-04-11",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 13447.4
+          }
+        ],
+        "case_category": "Employment matter"
+      }
+    },
+    "clean_scan.png": {
+      "note": "TEST 003 / 014 - clean image (simulated OCR text layer)",
+      "expected": {
+        "case_title": "Breach of the facility management service agreement",
+        "case_reference": "SYN-26-90003",
+        "client_name": "Silverbirch Facilities BV",
+        "opposing_party": "Thornlea Logistics SRL",
+        "document_type": "Formal notice",
+        "jurisdiction": "Namur Court of First Instance",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-11-15",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-01-12",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-02-02",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 21633
+          },
+          {
+            "label": "late_interest",
+            "value": 487.64
+          },
+          {
+            "label": "contractual_penalty",
+            "value": 2163.3
+          }
+        ],
+        "case_category": "Contract dispute"
+      }
+    },
+    "degraded_photo.jpg": {
+      "note": "TEST 004 - degraded photo, OCR noise",
+      "expected": {
+        "case_title": "Late payment for delivered IT hardware",
+        "case_reference": "SYN-26-90004",
+        "client_name": "Tamsinworth Facilities NV",
+        "opposing_party": "Lindenbrook Retail NV",
+        "document_type": "Invoice dispute letter",
+        "jurisdiction": "Brussels Enterprise Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-09-13",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2025-10-02",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2025-10-17",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 5754.5
+          },
+          {
+            "label": "late_interest",
+            "value": 366.26
+          }
+        ],
+        "case_category": "Commercial dispute"
+      }
+    },
+    "missing_fields.pdf": {
+      "note": "TEST 005 - jurisdiction and amount claimed absent",
+      "expected": {
+        "case_title": "Unpaid invoices for catering supplies",
+        "case_reference": "SYN-26-90005",
+        "client_name": "Castellan Interiors SA",
+        "opposing_party": "Castellan Systems NV",
+        "document_type": "Invoice dispute letter",
+        "jurisdiction": null,
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2026-01-07",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-01-28",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-02-18",
+            "incomplete": false
+          }
+        ],
+        "amounts": [],
+        "case_category": "Commercial dispute"
+      }
+    },
+    "multiple_dates.docx": {
+      "note": "TEST 006 - four dates in four formats",
+      "expected": {
+        "case_title": "Breach of the software maintenance service agreement",
+        "case_reference": "SYN-26-90006",
+        "client_name": "Quillfield Systems SRL",
+        "opposing_party": "Pellbrook Digital BV",
+        "document_type": "Court summons",
+        "jurisdiction": "Brussels Court of First Instance",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2026-01-07",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-02-03",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-02-24",
+            "incomplete": false
+          },
+          {
+            "label": "hearing_date",
+            "date": "2026-03-18",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 18400.0
+          }
+        ],
+        "case_category": "Contract dispute"
+      }
+    },
+    "multipage_contract.pdf": {
+      "note": "TEST 014 - three-page PDF, fields spread over pages",
+      "expected": {
+        "case_title": "Non-performance under the software maintenance agreement",
+        "case_reference": "SYN-26-90007",
+        "client_name": "Veldon Logistics NV",
+        "opposing_party": "Oakhaven Packaging SA",
+        "document_type": "Court summons",
+        "jurisdiction": "Antwerp Enterprise Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-11-25",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-01-02",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-01-17",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 62461
+          },
+          {
+            "label": "late_interest",
+            "value": 4062.56
+          }
+        ],
+        "case_category": "Contract dispute"
+      }
+    },
+    "cardboard_commercial.pdf": {
+      "note": "TEST 014 - category regression ('board' inside 'cardboard')",
+      "expected": {
+        "case_title": "Unpaid invoices for cardboard packaging",
+        "case_reference": "SYN-26-90008",
+        "client_name": "Silverbirch Construction SRL",
+        "opposing_party": "Lindenbrook Logistics NV",
+        "document_type": "Formal notice",
+        "jurisdiction": "Leuven Justice of the Peace",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2026-04-25",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2026-06-18",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2026-07-18",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 57897
+          }
+        ],
+        "case_category": "Commercial dispute"
+      }
+    },
+    "mixed_same_case.pdf": {
+      "note": "TEST 013 - the same case in three formats",
+      "expected": {
+        "case_title": "Contested board resolution",
+        "case_reference": "SYN-26-90009",
+        "client_name": "Merriton Retail SRL",
+        "opposing_party": "Lotte Maerlant-Oost",
+        "document_type": "Shareholder letter",
+        "jurisdiction": "Brussels Enterprise Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-09-20",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2025-11-17",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2025-12-17",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 63390
+          }
+        ],
+        "case_category": "Corporate matter"
+      }
+    },
+    "mixed_same_case.docx": {
+      "note": "TEST 013 - the same case in three formats",
+      "expected": {
+        "case_title": "Contested board resolution",
+        "case_reference": "SYN-26-90009",
+        "client_name": "Merriton Retail SRL",
+        "opposing_party": "Lotte Maerlant-Oost",
+        "document_type": "Shareholder letter",
+        "jurisdiction": "Brussels Enterprise Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-09-20",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2025-11-17",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2025-12-17",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 63390
+          }
+        ],
+        "case_category": "Corporate matter"
+      }
+    },
+    "mixed_same_case.png": {
+      "note": "TEST 013 - the same case in three formats",
+      "expected": {
+        "case_title": "Contested board resolution",
+        "case_reference": "SYN-26-90009",
+        "client_name": "Merriton Retail SRL",
+        "opposing_party": "Lotte Maerlant-Oost",
+        "document_type": "Shareholder letter",
+        "jurisdiction": "Brussels Enterprise Court",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-09-20",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2025-11-17",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2025-12-17",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 63390
+          }
+        ],
+        "case_category": "Corporate matter"
+      }
+    },
+    "contradictory.docx": {
+      "note": "conflicting values must be flagged for review",
+      "expected": {
+        "case_title": "Breach of the facility management service agreement",
+        "case_reference": "SYN-26-90010",
+        "client_name": "Calloway Vale Mobility SA",
+        "opposing_party": "Duskwater Consulting BV",
+        "document_type": "Formal notice",
+        "jurisdiction": "Brussels Court of First Instance",
+        "important_dates": [
+          {
+            "label": "incident_date",
+            "date": "2025-09-11",
+            "incomplete": false
+          },
+          {
+            "label": "notice_date",
+            "date": "2025-10-07",
+            "incomplete": false
+          },
+          {
+            "label": "response_deadline",
+            "date": "2025-10-28",
+            "incomplete": false
+          },
+          {
+            "label": "hearing_date",
+            "date": "2025-12-23",
+            "incomplete": false
+          }
+        ],
+        "amounts": [
+          {
+            "label": "amount_claimed",
+            "value": 18660.6
+          },
+          {
+            "label": "late_interest",
+            "value": 1231.05
+          },
+          {
+            "label": "contractual_penalty",
+            "value": 2073.4
+          }
+        ],
+        "case_category": "Contract dispute"
+      }
+    },
+    "invalid_file.pdf": {
+      "note": "TEST 011 - random bytes with a .pdf name",
+      "expected": null
+    },
+    "renamed_executable.docx": {
+      "note": "TEST 011 - executable header renamed .docx",
+      "expected": null
+    }
+  }
+}

@@ -1,0 +1,4 @@
+provider_id,provider_name,provider_role,is_external,description
+1,mock-primary,Primary,0,Deterministic local engine (default)
+2,mock-fallback,Fallback,0,Simpler local backup engine
+3,none (failed),None,0,No provider produced a valid output

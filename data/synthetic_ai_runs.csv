@@ -1,0 +1,893 @@
+ai_run_id,document_id,case_id,task,detected_format,sample_variant,document_role,provider_requested,provider_used,fallback_used,fallback_reason,status,error_stage,error_code,confidence_score,intake_status,missing_count,conflict_count,processing_ms,latency_is_simulated,retry_of_run_id,bug_replay,started_at
+1,1,1,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.92,Complete,0,0,1840.8,1,,"category_substring,docx_routing",2026-01-05T09:59:08
+2,1,1,category_suggestion,png,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.7,,,,6198.0,1,,"category_substring,docx_routing",2026-01-05T09:59:08
+3,1,1,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-05T11:32:52
+4,2,2,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.81,Complete,0,0,4077.1,1,,"category_substring,docx_routing",2026-01-06T09:50:58
+5,2,2,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,303.1,1,,"category_substring,docx_routing",2026-01-06T09:50:58
+6,2,2,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-06T10:10:21
+7,3,3,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.657,Missing Information,3,0,1905.0,1,,"category_substring,docx_routing",2026-01-06T12:19:57
+8,3,3,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,296.0,1,,"category_substring,docx_routing",2026-01-06T12:19:57
+9,3,3,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-06T13:36:25
+10,4,4,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,952.2,1,,"category_substring,docx_routing",2026-01-06T16:28:45
+11,4,4,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,214.3,1,,"category_substring,docx_routing",2026-01-06T16:28:45
+12,5,5,extraction,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.731,Missing Information,2,0,2580.6,1,,"category_substring,docx_routing",2026-01-07T08:00:44
+13,5,5,category_suggestion,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,311.3,1,,"category_substring,docx_routing",2026-01-07T08:00:44
+14,6,6,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2268.2,1,,"category_substring,docx_routing",2026-01-07T11:31:12
+15,6,6,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,239.5,1,,"category_substring,docx_routing",2026-01-07T11:31:12
+16,6,6,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,1.4,0,,,2026-01-07T12:55:06
+17,7,,extraction,docx,missing_fields,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,810.2,1,,"category_substring,docx_routing",2026-01-07T15:41:53
+18,8,,extraction,docx,contradictory,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,6797.1,1,,"category_substring,docx_routing",2026-01-07T16:37:41
+19,9,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,632.5,1,,"category_substring,docx_routing",2026-01-08T09:36:11
+20,10,7,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.937,Complete,0,0,829.1,1,,"category_substring,docx_routing",2026-01-09T10:03:01
+21,10,7,category_suggestion,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6298.2,1,,"category_substring,docx_routing",2026-01-09T10:03:01
+22,10,7,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-09T11:14:36
+23,11,,extraction,docx,missing_fields,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,1449.4,1,,"category_substring,docx_routing",2026-01-09T11:40:20
+24,10,7,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-09T12:35:36
+25,12,8,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1090.3,1,,"category_substring,docx_routing",2026-01-09T14:07:12
+26,12,8,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,211.2,1,,"category_substring,docx_routing",2026-01-09T14:07:12
+27,12,8,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-09T15:00:04
+28,13,9,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.898,Missing Information,1,0,1024.3,1,,"category_substring,docx_routing",2026-01-09T17:49:13
+29,13,9,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,211.1,1,,"category_substring,docx_routing",2026-01-09T17:49:13
+30,13,9,summarisation,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-09T18:03:27
+31,14,6,extraction,pdf,degraded,supporting,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.705,Missing Information,1,0,7472.2,1,,"category_substring,docx_routing",2026-01-10T11:51:06
+32,14,6,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,260.8,1,,"category_substring,docx_routing",2026-01-10T11:51:06
+33,15,,extraction,png,degraded,primary,mock-primary,,1,PROVIDER_ERROR,error,ai_provider,AI_UNAVAILABLE,,,,,3785.3,1,,"category_substring,docx_routing",2026-01-12T12:07:10
+34,16,1,extraction,docx,clean,supporting,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,567.4,1,,"category_substring,docx_routing",2026-01-12T12:16:52
+35,17,10,extraction,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.727,Missing Information,1,0,4025.3,1,33,"category_substring,docx_routing",2026-01-12T14:17:10
+36,17,10,category_suggestion,png,degraded,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.4,,,,6222.0,1,,"category_substring,docx_routing",2026-01-12T14:17:10
+37,17,10,summarisation,png,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-12T14:48:38
+38,18,11,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.829,Missing Information,1,0,943.2,1,,"category_substring,docx_routing",2026-01-13T17:19:55
+39,18,11,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.83,,,,290.5,1,,"category_substring,docx_routing",2026-01-13T17:19:55
+40,19,10,extraction,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.897,Complete,0,0,2850.7,1,,"category_substring,docx_routing",2026-01-13T18:37:38
+41,19,10,category_suggestion,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,389.2,1,,"category_substring,docx_routing",2026-01-13T18:37:38
+42,18,11,summarisation,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-13T18:41:59
+43,21,12,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1089.9,1,,"category_substring,docx_routing",2026-01-14T11:36:52
+44,21,12,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,188.3,1,,"category_substring,docx_routing",2026-01-14T11:36:52
+45,22,13,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,964.7,1,,"category_substring,docx_routing",2026-01-14T13:22:34
+46,22,13,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,404.0,1,,"category_substring,docx_routing",2026-01-14T13:22:34
+47,21,12,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-14T13:53:44
+48,22,13,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-14T13:56:28
+49,23,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,647.9,1,,"category_substring,docx_routing",2026-01-14T16:21:09
+50,24,7,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.755,Missing Information,1,0,1739.5,1,,"category_substring,docx_routing",2026-01-16T10:13:36
+51,24,7,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.85,,,,293.8,1,,"category_substring,docx_routing",2026-01-16T10:13:36
+52,25,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,516.4,1,,"category_substring,docx_routing",2026-01-16T11:55:52
+53,26,14,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2142.6,1,,"category_substring,docx_routing",2026-01-16T14:01:30
+54,26,14,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,350.2,1,,"category_substring,docx_routing",2026-01-16T14:01:30
+55,26,14,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-16T15:25:17
+56,27,15,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,1933.6,1,,"category_substring,docx_routing",2026-01-16T16:14:02
+57,27,15,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,328.2,1,,"category_substring,docx_routing",2026-01-16T16:14:02
+58,27,15,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-16T16:35:00
+59,28,,extraction,docx,missing_fields,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,693.2,1,,"category_substring,docx_routing",2026-01-19T11:33:55
+60,29,16,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1330.1,1,,"category_substring,docx_routing",2026-01-19T11:44:03
+61,29,16,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,282.2,1,,"category_substring,docx_routing",2026-01-19T11:44:03
+62,30,17,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2219.8,1,,"category_substring,docx_routing",2026-01-19T12:47:21
+63,30,17,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,238.9,1,,"category_substring,docx_routing",2026-01-19T12:47:21
+64,31,18,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.912,Complete,0,0,2100.3,1,,"category_substring,docx_routing",2026-01-20T09:30:12
+65,31,18,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.88,,,,306.9,1,,"category_substring,docx_routing",2026-01-20T09:30:12
+66,31,18,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-20T12:43:33
+67,32,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,615.9,1,,"category_substring,docx_routing",2026-01-20T14:26:10
+68,33,19,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,906.4,1,,"category_substring,docx_routing",2026-01-21T11:41:31
+69,33,19,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,334.2,1,,"category_substring,docx_routing",2026-01-21T11:41:31
+70,34,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,527.9,1,,"category_substring,docx_routing",2026-01-21T14:00:18
+71,33,19,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-21T15:32:31
+72,35,20,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,1865.9,1,,"category_substring,docx_routing",2026-01-21T16:51:21
+73,35,20,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,379.4,1,,"category_substring,docx_routing",2026-01-21T16:51:21
+74,35,20,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-21T17:43:10
+75,35,20,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-21T18:42:10
+76,36,21,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,879.5,1,,"category_substring,docx_routing",2026-01-22T08:29:44
+77,36,21,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,415.3,1,,"category_substring,docx_routing",2026-01-22T08:29:44
+78,36,21,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-22T09:32:23
+79,37,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,501.6,1,,"category_substring,docx_routing",2026-01-22T10:17:59
+80,38,22,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.814,Missing Information,1,0,3066.9,1,,"category_substring,docx_routing",2026-01-22T15:50:39
+81,38,22,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,261.4,1,,"category_substring,docx_routing",2026-01-22T15:50:39
+82,38,22,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-22T16:42:03
+83,39,23,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.937,Complete,0,0,924.1,1,,"category_substring,docx_routing",2026-01-23T12:19:58
+84,39,23,category_suggestion,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6237.5,1,,"category_substring,docx_routing",2026-01-23T12:19:58
+85,39,23,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.3,0,,,2026-01-23T14:50:46
+86,39,23,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-23T15:46:46
+87,40,24,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2151.5,1,,"category_substring,docx_routing",2026-01-26T09:24:20
+88,40,24,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,261.9,1,,"category_substring,docx_routing",2026-01-26T09:24:20
+89,41,,extraction,docx,contradictory,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,817.4,1,,"category_substring,docx_routing",2026-01-27T14:19:38
+90,42,25,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1887.6,1,,"category_substring,docx_routing",2026-01-27T16:15:03
+91,42,25,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,205.2,1,,"category_substring,docx_routing",2026-01-27T16:15:03
+92,42,25,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-27T18:01:27
+93,43,26,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2037.1,1,,"category_substring,docx_routing",2026-01-28T08:06:09
+94,43,26,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,246.1,1,,"category_substring,docx_routing",2026-01-28T08:06:09
+95,43,26,assistant,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-28T09:02:59
+96,43,26,assistant,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-01-28T10:43:59
+97,44,,extraction,jpg,clean,primary,mock-primary,,1,PROVIDER_ERROR,error,ai_provider,AI_UNAVAILABLE,,,,,4022.2,1,,"category_substring,docx_routing",2026-01-28T12:06:40
+98,45,27,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.922,Complete,0,0,2272.2,1,97,"category_substring,docx_routing",2026-01-28T14:30:40
+99,45,27,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.72,,,,258.1,1,,"category_substring,docx_routing",2026-01-28T14:30:40
+100,45,27,summarisation,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-28T15:59:38
+101,46,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,744.2,1,,"category_substring,docx_routing",2026-01-29T10:23:03
+102,47,,extraction,docx,contradictory,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,2000.0,1,,"category_substring,docx_routing",2026-01-30T10:36:24
+103,48,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,548.1,1,,"category_substring,docx_routing",2026-01-30T12:12:50
+104,49,28,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.924,Complete,0,0,876.2,1,,"category_substring,docx_routing",2026-01-30T17:04:33
+105,49,28,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.74,,,,241.1,1,,"category_substring,docx_routing",2026-01-30T17:04:33
+106,49,28,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-01-30T17:21:15
+107,50,22,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.816,Complete,0,0,1698.3,1,,"category_substring,docx_routing",2026-01-31T20:19:03
+108,50,22,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,298.6,1,,"category_substring,docx_routing",2026-01-31T20:19:03
+109,51,29,extraction,jpg,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.861,Complete,0,0,8143.5,1,,"category_substring,docx_routing",2026-02-03T08:07:12
+110,51,29,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,375.2,1,,"category_substring,docx_routing",2026-02-03T08:07:12
+111,52,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,664.6,1,,"category_substring,docx_routing",2026-02-03T09:32:07
+112,53,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,791.0,1,,"category_substring,docx_routing",2026-02-03T09:39:24
+113,54,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,756.3,1,,"category_substring,docx_routing",2026-02-04T11:48:53
+114,55,30,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,861.6,1,,"category_substring,docx_routing",2026-02-04T15:10:23
+115,55,30,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,362.7,1,,"category_substring,docx_routing",2026-02-04T15:10:23
+116,55,30,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-04T16:11:43
+117,56,31,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,873.5,1,,"category_substring,docx_routing",2026-02-04T17:51:58
+118,56,31,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,390.3,1,,"category_substring,docx_routing",2026-02-04T17:51:58
+119,56,31,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-04T18:29:23
+120,57,32,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,1100.1,1,,"category_substring,docx_routing",2026-02-05T13:32:49
+121,57,32,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,203.0,1,,"category_substring,docx_routing",2026-02-05T13:32:49
+122,57,32,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-05T14:00:47
+123,57,32,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-05T15:42:47
+124,60,33,extraction,pdf,multipage,primary,mock-primary,mock-fallback,1,PROVIDER_ERROR,success,,,0.856,Complete,0,0,2029.5,1,,"category_substring,docx_routing",2026-02-06T11:43:05
+125,60,33,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,348.3,1,,"category_substring,docx_routing",2026-02-06T11:43:05
+126,61,34,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.769,Missing Information,1,0,1009.6,1,,"category_substring,docx_routing",2026-02-06T15:00:04
+127,61,34,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.74,,,,347.8,1,,"category_substring,docx_routing",2026-02-06T15:00:04
+128,62,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,641.0,1,,"category_substring,docx_routing",2026-02-06T15:53:41
+129,63,35,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1071.2,1,,"category_substring,docx_routing",2026-02-06T16:55:02
+130,63,35,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,294.3,1,,"category_substring,docx_routing",2026-02-06T16:55:02
+131,63,35,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-06T17:56:09
+132,64,36,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1084.1,1,,"category_substring,docx_routing",2026-02-06T17:58:02
+133,64,36,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,206.3,1,,"category_substring,docx_routing",2026-02-06T17:58:02
+134,63,35,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-06T19:17:09
+135,65,37,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.914,Complete,0,0,805.9,1,,"category_substring,docx_routing",2026-02-09T13:39:01
+136,65,37,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.92,,,,275.1,1,,"category_substring,docx_routing",2026-02-09T13:39:01
+137,65,37,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-09T14:42:04
+138,66,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,655.8,1,,"category_substring,docx_routing",2026-02-09T16:11:38
+139,67,,extraction,docx,contradictory,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,1800.6,1,,"category_substring,docx_routing",2026-02-10T11:38:31
+140,68,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,652.0,1,,"category_substring,docx_routing",2026-02-10T12:01:33
+141,69,38,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.722,Missing Information,2,0,1566.7,1,,"category_substring,docx_routing",2026-02-10T13:44:27
+142,69,38,category_suggestion,pdf,degraded,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6410.6,1,,"category_substring,docx_routing",2026-02-10T13:44:27
+143,69,38,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-10T15:30:29
+144,69,38,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-10T17:10:29
+145,70,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,672.8,1,,"category_substring,docx_routing",2026-02-11T14:31:29
+146,71,,extraction,docx,clean,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,672.9,1,,"category_substring,docx_routing",2026-02-12T16:15:21
+147,72,,extraction,docx,contradictory,primary,mock-primary,,0,,error,text_extraction,PARSE_ERROR,,,,,713.6,1,,"category_substring,docx_routing",2026-02-13T08:21:34
+148,73,39,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.842,Missing Information,2,0,902.1,1,,"category_substring,docx_routing",2026-02-13T10:29:45
+149,73,39,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,326.0,1,,"category_substring,docx_routing",2026-02-13T10:29:45
+150,74,40,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1941.7,1,,"category_substring,docx_routing",2026-02-16T08:01:34
+151,74,40,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,339.0,1,,"category_substring,docx_routing",2026-02-16T08:01:34
+152,75,41,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,569.4,1,103,category_substring,2026-02-16T13:00:00
+153,75,41,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,374.7,1,,category_substring,2026-02-16T13:00:00
+154,75,41,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-16T13:26:30
+155,76,42,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.891,Missing Information,1,0,814.9,1,17,category_substring,2026-02-16T14:00:00
+156,76,42,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,347.8,1,,category_substring,2026-02-16T14:00:00
+157,77,43,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.906,Needs Review,0,1,806.5,1,139,category_substring,2026-02-16T15:00:00
+158,77,43,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,232.0,1,,category_substring,2026-02-16T15:00:00
+159,76,42,summarisation,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-16T15:26:58
+160,77,43,summarisation,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-16T15:53:29
+161,78,44,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,766.4,1,67,category_substring,2026-02-16T20:00:00
+162,78,44,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,197.9,1,,category_substring,2026-02-16T20:00:00
+163,78,44,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-16T20:58:23
+164,79,45,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.842,Missing Information,2,0,551.0,1,23,category_substring,2026-02-17T06:00:00
+165,79,45,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,266.4,1,,category_substring,2026-02-17T06:00:00
+166,80,46,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.894,Complete,0,0,1985.8,1,,category_substring,2026-02-17T08:00:56
+167,80,46,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,240.2,1,,category_substring,2026-02-17T08:00:56
+168,80,46,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-17T08:15:23
+169,81,47,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,574.2,1,145,category_substring,2026-02-17T10:00:00
+170,81,47,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,276.0,1,,category_substring,2026-02-17T10:00:00
+171,80,46,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-17T11:17:23
+172,81,47,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-17T11:27:36
+173,80,46,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,2.1,0,,,2026-02-17T11:59:23
+174,82,48,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,780.0,1,128,category_substring,2026-02-17T12:00:00
+175,82,48,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,287.9,1,,category_substring,2026-02-17T12:00:00
+176,82,48,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-17T12:43:19
+177,83,49,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1366.5,1,,category_substring,2026-02-17T14:13:18
+178,83,49,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,342.0,1,,category_substring,2026-02-17T14:13:18
+179,83,49,assistant,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-17T17:51:47
+180,83,49,assistant,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-17T17:53:47
+181,84,50,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,633.0,1,19,category_substring,2026-02-17T23:00:00
+182,84,50,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,402.9,1,,category_substring,2026-02-17T23:00:00
+183,85,51,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,823.3,1,79,category_substring,2026-02-18T02:00:00
+184,85,51,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,285.5,1,,category_substring,2026-02-18T02:00:00
+185,86,52,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,Needs Review,0,1,680.8,1,18,category_substring,2026-02-18T03:00:00
+186,86,52,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,398.0,1,,category_substring,2026-02-18T03:00:00
+187,87,53,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.737,Missing Information,2,0,536.1,1,59,category_substring,2026-02-18T05:00:00
+188,87,53,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,305.4,1,,category_substring,2026-02-18T05:00:00
+189,88,54,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,737.9,1,70,category_substring,2026-02-18T09:00:00
+190,88,54,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,318.1,1,,category_substring,2026-02-18T09:00:00
+191,89,55,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.906,Needs Review,0,1,645.9,1,147,category_substring,2026-02-18T10:00:00
+192,89,55,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,186.5,1,,category_substring,2026-02-18T10:00:00
+193,90,56,extraction,docx,clean,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.861,Complete,0,0,1920.0,1,49,category_substring,2026-02-18T11:00:00
+194,90,56,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,270.8,1,,category_substring,2026-02-18T11:00:00
+195,89,55,summarisation,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T11:30:34
+196,90,56,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T12:49:30
+197,91,57,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,591.0,1,111,category_substring,2026-02-18T13:00:00
+198,91,57,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,257.6,1,,category_substring,2026-02-18T13:00:00
+199,91,57,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T13:18:55
+200,92,58,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,500.6,1,112,category_substring,2026-02-18T15:00:00
+201,92,58,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,239.8,1,,category_substring,2026-02-18T15:00:00
+202,92,58,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T15:46:03
+203,93,59,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,661.8,1,52,category_substring,2026-02-18T16:00:00
+204,93,59,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,305.0,1,,category_substring,2026-02-18T16:00:00
+205,92,58,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T16:38:03
+206,93,59,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T17:09:21
+207,93,59,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T17:36:21
+208,94,60,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,980.4,1,,category_substring,2026-02-18T17:42:53
+209,94,60,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,337.4,1,,category_substring,2026-02-18T17:42:53
+210,93,59,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-18T18:11:21
+211,95,61,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.876,Needs Review,0,1,517.1,1,89,category_substring,2026-02-18T20:00:00
+212,95,61,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,353.5,1,,category_substring,2026-02-18T20:00:00
+213,96,62,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,554.5,1,138,category_substring,2026-02-18T23:00:00
+214,96,62,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,222.4,1,,category_substring,2026-02-18T23:00:00
+215,97,63,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,776.3,1,101,category_substring,2026-02-19T01:00:00
+216,97,63,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,326.3,1,,category_substring,2026-02-19T01:00:00
+217,98,64,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,717.2,1,146,category_substring,2026-02-19T01:00:00
+218,98,64,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,243.9,1,,category_substring,2026-02-19T01:00:00
+219,98,64,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-19T03:49:09
+220,98,64,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T04:26:09
+221,99,65,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,711.2,1,140,category_substring,2026-02-19T05:00:00
+222,99,65,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,273.0,1,,category_substring,2026-02-19T05:00:00
+223,100,66,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.906,Needs Review,0,1,566.4,1,102,category_substring,2026-02-19T06:00:00
+224,100,66,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,364.5,1,,category_substring,2026-02-19T06:00:00
+225,101,67,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,786.9,1,113,category_substring,2026-02-19T06:00:00
+226,101,67,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,350.8,1,,category_substring,2026-02-19T06:00:00
+227,99,65,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-19T06:33:59
+228,100,66,summarisation,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T06:58:47
+229,101,67,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T07:01:30
+230,101,67,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-19T07:28:30
+231,102,68,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.892,Needs Review,0,0,755.1,1,,category_substring,2026-02-19T08:17:43
+232,102,68,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,363.2,1,,category_substring,2026-02-19T08:17:43
+233,103,69,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2398.4,1,,category_substring,2026-02-19T08:47:29
+234,103,69,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,204.2,1,,category_substring,2026-02-19T08:47:29
+235,102,68,summarisation,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-19T08:51:33
+236,103,69,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T09:57:58
+237,103,69,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T10:42:58
+238,103,69,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-02-19T11:20:58
+239,102,68,assistant,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T11:59:33
+240,102,68,assistant,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T12:07:33
+241,104,70,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.837,Missing Information,1,0,668.4,1,,category_substring,2026-02-19T13:31:08
+242,104,70,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,382.7,1,,category_substring,2026-02-19T13:31:08
+243,105,71,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.83,Complete,0,0,1572.4,1,,category_substring,2026-02-19T16:42:22
+244,105,71,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.85,,,,335.1,1,,category_substring,2026-02-19T16:42:22
+245,105,71,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-02-19T18:26:34
+246,106,72,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.928,Complete,0,0,822.3,1,,category_substring,2026-02-20T09:05:52
+247,106,72,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.77,,,,319.7,1,,category_substring,2026-02-20T09:05:52
+248,107,73,extraction,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.687,Missing Information,1,0,3568.6,1,,category_substring,2026-02-23T12:37:00
+249,107,73,category_suggestion,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,232.6,1,,category_substring,2026-02-23T12:37:00
+250,108,39,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,706.4,1,,category_substring,2026-02-23T13:32:33
+251,108,39,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,315.6,1,,category_substring,2026-02-23T13:32:33
+252,109,65,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,716.9,1,,category_substring,2026-02-24T07:29:59
+253,109,65,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,291.5,1,,category_substring,2026-02-24T07:29:59
+254,110,74,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.937,Complete,0,0,980.2,1,,category_substring,2026-02-25T14:09:30
+255,110,74,category_suggestion,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6310.2,1,,category_substring,2026-02-25T14:09:30
+256,111,75,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.906,Needs Review,0,1,534.0,1,,category_substring,2026-02-26T13:22:26
+257,111,75,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,305.8,1,,category_substring,2026-02-26T13:22:26
+258,112,76,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1061.8,1,,category_substring,2026-02-27T10:52:17
+259,112,76,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,227.3,1,,category_substring,2026-02-27T10:52:17
+260,113,77,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.897,Needs Review,0,1,571.8,1,,category_substring,2026-03-02T12:53:03
+261,113,77,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.87,,,,293.6,1,,category_substring,2026-03-02T12:53:03
+262,113,77,summarisation,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-02T13:30:48
+263,114,78,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.92,Complete,0,0,1862.9,1,,category_substring,2026-03-02T13:32:24
+264,114,78,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.7,,,,357.7,1,,category_substring,2026-03-02T13:32:24
+265,115,74,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.924,Complete,0,0,1988.0,1,,category_substring,2026-03-02T14:20:45
+266,115,74,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,363.5,1,,category_substring,2026-03-02T14:20:45
+267,117,79,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.791,Needs Review,0,0,3966.9,1,,category_substring,2026-03-03T09:19:10
+268,117,79,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,200.3,1,,category_substring,2026-03-03T09:19:10
+269,118,80,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1342.2,1,,category_substring,2026-03-03T10:11:26
+270,118,80,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,252.6,1,,category_substring,2026-03-03T10:11:26
+271,118,80,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-03T10:58:32
+272,119,81,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,799.6,1,,category_substring,2026-03-03T16:28:12
+273,119,81,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,347.4,1,,category_substring,2026-03-03T16:28:12
+274,120,82,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,642.9,1,,category_substring,2026-03-04T13:39:57
+275,120,82,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,277.9,1,,category_substring,2026-03-04T13:39:57
+276,121,83,extraction,docx,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.861,Complete,0,0,6833.1,1,,category_substring,2026-03-04T14:16:21
+277,121,83,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,208.4,1,,category_substring,2026-03-04T14:16:21
+278,122,,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,530.0,1,,category_substring,2026-03-04T16:10:21
+279,122,,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,265.1,1,,category_substring,2026-03-04T16:10:21
+280,123,84,extraction,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.861,Complete,0,0,6875.7,1,,category_substring,2026-03-05T15:00:43
+281,123,84,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,375.7,1,,category_substring,2026-03-05T15:00:43
+282,124,85,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,830.4,1,,category_substring,2026-03-05T15:03:29
+283,124,85,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,219.8,1,,category_substring,2026-03-05T15:03:29
+284,125,86,extraction,pdf,multipage,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.767,Missing Information,1,0,8014.5,1,,category_substring,2026-03-05T15:16:50
+285,125,86,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,211.7,1,,category_substring,2026-03-05T15:16:50
+286,124,85,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-05T15:31:29
+287,124,85,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-05T15:43:29
+288,123,84,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-05T15:55:44
+289,123,84,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-05T15:57:44
+290,125,86,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-05T17:08:51
+291,124,85,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-03-05T18:40:29
+292,123,84,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-05T19:07:44
+293,126,80,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.937,Complete,0,0,724.4,1,,category_substring,2026-03-06T11:35:32
+294,126,80,category_suggestion,docx,clean,supporting,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6298.0,1,,category_substring,2026-03-06T11:35:32
+295,127,87,extraction,png,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.761,Missing Information,1,0,8339.3,1,,category_substring,2026-03-06T12:21:16
+296,127,87,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,230.5,1,,category_substring,2026-03-06T12:21:16
+297,127,87,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-06T14:01:56
+298,128,88,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1014.8,1,,category_substring,2026-03-06T15:00:18
+299,128,88,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,419.4,1,,category_substring,2026-03-06T15:00:18
+300,129,89,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,2233.3,1,,category_substring,2026-03-06T16:23:48
+301,129,89,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,401.6,1,,category_substring,2026-03-06T16:23:48
+302,128,88,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-06T16:32:07
+303,130,90,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.922,Complete,0,0,2095.9,1,,category_substring,2026-03-06T17:19:31
+304,130,90,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,245.8,1,,category_substring,2026-03-06T17:19:31
+305,130,90,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-06T18:23:29
+306,130,90,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-03-06T19:19:29
+307,131,81,extraction,pdf,clean,supporting,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.858,Complete,0,0,2311.5,1,,category_substring,2026-03-08T18:42:07
+308,131,81,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.92,,,,355.2,1,,category_substring,2026-03-08T18:42:07
+309,132,91,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.901,Needs Review,0,1,716.8,1,,,2026-03-09T10:36:44
+310,132,91,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.91,,,,392.2,1,,,2026-03-09T10:36:44
+311,132,91,assistant,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-09T11:57:23
+312,132,91,assistant,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-09T12:30:23
+313,133,92,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2988.8,1,,,2026-03-10T14:51:32
+314,133,92,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,306.5,1,,,2026-03-10T14:51:32
+315,133,92,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-10T16:04:48
+316,133,92,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-03-10T18:14:48
+317,134,93,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.737,Missing Information,2,0,758.3,1,,,2026-03-11T10:24:38
+318,134,93,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,217.8,1,,,2026-03-11T10:24:38
+319,134,93,summarisation,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-11T10:49:55
+320,134,93,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-11T10:56:55
+321,134,93,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-11T14:05:55
+322,135,94,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.92,Missing Information,1,0,1536.9,1,,,2026-03-12T16:59:24
+323,135,94,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,363.5,1,,,2026-03-12T16:59:24
+324,136,92,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,3061.6,1,,,2026-03-12T17:56:48
+325,136,92,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,241.8,1,,,2026-03-12T17:56:48
+326,135,94,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-12T18:16:38
+327,137,95,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2711.4,1,,,2026-03-13T09:06:14
+328,137,95,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,195.3,1,,,2026-03-13T09:06:14
+329,137,95,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-13T10:07:04
+330,138,96,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1111.0,1,,,2026-03-13T13:25:01
+331,138,96,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,256.1,1,,,2026-03-13T13:25:01
+332,139,97,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,721.0,1,,,2026-03-13T16:57:30
+333,139,97,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,184.1,1,,,2026-03-13T16:57:30
+334,140,98,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.902,Needs Review,0,1,749.2,1,,,2026-03-13T17:26:48
+335,140,98,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.92,,,,375.3,1,,,2026-03-13T17:26:48
+336,140,98,summarisation,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-13T18:17:33
+337,139,97,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-13T20:22:16
+338,141,79,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.79,Needs Review,0,0,1477.9,1,,,2026-03-14T12:27:42
+339,141,79,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,325.1,1,,,2026-03-14T12:27:42
+340,142,96,extraction,jpg,degraded,supporting,mock-primary,,1,PROVIDER_ERROR,error,ai_provider,AI_UNAVAILABLE,,,,,5020.4,1,,,2026-03-15T17:43:08
+341,143,99,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,2861.9,1,,,2026-03-16T09:13:35
+342,143,99,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,210.5,1,,,2026-03-16T09:13:35
+343,144,100,extraction,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.906,Needs Review,0,1,799.1,1,,,2026-03-16T10:51:59
+344,144,100,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,203.9,1,,,2026-03-16T10:51:59
+345,145,101,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.915,Complete,0,0,1473.6,1,,,2026-03-16T17:40:02
+346,145,101,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,335.2,1,,,2026-03-16T17:40:02
+347,146,97,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,807.1,1,,,2026-03-16T19:19:16
+348,146,97,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.4,,,,329.5,1,,,2026-03-16T19:19:16
+349,147,102,extraction,pdf,contradictory,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.826,Needs Review,0,1,2287.9,1,,,2026-03-17T13:56:42
+350,147,102,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.91,,,,216.7,1,,,2026-03-17T13:56:42
+351,148,103,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,Needs Review,0,1,717.6,1,,,2026-03-17T14:57:03
+352,148,103,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,251.5,1,,,2026-03-17T14:57:03
+353,149,104,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,841.7,1,,,2026-03-17T15:10:25
+354,149,104,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,214.9,1,,,2026-03-17T15:10:25
+355,149,104,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-17T16:34:25
+356,150,105,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.736,Missing Information,1,0,1920.9,1,,,2026-03-18T09:40:19
+357,150,105,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,265.5,1,,,2026-03-18T09:40:19
+358,151,106,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1138.7,1,,,2026-03-18T10:08:54
+359,151,106,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,252.7,1,,,2026-03-18T10:08:54
+360,152,107,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,796.1,1,,,2026-03-18T10:44:04
+361,152,107,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,337.3,1,,,2026-03-18T10:44:04
+362,153,108,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.912,Complete,0,0,1918.0,1,,,2026-03-18T15:17:15
+363,153,108,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,212.9,1,,,2026-03-18T15:17:15
+364,153,108,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-18T16:27:42
+365,154,109,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.65,Missing Information,1,0,4038.1,1,,,2026-03-19T11:25:52
+366,154,109,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,404.1,1,,,2026-03-19T11:25:52
+367,154,109,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-19T11:37:40
+368,155,110,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,721.9,1,,,2026-03-19T13:13:42
+369,155,110,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,200.7,1,,,2026-03-19T13:13:42
+370,156,111,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,728.1,1,,,2026-03-19T17:03:06
+371,156,111,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,197.8,1,,,2026-03-19T17:03:06
+372,156,111,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-19T17:32:57
+373,157,112,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,Needs Review,0,1,677.7,1,,,2026-03-20T09:09:07
+374,157,112,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,263.7,1,,,2026-03-20T09:09:07
+375,158,100,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,571.3,1,,,2026-03-21T15:13:56
+376,158,100,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,390.7,1,,,2026-03-21T15:13:56
+377,159,113,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.898,Complete,0,0,4021.9,1,,,2026-03-23T12:33:21
+378,159,113,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,270.5,1,,,2026-03-23T12:33:21
+379,159,113,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-23T13:44:44
+380,160,114,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.898,Missing Information,1,0,817.4,1,,,2026-03-25T16:11:23
+381,160,114,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,380.8,1,,,2026-03-25T16:11:23
+382,161,115,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,705.8,1,,,2026-03-25T16:14:10
+383,161,115,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,319.9,1,,,2026-03-25T16:14:10
+384,162,116,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1854.9,1,,,2026-03-25T16:48:09
+385,162,116,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,268.1,1,,,2026-03-25T16:48:09
+386,163,117,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.897,Complete,0,0,2202.6,1,,,2026-03-26T14:50:57
+387,163,117,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,245.9,1,,,2026-03-26T14:50:57
+388,164,118,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.941,Complete,0,0,1005.2,1,,,2026-03-26T17:32:05
+389,164,118,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,319.0,1,,,2026-03-26T17:32:05
+390,164,118,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-26T18:52:33
+391,165,110,extraction,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.82,Complete,0,0,2850.9,1,,,2026-03-27T13:23:56
+392,165,110,category_suggestion,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,308.8,1,,,2026-03-27T13:23:56
+393,166,113,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.79,Missing Information,1,0,1544.8,1,,,2026-03-27T13:57:44
+394,166,113,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,261.9,1,,,2026-03-27T13:57:44
+395,167,119,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,824.9,1,,,2026-03-27T14:42:50
+396,167,119,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,291.2,1,,,2026-03-27T14:42:50
+397,167,119,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-27T15:30:49
+398,168,120,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.768,Missing Information,1,0,1897.9,1,,,2026-03-27T17:14:18
+399,168,120,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,335.3,1,,,2026-03-27T17:14:18
+400,168,120,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-27T17:32:32
+401,170,108,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.912,Complete,0,0,2904.4,1,,,2026-03-28T17:43:42
+402,170,108,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,205.7,1,,,2026-03-28T17:43:42
+403,171,121,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2853.6,1,,,2026-03-30T15:09:05
+404,171,121,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,400.9,1,,,2026-03-30T15:09:05
+405,171,121,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-30T16:09:14
+406,172,122,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.735,Missing Information,2,0,4219.4,1,,,2026-03-31T13:06:09
+407,172,122,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,376.3,1,,,2026-03-31T13:06:09
+408,172,122,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-31T14:04:31
+409,173,123,extraction,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,Needs Review,0,1,903.9,1,,,2026-03-31T15:56:15
+410,173,123,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,388.9,1,,,2026-03-31T15:56:15
+411,173,123,summarisation,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-03-31T16:32:35
+412,174,124,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,567.7,1,,,2026-04-01T09:20:51
+413,174,124,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,196.6,1,,,2026-04-01T09:20:51
+414,175,,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,2452.6,1,,,2026-04-01T09:27:01
+415,175,,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,308.7,1,,,2026-04-01T09:27:01
+416,174,124,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-01T10:03:08
+417,176,125,extraction,pdf,clean,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.861,Complete,0,0,1980.5,1,,,2026-04-01T14:47:49
+418,176,125,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,223.3,1,,,2026-04-01T14:47:49
+419,176,125,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-01T16:28:11
+420,177,126,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1406.6,1,,,2026-04-01T16:34:19
+421,177,126,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,284.6,1,,,2026-04-01T16:34:19
+422,177,126,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-01T17:39:05
+423,178,127,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,806.2,1,,,2026-04-01T17:48:41
+424,178,127,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,230.9,1,,,2026-04-01T17:48:41
+425,178,127,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-01T18:38:11
+426,179,128,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.664,Missing Information,1,0,2119.2,1,,,2026-04-02T08:07:23
+427,179,128,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,184.0,1,,,2026-04-02T08:07:23
+428,179,128,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-02T09:16:41
+429,179,128,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-02T10:59:41
+430,179,128,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-02T11:25:41
+431,180,129,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,815.3,1,,,2026-04-02T13:11:15
+432,180,129,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,264.3,1,,,2026-04-02T13:11:15
+433,180,129,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-02T13:36:43
+434,181,130,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.898,Missing Information,1,0,698.6,1,,,2026-04-03T12:08:50
+435,181,130,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,208.3,1,,,2026-04-03T12:08:50
+436,182,131,extraction,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_ERROR,success,,,0.856,Complete,0,0,1275.3,1,,,2026-04-03T13:41:43
+437,182,131,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,206.3,1,,,2026-04-03T13:41:43
+438,183,,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,801.5,1,,,2026-04-03T13:43:08
+439,183,,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,275.8,1,,,2026-04-03T13:43:08
+440,182,131,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-03T14:40:36
+441,184,132,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,1785.0,1,,,2026-04-03T15:26:54
+442,184,132,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,201.6,1,,,2026-04-03T15:26:54
+443,185,129,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1144.3,1,,,2026-04-04T15:25:43
+444,185,129,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,304.4,1,,,2026-04-04T15:25:43
+445,186,131,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,2457.2,1,,,2026-04-04T16:46:36
+446,186,131,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,321.2,1,,,2026-04-04T16:46:36
+447,187,115,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.818,Complete,0,0,1986.2,1,,,2026-04-05T16:38:34
+448,187,115,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,385.0,1,,,2026-04-05T16:38:34
+449,188,133,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.948,Missing Information,1,0,760.6,1,,,2026-04-06T10:32:58
+450,188,133,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,190.3,1,,,2026-04-06T10:32:58
+451,188,133,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-06T12:21:52
+452,188,133,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.6,0,,,2026-04-06T14:29:52
+453,189,122,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,763.1,1,,,2026-04-06T15:27:31
+454,189,122,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,250.4,1,,,2026-04-06T15:27:31
+455,190,134,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.937,Complete,0,0,914.0,1,,,2026-04-06T16:15:17
+456,190,134,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.85,,,,266.6,1,,,2026-04-06T16:15:17
+457,191,135,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1774.3,1,,,2026-04-07T08:22:30
+458,191,135,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,222.6,1,,,2026-04-07T08:22:30
+459,191,135,assistant,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-07T09:10:05
+460,191,135,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-07T09:25:05
+461,192,136,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.84,Missing Information,1,0,2277.9,1,,,2026-04-07T09:40:32
+462,192,136,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,216.9,1,,,2026-04-07T09:40:32
+463,193,137,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,790.3,1,,,2026-04-07T10:22:12
+464,193,137,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,238.5,1,,,2026-04-07T10:22:12
+465,194,138,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1023.1,1,,,2026-04-07T11:06:08
+466,194,138,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,361.8,1,,,2026-04-07T11:06:08
+467,194,138,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-07T11:34:24
+468,191,135,assistant,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-07T11:36:05
+469,193,137,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-07T13:59:01
+470,195,139,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,740.8,1,,,2026-04-07T15:56:46
+471,195,139,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,333.8,1,,,2026-04-07T15:56:46
+472,196,,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1585.5,1,,,2026-04-07T16:58:05
+473,196,,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,231.4,1,,,2026-04-07T16:58:05
+474,195,139,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-07T16:59:12
+475,198,140,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,2639.1,1,,,2026-04-08T15:10:48
+476,198,140,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,259.7,1,,,2026-04-08T15:10:48
+477,198,140,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-08T15:59:29
+478,199,141,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,580.8,1,,,2026-04-09T09:11:08
+479,199,141,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,376.9,1,,,2026-04-09T09:11:08
+480,199,141,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-09T11:04:21
+481,200,142,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,742.5,1,,,2026-04-09T11:07:45
+482,200,142,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,350.3,1,,,2026-04-09T11:07:45
+483,200,142,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-09T11:38:24
+484,201,143,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,998.2,1,,,2026-04-10T15:31:09
+485,201,143,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,255.9,1,,,2026-04-10T15:31:09
+486,201,143,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-10T16:24:02
+487,201,143,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-10T19:44:02
+488,202,140,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.939,Complete,0,0,721.0,1,,,2026-04-11T19:14:29
+489,202,140,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.87,,,,284.7,1,,,2026-04-11T19:14:29
+490,203,144,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,853.0,1,,,2026-04-13T12:46:14
+491,203,144,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,244.5,1,,,2026-04-13T12:46:14
+492,204,145,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,569.3,1,,,2026-04-14T10:03:00
+493,204,145,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,339.3,1,,,2026-04-14T10:03:00
+494,205,146,extraction,pdf,degraded,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.672,Missing Information,1,0,8340.9,1,,,2026-04-14T10:50:54
+495,205,146,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,270.8,1,,,2026-04-14T10:50:54
+496,204,145,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-14T11:48:55
+497,206,147,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,862.9,1,,,2026-04-14T12:09:20
+498,206,147,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,317.3,1,,,2026-04-14T12:09:20
+499,205,146,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-14T12:39:55
+500,206,147,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-14T12:57:35
+501,206,147,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-14T14:06:35
+502,207,141,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.76,Needs Review,0,0,2321.9,1,,,2026-04-15T09:41:21
+503,207,141,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.87,,,,286.5,1,,,2026-04-15T09:41:21
+504,208,148,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,835.3,1,,,2026-04-15T13:58:12
+505,208,148,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,187.1,1,,,2026-04-15T13:58:12
+506,208,148,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-15T14:12:48
+507,209,149,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2652.2,1,,,2026-04-15T14:31:19
+508,209,149,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,256.8,1,,,2026-04-15T14:31:19
+509,209,149,summarisation,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-15T14:41:11
+510,210,150,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,560.2,1,,,2026-04-15T17:28:48
+511,210,150,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,365.2,1,,,2026-04-15T17:28:48
+512,210,150,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-15T20:27:40
+513,210,150,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-15T20:36:40
+514,211,151,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,2030.0,1,,,2026-04-16T09:17:05
+515,211,151,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,308.9,1,,,2026-04-16T09:17:05
+516,212,152,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,683.1,1,,,2026-04-16T09:26:40
+517,212,152,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,266.7,1,,,2026-04-16T09:26:40
+518,212,152,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-16T10:44:25
+519,212,152,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-16T13:23:25
+520,213,,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,653.4,1,,,2026-04-17T09:27:08
+521,213,,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,296.5,1,,,2026-04-17T09:27:08
+522,214,153,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.757,Missing Information,1,0,1042.8,1,,,2026-04-21T17:32:30
+523,214,153,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,266.8,1,,,2026-04-21T17:32:30
+524,215,154,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,1417.2,1,,,2026-04-23T08:22:13
+525,215,154,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,376.8,1,,,2026-04-23T08:22:13
+526,216,155,extraction,docx,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.861,Complete,0,0,6683.3,1,,,2026-04-23T17:23:14
+527,216,155,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,253.1,1,,,2026-04-23T17:23:14
+528,217,156,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.842,Missing Information,1,0,546.6,1,,,2026-04-23T17:35:08
+529,217,156,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,366.7,1,,,2026-04-23T17:35:08
+530,218,157,extraction,png,clean,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.848,Complete,0,0,3262.9,1,,,2026-04-23T17:58:06
+531,218,157,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.83,,,,374.2,1,,,2026-04-23T17:58:06
+532,217,156,summarisation,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-23T18:00:46
+533,217,156,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-23T19:44:46
+534,217,156,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-23T21:08:46
+535,219,158,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.84,Complete,0,0,2009.8,1,,,2026-04-24T08:29:15
+536,219,158,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,347.9,1,,,2026-04-24T08:29:15
+537,219,158,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-24T09:15:36
+538,220,159,extraction,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,Needs Review,0,1,1036.5,1,,,2026-04-24T14:37:58
+539,220,159,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,343.5,1,,,2026-04-24T14:37:58
+540,220,159,summarisation,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-24T15:44:52
+541,221,160,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,833.3,1,,,2026-04-24T17:28:50
+542,221,160,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,223.5,1,,,2026-04-24T17:28:50
+543,221,160,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-24T19:11:40
+544,222,161,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1045.7,1,,,2026-04-27T12:32:40
+545,222,161,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,337.1,1,,,2026-04-27T12:32:40
+546,223,162,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.84,Missing Information,2,0,4307.2,1,,,2026-04-27T17:08:40
+547,223,162,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,204.5,1,,,2026-04-27T17:08:40
+548,224,163,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.908,Complete,0,0,799.2,1,,,2026-04-28T08:06:57
+549,224,163,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,387.1,1,,,2026-04-28T08:06:57
+550,225,164,extraction,pdf,contradictory,primary,mock-primary,mock-fallback,1,PROVIDER_ERROR,success,,,0.821,Needs Review,0,1,1213.3,1,,,2026-04-28T14:00:02
+551,225,164,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.87,,,,287.8,1,,,2026-04-28T14:00:02
+552,225,164,summarisation,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-28T15:47:54
+553,226,165,extraction,jpg,degraded,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.672,Missing Information,2,0,4073.6,1,,,2026-04-29T13:37:03
+554,226,165,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,417.0,1,,,2026-04-29T13:37:03
+555,226,165,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-29T14:14:13
+556,227,166,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,721.1,1,,,2026-04-29T14:45:28
+557,227,166,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,332.4,1,,,2026-04-29T14:45:28
+558,227,166,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-29T15:37:11
+559,226,165,assistant,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-29T15:54:13
+560,226,165,assistant,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-29T16:31:13
+561,227,166,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-04-29T17:14:11
+562,227,166,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-29T18:46:11
+563,228,167,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.941,Complete,0,0,762.3,1,,,2026-04-30T08:22:08
+564,228,167,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,376.8,1,,,2026-04-30T08:22:08
+565,229,168,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.781,Missing Information,1,0,1078.2,1,,,2026-04-30T10:15:52
+566,229,168,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,409.2,1,,,2026-04-30T10:15:52
+567,230,169,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1975.4,1,,,2026-04-30T14:59:54
+568,230,169,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,270.3,1,,,2026-04-30T14:59:54
+569,230,169,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-04-30T15:31:25
+570,231,170,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1094.8,1,,,2026-05-01T10:44:40
+571,231,170,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,369.9,1,,,2026-05-01T10:44:40
+572,231,170,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-01T11:28:50
+573,232,171,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,2620.8,1,,,2026-05-01T15:02:56
+574,232,171,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,365.4,1,,,2026-05-01T15:02:56
+575,232,171,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-01T16:37:14
+576,232,171,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-01T19:04:14
+577,232,171,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-01T19:08:14
+578,233,167,extraction,pdf,degraded,supporting,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.664,Missing Information,1,0,7953.7,1,,,2026-05-03T11:24:12
+579,233,167,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.88,,,,400.7,1,,,2026-05-03T11:24:12
+580,234,172,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1067.3,1,,,2026-05-05T08:27:25
+581,234,172,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,207.1,1,,,2026-05-05T08:27:25
+582,235,173,extraction,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.906,Needs Review,0,1,1055.8,1,,,2026-05-05T12:53:08
+583,235,173,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,263.8,1,,,2026-05-05T12:53:08
+584,236,174,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,713.7,1,,,2026-05-06T08:37:01
+585,236,174,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,294.6,1,,,2026-05-06T08:37:01
+586,236,174,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-06T09:15:26
+587,237,175,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,767.3,1,,,2026-05-06T11:15:32
+588,237,175,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,354.7,1,,,2026-05-06T11:15:32
+589,238,176,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.811,Missing Information,1,0,2076.7,1,,,2026-05-06T11:48:22
+590,238,176,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,309.2,1,,,2026-05-06T11:48:22
+591,237,175,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-06T12:03:53
+592,239,177,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,553.4,1,,,2026-05-06T12:18:05
+593,239,177,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,384.0,1,,,2026-05-06T12:18:05
+594,238,176,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-06T13:17:16
+595,237,175,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-06T14:46:53
+596,237,175,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-06T15:26:53
+597,240,178,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.782,Missing Information,1,0,3068.7,1,,,2026-05-07T12:41:35
+598,240,178,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,270.6,1,,,2026-05-07T12:41:35
+599,241,179,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,530.0,1,,,2026-05-07T16:37:57
+600,241,179,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,335.8,1,,,2026-05-07T16:37:57
+601,241,179,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-07T17:47:16
+602,242,180,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,780.3,1,,,2026-05-08T12:52:15
+603,242,180,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,225.0,1,,,2026-05-08T12:52:15
+604,242,180,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-08T13:13:09
+605,243,178,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,3313.3,1,,,2026-05-08T15:47:05
+606,243,178,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,206.3,1,,,2026-05-08T15:47:05
+607,244,174,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,996.7,1,,,2026-05-10T09:07:26
+608,244,174,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,228.9,1,,,2026-05-10T09:07:26
+609,245,181,extraction,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_ERROR,success,,,0.851,Complete,0,0,1506.0,1,,,2026-05-11T09:14:44
+610,245,181,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,258.5,1,,,2026-05-11T09:14:44
+611,246,182,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,548.5,1,,,2026-05-11T09:56:12
+612,246,182,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,351.0,1,,,2026-05-11T09:56:12
+613,245,181,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-11T10:48:38
+614,247,183,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.729,Needs Review,0,0,4058.8,1,,,2026-05-11T17:18:01
+615,247,183,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,272.1,1,,,2026-05-11T17:18:01
+616,248,184,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.803,Missing Information,1,0,1400.9,1,,,2026-05-12T16:16:36
+617,248,184,category_suggestion,pdf,degraded,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6225.1,1,,,2026-05-12T16:16:36
+618,249,185,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.912,Complete,0,0,514.6,1,,,2026-05-12T16:20:05
+619,249,185,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,381.1,1,,,2026-05-12T16:20:05
+620,249,185,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-12T16:56:20
+621,250,186,extraction,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.703,Missing Information,1,0,3782.3,1,,,2026-05-12T17:22:25
+622,250,186,category_suggestion,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,358.3,1,,,2026-05-12T17:22:25
+623,250,186,summarisation,png,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-12T18:23:07
+624,251,177,extraction,jpg,clean,supporting,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.861,Complete,0,0,3399.9,1,,,2026-05-13T12:32:03
+625,251,177,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,225.0,1,,,2026-05-13T12:32:03
+626,252,187,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.887,Needs Review,0,0,748.1,1,,,2026-05-13T13:55:20
+627,252,187,category_suggestion,docx,missing_fields,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6284.7,1,,,2026-05-13T13:55:20
+628,253,188,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,850.4,1,,,2026-05-13T15:44:47
+629,253,188,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,276.8,1,,,2026-05-13T15:44:47
+630,253,188,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-13T16:41:27
+631,254,189,extraction,pdf,missing_fields,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.706,Missing Information,1,0,7030.2,1,,,2026-05-14T09:27:30
+632,254,189,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,264.8,1,,,2026-05-14T09:27:30
+633,254,189,assistant,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-14T11:52:16
+634,255,190,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,773.2,1,,,2026-05-14T16:25:29
+635,255,190,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,336.0,1,,,2026-05-14T16:25:29
+636,256,191,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1081.1,1,,,2026-05-14T17:41:09
+637,256,191,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,213.1,1,,,2026-05-14T17:41:09
+638,256,191,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-14T18:33:05
+639,256,191,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-14T19:31:05
+640,256,191,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-14T21:05:05
+641,257,192,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,674.4,1,,,2026-05-15T09:13:06
+642,257,192,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,236.1,1,,,2026-05-15T09:13:06
+643,258,193,extraction,png,degraded,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.455,Missing Information,3,0,8814.3,1,,,2026-05-15T10:00:07
+644,258,193,category_suggestion,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,230.9,1,,,2026-05-15T10:00:07
+645,259,194,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,584.8,1,,,2026-05-15T10:01:07
+646,259,194,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,285.2,1,,,2026-05-15T10:01:07
+647,257,192,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-15T10:01:37
+648,260,195,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,1015.6,1,,,2026-05-15T11:52:14
+649,260,195,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,230.6,1,,,2026-05-15T11:52:14
+650,260,195,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-15T13:12:52
+651,261,,extraction,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,Needs Review,0,1,933.7,1,,,2026-05-15T14:59:52
+652,261,,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,357.4,1,,,2026-05-15T14:59:52
+653,262,196,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1738.9,1,,,2026-05-15T15:20:11
+654,262,196,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,281.0,1,,,2026-05-15T15:20:11
+655,260,195,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-15T15:31:52
+656,262,196,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-15T16:41:52
+657,263,189,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,655.9,1,,,2026-05-16T13:30:16
+658,263,189,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.4,,,,225.2,1,,,2026-05-16T13:30:16
+659,264,,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,794.1,1,,,2026-05-17T09:07:26
+660,264,,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,416.0,1,,,2026-05-17T09:07:26
+661,265,181,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,994.7,1,,,2026-05-17T10:34:38
+662,265,181,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.86,,,,300.4,1,,,2026-05-17T10:34:38
+663,266,191,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.944,Complete,0,0,2015.6,1,,,2026-05-17T20:00:05
+664,266,191,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.92,,,,305.4,1,,,2026-05-17T20:00:05
+665,267,192,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,2836.6,1,,,2026-05-19T10:28:37
+666,267,192,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,318.5,1,,,2026-05-19T10:28:37
+667,268,197,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,759.7,1,,,2026-05-19T11:52:48
+668,268,197,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,289.8,1,,,2026-05-19T11:52:48
+669,268,197,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-19T13:25:28
+670,269,198,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,3013.8,1,,,2026-05-19T15:40:34
+671,269,198,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,367.7,1,,,2026-05-19T15:40:34
+672,269,198,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.2,0,,,2026-05-19T17:32:30
+673,269,198,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-19T18:02:30
+674,270,199,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,825.4,1,,,2026-05-20T10:53:53
+675,270,199,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,399.7,1,,,2026-05-20T10:53:53
+676,270,199,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-20T11:08:13
+677,271,200,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,869.6,1,,,2026-05-20T11:26:37
+678,271,200,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,233.8,1,,,2026-05-20T11:26:37
+679,272,201,extraction,docx,missing_fields,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.822,Missing Information,1,0,2056.7,1,,,2026-05-20T11:33:53
+680,272,201,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,245.7,1,,,2026-05-20T11:33:53
+681,273,202,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,649.2,1,,,2026-05-20T12:23:19
+682,273,202,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,198.7,1,,,2026-05-20T12:23:19
+683,272,201,summarisation,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-20T12:40:04
+684,271,200,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-20T13:26:31
+685,271,200,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-20T13:40:31
+686,274,203,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1008.3,1,,,2026-05-20T14:02:19
+687,274,203,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,373.6,1,,,2026-05-20T14:02:19
+688,275,204,extraction,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.861,Complete,0,0,6741.6,1,,,2026-05-20T16:52:12
+689,275,204,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,216.1,1,,,2026-05-20T16:52:12
+690,276,205,extraction,docx,clean,primary,mock-primary,mock-fallback,1,PROVIDER_ERROR,success,,,0.767,Missing Information,1,0,1053.4,1,,,2026-05-21T14:31:57
+691,276,205,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,241.6,1,,,2026-05-21T14:31:57
+692,277,199,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,2312.8,1,,,2026-05-22T15:04:13
+693,277,199,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,294.3,1,,,2026-05-22T15:04:13
+694,278,206,extraction,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.842,Missing Information,1,0,831.2,1,,,2026-05-22T15:37:59
+695,278,206,category_suggestion,pdf,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,294.8,1,,,2026-05-22T15:37:59
+696,279,,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.811,Missing Information,1,0,2017.0,1,,,2026-05-23T12:02:16
+697,279,,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,264.8,1,,,2026-05-23T12:02:16
+698,280,188,extraction,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.679,Missing Information,2,0,4115.8,1,,,2026-05-23T18:49:27
+699,280,188,category_suggestion,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.89,,,,375.7,1,,,2026-05-23T18:49:27
+700,281,207,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2673.9,1,,,2026-05-25T15:07:55
+701,281,207,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,357.0,1,,,2026-05-25T15:07:55
+702,282,208,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1118.8,1,,,2026-05-26T10:54:23
+703,282,208,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,271.7,1,,,2026-05-26T10:54:23
+704,283,209,extraction,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.844,Needs Review,0,1,1078.7,1,,,2026-05-26T11:56:48
+705,283,209,category_suggestion,pdf,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,254.0,1,,,2026-05-26T11:56:48
+706,284,210,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,749.0,1,,,2026-05-26T13:40:35
+707,284,210,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,334.7,1,,,2026-05-26T13:40:35
+708,284,210,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-26T14:30:54
+709,285,211,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,3342.8,1,,,2026-05-26T15:51:58
+710,285,211,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,352.5,1,,,2026-05-26T15:51:58
+711,285,211,summarisation,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-26T16:36:02
+712,284,210,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-26T16:50:54
+713,286,212,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.92,Complete,0,0,1491.3,1,,,2026-05-26T16:58:52
+714,286,212,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,190.4,1,,,2026-05-26T16:58:52
+715,286,212,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-26T17:17:21
+716,286,212,assistant,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.3,0,,,2026-05-26T19:00:21
+717,287,213,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,625.4,1,,,2026-05-27T08:27:43
+718,287,213,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,337.0,1,,,2026-05-27T08:27:43
+719,288,214,extraction,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.862,Complete,0,0,2821.2,1,,,2026-05-27T09:28:13
+720,288,214,category_suggestion,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,255.3,1,,,2026-05-27T09:28:13
+721,288,214,summarisation,jpg,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-27T10:24:45
+722,289,215,extraction,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.747,Needs Review,0,0,3981.9,1,,,2026-05-27T17:57:41
+723,289,215,category_suggestion,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.84,,,,292.7,1,,,2026-05-27T17:57:41
+724,289,215,summarisation,png,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-27T18:43:03
+725,290,216,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.913,Complete,0,0,624.8,1,,,2026-05-28T12:50:21
+726,290,216,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.91,,,,245.1,1,,,2026-05-28T12:50:21
+727,291,197,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.943,Complete,0,0,791.3,1,,,2026-05-28T13:14:28
+728,291,197,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.91,,,,416.9,1,,,2026-05-28T13:14:28
+729,290,216,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-28T13:24:49
+730,292,217,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1113.4,1,,,2026-05-29T09:19:09
+731,292,217,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,252.2,1,,,2026-05-29T09:19:09
+732,293,218,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1841.5,1,,,2026-05-29T09:55:59
+733,293,218,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,330.5,1,,,2026-05-29T09:55:59
+734,292,217,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-29T10:27:23
+735,292,217,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-05-29T11:10:23
+736,292,217,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-29T13:11:23
+737,293,218,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-05-29T13:13:31
+738,294,219,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2780.7,1,,,2026-05-29T13:56:56
+739,294,219,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,255.9,1,,,2026-05-29T13:56:56
+740,295,198,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.805,Missing Information,1,0,2058.1,1,,,2026-05-29T15:43:30
+741,295,198,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,194.3,1,,,2026-05-29T15:43:30
+742,296,,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,922.0,1,,,2026-05-31T13:11:09
+743,296,,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,403.6,1,,,2026-05-31T13:11:09
+744,297,220,extraction,pdf,clean,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.856,Complete,0,0,2078.5,1,,,2026-06-01T12:04:30
+745,297,220,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,235.6,1,,,2026-06-01T12:04:30
+746,297,220,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-06-01T12:19:49
+747,298,221,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,1022.9,1,,,2026-06-01T12:52:04
+748,298,221,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,188.7,1,,,2026-06-01T12:52:04
+749,299,222,extraction,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.902,Needs Review,0,1,603.7,1,,,2026-06-01T16:56:45
+750,299,222,category_suggestion,docx,contradictory,primary,mock-primary,mock-primary,0,,success,,,0.92,,,,416.9,1,,,2026-06-01T16:56:45
+751,300,223,extraction,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.948,Missing Information,1,0,2329.2,1,,,2026-06-02T09:48:07
+752,300,223,category_suggestion,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,407.3,1,,,2026-06-02T09:48:07
+753,301,224,extraction,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.737,Missing Information,2,0,2302.4,1,,,2026-06-02T11:12:25
+754,301,224,category_suggestion,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,356.6,1,,,2026-06-02T11:12:25
+755,301,224,summarisation,png,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-02T12:47:18
+756,302,225,extraction,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.789,Missing Information,1,0,2614.6,1,,,2026-06-02T16:49:16
+757,302,225,category_suggestion,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,297.0,1,,,2026-06-02T16:49:16
+758,302,225,summarisation,png,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-02T17:25:33
+759,303,,extraction,png,clean,primary,mock-primary,mock-fallback,1,PROVIDER_ERROR,success,,,0.861,Complete,0,0,2649.4,1,,,2026-06-03T10:17:31
+760,303,,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,293.4,1,,,2026-06-03T10:17:31
+761,304,214,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.939,Complete,0,0,3032.0,1,,,2026-06-03T11:52:45
+762,304,214,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.87,,,,406.5,1,,,2026-06-03T11:52:45
+763,305,226,extraction,docx,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.851,Complete,0,0,6628.2,1,,,2026-06-03T12:32:57
+764,305,226,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,297.8,1,,,2026-06-03T12:32:57
+765,305,226,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-03T13:00:02
+766,306,208,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,505.3,1,,,2026-06-04T13:18:14
+767,306,208,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,242.9,1,,,2026-06-04T13:18:14
+768,307,227,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2663.4,1,,,2026-06-04T16:10:44
+769,307,227,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,321.6,1,,,2026-06-04T16:10:44
+770,307,227,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-06-04T16:40:42
+771,308,216,extraction,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.597,Missing Information,2,0,3687.4,1,,,2026-06-05T14:00:49
+772,308,216,category_suggestion,jpg,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.84,,,,208.7,1,,,2026-06-05T14:00:49
+773,309,228,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,1112.1,1,,,2026-06-05T14:04:33
+774,309,228,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,349.6,1,,,2026-06-05T14:04:33
+775,309,228,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-05T14:46:34
+776,310,229,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,742.6,1,,,2026-06-05T14:53:02
+777,310,229,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,375.1,1,,,2026-06-05T14:53:02
+778,310,229,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-05T16:25:12
+779,311,230,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,666.6,1,,,2026-06-09T10:42:20
+780,311,230,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,285.2,1,,,2026-06-09T10:42:20
+781,311,230,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-09T11:42:46
+782,312,,extraction,docx,clean,primary,mock-primary,,1,PROVIDER_ERROR,error,ai_provider,AI_UNAVAILABLE,,,,,1645.9,1,,,2026-06-09T14:10:08
+783,313,231,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,535.7,1,782,,2026-06-09T16:31:08
+784,313,231,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,354.3,1,,,2026-06-09T16:31:08
+785,315,232,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.942,Missing Information,1,0,1455.5,1,,,2026-06-10T10:59:52
+786,315,232,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,367.4,1,,,2026-06-10T10:59:52
+787,315,232,summarisation,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-10T12:20:22
+788,316,233,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,939.8,1,,,2026-06-10T16:36:32
+789,316,233,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,292.1,1,,,2026-06-10T16:36:32
+790,316,233,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-10T17:05:34
+791,317,,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,792.1,1,,,2026-06-11T09:23:23
+792,317,,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,228.4,1,,,2026-06-11T09:23:23
+793,318,234,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1109.1,1,,,2026-06-11T10:04:22
+794,318,234,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,276.0,1,,,2026-06-11T10:04:22
+795,319,235,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,525.5,1,,,2026-06-11T14:16:45
+796,319,235,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,375.7,1,,,2026-06-11T14:16:45
+797,319,235,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-11T14:41:26
+798,319,235,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-11T15:21:26
+799,320,236,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.841,Missing Information,1,0,1606.1,1,,,2026-06-11T15:44:06
+800,320,236,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,359.8,1,,,2026-06-11T15:44:06
+801,321,231,extraction,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.946,Complete,0,0,2130.0,1,,,2026-06-11T16:34:51
+802,321,231,category_suggestion,pdf,degraded,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,237.4,1,,,2026-06-11T16:34:51
+803,322,237,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1947.2,1,,,2026-06-11T17:38:09
+804,322,237,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,236.1,1,,,2026-06-11T17:38:09
+805,323,238,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.77,Missing Information,2,0,1879.9,1,,,2026-06-11T17:39:18
+806,323,238,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,194.2,1,,,2026-06-11T17:39:18
+807,319,235,assistant,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-11T17:40:26
+808,322,237,summarisation,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-11T18:27:28
+809,324,229,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.942,Complete,0,0,697.5,1,,,2026-06-11T19:08:12
+810,324,229,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.9,,,,390.5,1,,,2026-06-11T19:08:12
+811,322,237,assistant,png,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-11T21:32:28
+812,325,239,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,947.3,1,,,2026-06-15T10:09:24
+813,325,239,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,356.1,1,,,2026-06-15T10:09:24
+814,325,239,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-15T10:59:44
+815,325,239,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-06-15T11:11:44
+816,325,239,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-15T13:04:44
+817,326,240,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,775.5,1,,,2026-06-15T13:49:26
+818,326,240,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,364.9,1,,,2026-06-15T13:49:26
+819,327,241,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,788.8,1,,,2026-06-15T13:52:37
+820,327,241,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,374.2,1,,,2026-06-15T13:52:37
+821,326,240,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-15T14:19:06
+822,328,227,extraction,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1107.5,1,,,2026-06-15T19:25:42
+823,328,227,category_suggestion,pdf,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,334.9,1,,,2026-06-15T19:25:42
+824,329,233,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,581.1,1,,,2026-06-15T19:45:34
+825,329,233,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,307.8,1,,,2026-06-15T19:45:34
+826,330,242,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2764.8,1,,,2026-06-16T15:49:21
+827,330,242,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,228.3,1,,,2026-06-16T15:49:21
+828,331,235,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,758.2,1,,,2026-06-16T16:20:26
+829,331,235,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,226.4,1,,,2026-06-16T16:20:26
+830,330,242,summarisation,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-06-16T16:54:58
+831,332,243,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1092.5,1,,,2026-06-17T12:05:55
+832,332,243,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,225.5,1,,,2026-06-17T12:05:55
+833,333,244,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,751.2,1,,,2026-06-17T17:59:31
+834,333,244,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,290.0,1,,,2026-06-17T17:59:31
+835,334,245,extraction,png,clean,primary,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.861,Complete,0,0,4135.1,1,,,2026-06-18T10:54:57
+836,334,245,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,267.7,1,,,2026-06-18T10:54:57
+837,335,246,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,693.9,1,,,2026-06-18T13:39:32
+838,335,246,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,229.3,1,,,2026-06-18T13:39:32
+839,335,246,summarisation,docx,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-18T15:07:15
+840,336,247,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.887,Complete,0,0,665.2,1,,,2026-06-19T10:40:56
+841,336,247,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.4,,,,362.2,1,,,2026-06-19T10:40:56
+842,337,248,extraction,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.731,Missing Information,1,0,1808.6,1,,,2026-06-19T17:37:56
+843,337,248,category_suggestion,pdf,degraded,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,288.4,1,,,2026-06-19T17:37:56
+844,338,247,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,615.7,1,,,2026-06-20T11:44:48
+845,338,247,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,240.2,1,,,2026-06-20T11:44:48
+846,339,249,extraction,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2988.1,1,,,2026-06-22T08:36:29
+847,339,249,category_suggestion,png,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,256.5,1,,,2026-06-22T08:36:29
+848,340,250,extraction,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.808,Missing Information,1,0,3048.4,1,,,2026-06-22T13:53:22
+849,340,250,category_suggestion,png,degraded,primary,mock-primary,mock-primary,0,,success,,,0.89,,,,354.3,1,,,2026-06-22T13:53:22
+850,342,244,extraction,docx,clean,supporting,mock-primary,mock-fallback,1,INVALID_OUTPUT,success,,,0.861,Complete,0,0,2097.4,1,,,2026-06-22T20:08:15
+851,342,244,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,274.1,1,,,2026-06-22T20:08:15
+852,343,251,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.937,Complete,0,0,976.4,1,,,2026-06-23T11:34:14
+853,343,251,category_suggestion,pdf,clean,primary,mock-primary,mock-fallback,1,PROVIDER_TIMEOUT,success,,,0.85,,,,6410.6,1,,,2026-06-23T11:34:14
+854,343,251,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-23T13:14:29
+855,344,252,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.918,Complete,0,0,827.1,1,,,2026-06-23T13:57:03
+856,344,252,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,307.0,1,,,2026-06-23T13:57:03
+857,344,252,summarisation,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-23T15:43:22
+858,345,253,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.842,Missing Information,1,0,645.8,1,,,2026-06-25T14:09:54
+859,345,253,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,237.7,1,,,2026-06-25T14:09:54
+860,345,253,summarisation,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-25T15:55:41
+861,346,254,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,904.1,1,,,2026-06-25T17:42:37
+862,346,254,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,409.7,1,,,2026-06-25T17:42:37
+863,345,253,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-25T17:45:41
+864,346,254,assistant,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-25T18:37:09
+865,347,255,extraction,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,3071.0,1,,,2026-06-26T08:49:15
+866,347,255,category_suggestion,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,210.8,1,,,2026-06-26T08:49:15
+867,347,255,summarisation,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-26T08:53:57
+868,348,256,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.792,Missing Information,1,0,521.0,1,,,2026-06-26T09:10:59
+869,348,256,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,397.0,1,,,2026-06-26T09:10:59
+870,349,257,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.837,Missing Information,1,0,689.5,1,,,2026-06-26T10:28:27
+871,349,257,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.9,,,,351.6,1,,,2026-06-26T10:28:27
+872,347,255,assistant,jpg,clean,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-26T10:53:57
+873,349,257,summarisation,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-26T10:57:20
+874,350,258,extraction,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,617.8,1,,,2026-06-26T13:17:36
+875,350,258,category_suggestion,docx,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,305.1,1,,,2026-06-26T13:17:36
+876,351,259,extraction,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.938,Complete,0,0,1577.6,1,,,2026-06-26T13:35:50
+877,351,259,category_suggestion,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,0.86,,,,382.5,1,,,2026-06-26T13:35:50
+878,351,259,summarisation,pdf,multipage,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-26T14:50:27
+879,352,242,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2425.0,1,,,2026-06-26T16:00:58
+880,352,242,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,255.3,1,,,2026-06-26T16:00:58
+881,353,260,extraction,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.737,Missing Information,2,0,833.7,1,,,2026-06-26T16:05:55
+882,353,260,category_suggestion,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,220.2,1,,,2026-06-26T16:05:55
+883,353,260,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.0,0,,,2026-06-26T18:50:22
+884,353,260,assistant,docx,missing_fields,primary,mock-primary,mock-primary,0,,success,,,,,,,0.1,0,,,2026-06-26T19:10:22
+885,354,250,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.939,Complete,0,0,778.2,1,,,2026-06-27T16:18:17
+886,354,250,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.87,,,,340.5,1,,,2026-06-27T16:18:17
+887,355,245,extraction,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,2819.6,1,,,2026-06-29T11:08:33
+888,355,245,category_suggestion,jpg,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,297.4,1,,,2026-06-29T11:08:33
+889,356,256,extraction,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,672.8,1,,,2026-06-30T09:29:54
+890,356,256,category_suggestion,docx,clean,supporting,mock-primary,mock-primary,0,,success,,,0.95,,,,238.9,1,,,2026-06-30T09:29:54
+891,357,,extraction,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.948,Complete,0,0,1089.4,1,,,2026-07-15T18:13:09
+892,357,,category_suggestion,pdf,clean,primary,mock-primary,mock-primary,0,,success,,,0.95,,,,185.3,1,,,2026-07-15T18:13:09

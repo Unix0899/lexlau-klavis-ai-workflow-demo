@@ -1,0 +1,256 @@
+createOrReplace
+
+	ref table FactAIRuns
+
+		measure 'Total AI Runs' = COUNTROWS ( FactAIRuns )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Successful AI Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[status] = "success" )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Failed AI Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[status] = "error" )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'AI Success Rate %' = DIVIDE ( [Successful AI Runs], [Total AI Runs] )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Extraction Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[task] = "extraction" )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Successful Extractions' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[task] = "extraction", FactAIRuns[status] = "success" )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Extraction Success Rate %' = DIVIDE ( [Successful Extractions], [Extraction Runs] )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Average Confidence' = CALCULATE ( AVERAGE ( FactAIRuns[confidence_score] ), FactAIRuns[task] = "extraction", FactAIRuns[status] = "success" )
+			formatString: "0.00"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Average Processing Time' = CALCULATE ( AVERAGE ( FactAIRuns[processing_ms] ), FactAIRuns[task] = "extraction" )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Fallback Runs' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[task] = "extraction", FactAIRuns[fallback_used] = 1 )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Fallback Rate %' = DIVIDE ( [Fallback Runs], [Extraction Runs] )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Error Rate %' = DIVIDE ( CALCULATE ( [Failed AI Runs], FactAIRuns[task] = "extraction" ), [Extraction Runs] )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Human Review Cases' = CALCULATE ( COUNTROWS ( FactAIRuns ), FactAIRuns[needs_review] = 1 )
+			formatString: "#,0"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Human Review Rate %' = DIVIDE ( [Human Review Cases], [Successful Extractions] )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'PDF Success Rate %' = CALCULATE ( [Extraction Success Rate %], DimDocumentType[file_family] = "PDF" )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'DOCX Success Rate %' = CALCULATE ( [Extraction Success Rate %], DimDocumentType[file_family] = "DOCX" )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactAIRuns
+
+		measure 'Image Success Rate %' = CALCULATE ( [Extraction Success Rate %], DimDocumentType[file_family] = "Image" )
+			formatString: "0.0%"
+			displayFolder: 1 AI runs
+
+	ref table FactFieldExtraction
+
+		measure 'Scored Fields' = SUM ( FactFieldExtraction[is_scored] )
+			formatString: "#,0"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Correct Fields' = SUM ( FactFieldExtraction[is_correct] )
+			formatString: "#,0"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Field Accuracy %' = DIVIDE ( [Correct Fields], [Scored Fields] )
+			formatString: "0.0%"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Completeness %' = DIVIDE ( SUM ( FactFieldExtraction[found_when_present] ), SUM ( FactFieldExtraction[expected_present] ) )
+			formatString: "0.0%"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Missing Fields' = SUM ( FactFieldExtraction[is_missing] )
+			formatString: "#,0"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Missing Rate %' = DIVIDE ( [Missing Fields], COUNTROWS ( FactFieldExtraction ) )
+			formatString: "0.0%"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Conflicting Fields' = SUM ( FactFieldExtraction[has_conflict] )
+			formatString: "#,0"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Avg Field Confidence' = CALCULATE ( AVERAGE ( FactFieldExtraction[confidence] ), FactFieldExtraction[is_missing] = 0 )
+			formatString: "0.00"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Manual Corrections' = SUM ( FactFieldExtraction[was_corrected] )
+			formatString: "#,0"
+			displayFolder: 2 Field quality
+
+	ref table FactFieldExtraction
+
+		measure 'Manual Correction Rate %' = DIVIDE ( [Manual Corrections], SUM ( FactFieldExtraction[is_reviewed] ) )
+			formatString: "0.0%"
+			displayFolder: 2 Field quality
+
+	ref table FactTestResults
+
+		measure 'Tests Executed' = COUNTROWS ( FactTestResults )
+			formatString: "#,0"
+			displayFolder: 3 Testing
+
+	ref table FactTestResults
+
+		measure 'Tests Passed' = SUM ( FactTestResults[is_pass] )
+			formatString: "#,0"
+			displayFolder: 3 Testing
+
+	ref table FactTestResults
+
+		measure 'Tests Failed' = SUM ( FactTestResults[is_fail] )
+			formatString: "#,0"
+			displayFolder: 3 Testing
+
+	ref table FactTestResults
+
+		measure 'Test Pass Rate %' = DIVIDE ( [Tests Passed], [Tests Executed] )
+			formatString: "0.0%"
+			displayFolder: 3 Testing
+
+	ref table FactTestResults
+
+		measure 'Regression Failures' = SUM ( FactTestResults[is_regression] )
+			formatString: "#,0"
+			displayFolder: 3 Testing
+
+	ref table FactTestResults
+
+		measure 'Latest Test Pass Rate %' =
+				VAR LastRun = CALCULATE ( MAX ( FactTestResults[run_order] ), ALL ( FactTestResults ) )
+				RETURN
+				    CALCULATE ( [Test Pass Rate %], FactTestResults[run_order] = LastRun )
+			formatString: "0.0%"
+			displayFolder: 3 Testing
+
+	ref table FactTestResults
+
+		measure 'Test Runs' = DISTINCTCOUNT ( FactTestResults[test_run_id] )
+			formatString: "#,0"
+			displayFolder: 3 Testing
+
+	ref table FactHumanReview
+
+		measure 'Reviews' = CALCULATE ( COUNTROWS ( FactHumanReview ), FactHumanReview[review_type] = "intake validation" )
+			formatString: "#,0"
+			displayFolder: 4 Human review
+
+	ref table FactHumanReview
+
+		measure 'Reviews With Corrections' = CALCULATE ( [Reviews], FactHumanReview[decision] = "Approved with corrections" )
+			formatString: "#,0"
+			displayFolder: 4 Human review
+
+	ref table FactHumanReview
+
+		measure 'Reviews With Corrections %' = DIVIDE ( [Reviews With Corrections], [Reviews] )
+			formatString: "0.0%"
+			displayFolder: 4 Human review
+
+	ref table FactHumanReview
+
+		measure 'Avg Review Time' = CALCULATE ( AVERAGE ( FactHumanReview[review_seconds] ), FactHumanReview[review_type] = "intake validation" )
+			formatString: "0"
+			displayFolder: 4 Human review
+
+	ref table FactHumanReview
+
+		measure 'Category Changes' = SUM ( FactHumanReview[category_changed] )
+			formatString: "#,0"
+			displayFolder: 4 Human review
+
+	ref table FactAuditEvents
+
+		measure 'Audit Events' = COUNTROWS ( FactAuditEvents )
+			formatString: "#,0"
+			displayFolder: 4 Human review
+
+	ref table FactAuditEvents
+
+		measure 'Files Rejected' = CALCULATE ( COUNTROWS ( FactAuditEvents ), FactAuditEvents[event_type] = "file_rejected" )
+			formatString: "#,0"
+			displayFolder: 4 Human review
+
+	ref table FactAuditEvents
+
+		measure 'Duplicates Blocked' = CALCULATE ( COUNTROWS ( FactAuditEvents ), FactAuditEvents[event_group] = "Duplicate prevention" )
+			formatString: "#,0"
+			displayFolder: 4 Human review

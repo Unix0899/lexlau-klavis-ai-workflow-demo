@@ -1,0 +1,354 @@
+review_id,case_id,date_key,document_type_id,reviewer,review_type,decision,intake_status,fields_reviewed,fields_corrected,category_changed,review_seconds,is_simulated
+1,1,20260105,11,reviewer_01,intake validation,Approved,Complete,9,0,0,47,1
+2,2,20260106,10,reviewer_02,intake validation,Approved with corrections,Complete,9,3,0,118,1
+3,3,20260106,3,reviewer_02,intake validation,Approved with corrections,Missing Information,9,3,0,156,1
+4,4,20260106,1,reviewer_03,intake validation,Approved,Complete,9,0,0,71,1
+5,5,20260107,13,reviewer_04,intake validation,Approved,Missing Information,9,0,0,78,1
+6,6,20260107,11,reviewer_02,intake validation,Approved,Complete,9,0,0,55,1
+7,7,20260109,1,reviewer_01,intake validation,Approved,Complete,9,0,0,72,1
+8,8,20260109,1,reviewer_03,intake validation,Approved,Complete,9,0,0,55,1
+9,9,20260109,4,reviewer_04,intake validation,Approved,Missing Information,9,0,0,65,1
+10,10,20260112,12,reviewer_02,intake validation,Approved with corrections,Missing Information,9,2,0,98,1
+11,11,20260113,4,reviewer_03,intake validation,Approved,Missing Information,9,0,0,72,1
+12,12,20260114,1,reviewer_04,intake validation,Approved,Complete,9,0,0,52,1
+13,13,20260114,1,reviewer_04,intake validation,Approved,Complete,9,0,0,70,1
+14,14,20260116,2,reviewer_01,intake validation,Approved,Complete,9,0,0,41,1
+15,15,20260116,3,reviewer_02,intake validation,Approved,Complete,9,0,0,38,1
+16,16,20260119,2,reviewer_04,intake validation,Approved,Complete,9,0,0,64,1
+17,17,20260119,11,reviewer_04,intake validation,Approved,Complete,9,0,0,46,1
+18,18,20260120,3,reviewer_04,intake validation,Approved with corrections,Complete,9,2,0,86,1
+19,19,20260121,1,reviewer_04,intake validation,Approved,Complete,9,0,0,58,1
+20,20,20260121,11,reviewer_03,intake validation,Approved,Complete,9,0,0,50,1
+21,21,20260122,1,reviewer_04,intake validation,Approved,Complete,9,0,0,68,1
+22,22,20260122,10,reviewer_03,intake validation,Approved with corrections,Missing Information,9,2,0,128,1
+23,23,20260123,1,reviewer_04,intake validation,Approved,Complete,9,0,0,64,1
+24,24,20260126,2,reviewer_03,intake validation,Approved,Complete,9,0,0,63,1
+25,25,20260127,2,reviewer_01,intake validation,Approved,Complete,9,0,0,59,1
+26,26,20260128,2,reviewer_04,intake validation,Approved,Complete,9,0,0,60,1
+27,27,20260128,9,reviewer_03,intake validation,Approved with corrections,Complete,9,1,1,88,1
+28,28,20260130,1,reviewer_04,intake validation,Approved with corrections,Complete,9,1,1,96,1
+29,29,20260203,9,reviewer_02,intake validation,Approved,Complete,9,0,0,43,1
+30,30,20260204,1,reviewer_01,intake validation,Approved,Complete,9,0,0,70,1
+31,31,20260204,1,reviewer_04,intake validation,Approved,Complete,9,0,0,69,1
+32,32,20260205,1,reviewer_04,intake validation,Approved,Complete,9,0,0,36,1
+33,33,20260206,2,reviewer_02,intake validation,Approved,Complete,9,0,0,70,1
+34,34,20260206,4,reviewer_03,intake validation,Approved with corrections,Missing Information,9,1,1,87,1
+35,35,20260206,1,reviewer_01,intake validation,Approved,Complete,9,0,0,72,1
+36,36,20260206,1,reviewer_04,intake validation,Approved,Complete,9,0,0,73,1
+37,37,20260209,1,reviewer_04,intake validation,Approved,Complete,9,0,0,36,1
+38,38,20260210,3,reviewer_01,intake validation,Approved with corrections,Missing Information,9,4,0,178,1
+39,39,20260213,4,reviewer_02,intake validation,Approved,Missing Information,9,0,0,90,1
+40,4,20260215,1,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+41,40,20260216,11,reviewer_02,intake validation,Approved,Complete,9,0,0,52,1
+42,24,20260216,2,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+43,41,20260216,6,reviewer_03,intake validation,Approved,Complete,9,0,0,72,1
+44,42,20260216,7,reviewer_02,intake validation,Approved,Missing Information,9,0,0,81,1
+45,43,20260216,8,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,58,1
+46,44,20260216,6,reviewer_01,intake validation,Approved,Complete,9,0,0,38,1
+47,45,20260217,7,reviewer_02,intake validation,Approved,Missing Information,9,0,0,71,1
+48,46,20260217,3,reviewer_04,intake validation,Approved with corrections,Complete,9,2,0,116,1
+49,47,20260217,6,reviewer_02,intake validation,Approved,Complete,9,0,0,37,1
+50,48,20260217,6,reviewer_01,intake validation,Approved,Complete,9,0,0,55,1
+51,49,20260217,2,reviewer_03,intake validation,Approved,Complete,9,0,0,38,1
+52,50,20260217,6,reviewer_04,intake validation,Approved,Complete,9,0,0,53,1
+53,51,20260218,6,reviewer_03,intake validation,Approved,Complete,9,0,0,73,1
+54,52,20260218,8,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,80,1
+55,53,20260218,7,reviewer_02,intake validation,Approved,Missing Information,9,0,0,65,1
+56,54,20260218,6,reviewer_01,intake validation,Approved,Complete,9,0,0,45,1
+57,55,20260218,8,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,87,1
+58,56,20260218,6,reviewer_01,intake validation,Approved,Complete,9,0,0,40,1
+59,57,20260218,6,reviewer_03,intake validation,Approved,Complete,9,0,0,38,1
+60,58,20260218,6,reviewer_04,intake validation,Approved,Complete,9,0,0,73,1
+61,59,20260218,6,reviewer_03,intake validation,Approved,Complete,9,0,0,60,1
+62,60,20260218,1,reviewer_02,intake validation,Approved,Complete,9,0,0,65,1
+63,61,20260218,8,reviewer_04,intake validation,Approved with corrections,Needs Review,9,1,0,82,1
+64,62,20260218,6,reviewer_01,intake validation,Approved,Complete,9,0,0,53,1
+65,63,20260219,6,reviewer_03,intake validation,Approved,Complete,9,0,0,44,1
+66,64,20260219,6,reviewer_04,intake validation,Approved,Complete,9,0,0,70,1
+67,65,20260219,6,reviewer_03,intake validation,Approved,Complete,9,0,0,60,1
+68,66,20260219,8,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,96,1
+69,67,20260219,6,reviewer_03,intake validation,Approved,Complete,9,0,0,38,1
+70,68,20260219,4,reviewer_01,intake validation,Approved,Needs Review,9,0,0,46,1
+71,69,20260219,11,reviewer_02,intake validation,Approved,Complete,9,0,0,61,1
+72,70,20260219,7,reviewer_01,intake validation,Approved,Missing Information,9,0,0,73,1
+73,71,20260219,3,reviewer_03,intake validation,Approved with corrections,Complete,9,3,0,133,1
+74,72,20260220,1,reviewer_01,intake validation,Approved with corrections,Complete,9,1,1,92,1
+75,13,20260220,1,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+76,10,20260221,12,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+77,73,20260223,12,reviewer_01,intake validation,Approved with corrections,Missing Information,9,3,0,136,1
+78,14,20260223,2,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+79,3,20260224,3,reviewer_01,post creation edit,Approved,Missing Information,1,0,0,,0
+80,74,20260225,1,reviewer_02,intake validation,Approved,Complete,9,0,0,66,1
+81,1,20260226,11,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+82,75,20260226,8,reviewer_03,intake validation,Approved with corrections,Needs Review,9,1,0,75,1
+83,76,20260227,1,reviewer_01,intake validation,Approved,Complete,9,0,0,73,1
+84,33,20260227,2,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+85,9,20260301,4,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+86,77,20260302,8,reviewer_04,intake validation,Approved with corrections,Needs Review,9,1,0,66,1
+87,78,20260302,11,reviewer_03,intake validation,Approved,Complete,9,0,0,63,1
+88,79,20260303,10,reviewer_04,intake validation,Approved with corrections,Needs Review,9,4,0,140,1
+89,80,20260303,2,reviewer_03,intake validation,Approved,Complete,9,0,0,72,1
+90,81,20260303,1,reviewer_01,intake validation,Approved,Complete,9,0,0,68,1
+91,82,20260304,6,reviewer_03,intake validation,Approved,Complete,9,0,0,50,1
+92,83,20260304,6,reviewer_01,intake validation,Approved,Complete,9,0,0,70,1
+93,84,20260305,1,reviewer_02,intake validation,Approved,Complete,9,0,0,47,1
+94,85,20260305,6,reviewer_03,intake validation,Approved,Complete,9,0,0,38,1
+95,86,20260305,2,reviewer_04,intake validation,Approved with corrections,Missing Information,9,1,0,75,1
+96,87,20260306,11,reviewer_04,intake validation,Approved with corrections,Missing Information,9,1,0,74,1
+97,88,20260306,1,reviewer_04,intake validation,Approved,Complete,9,0,0,65,1
+98,89,20260306,11,reviewer_04,intake validation,Approved,Complete,9,0,0,64,1
+99,90,20260306,3,reviewer_03,intake validation,Approved,Complete,9,0,0,45,1
+100,34,20260308,4,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+101,91,20260309,8,reviewer_01,intake validation,Approved with corrections,Needs Review,9,1,0,74,1
+102,45,20260310,7,reviewer_01,post creation edit,Approved,Missing Information,1,0,0,,0
+103,92,20260310,11,reviewer_02,intake validation,Approved,Complete,9,0,0,66,1
+104,93,20260311,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,63,1
+105,46,20260312,3,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+106,94,20260312,3,reviewer_01,intake validation,Approved with corrections,Missing Information,9,2,0,98,1
+107,53,20260313,7,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+108,95,20260313,11,reviewer_03,intake validation,Approved,Complete,9,0,0,56,1
+109,96,20260313,1,reviewer_03,intake validation,Approved,Complete,9,0,0,55,1
+110,97,20260313,6,reviewer_02,intake validation,Approved,Complete,9,0,0,38,1
+111,98,20260313,8,reviewer_03,intake validation,Approved with corrections,Needs Review,9,1,0,71,1
+112,61,20260314,8,reviewer_01,post creation edit,Approved,Needs Review,1,0,0,,0
+113,99,20260316,9,reviewer_03,intake validation,Approved,Complete,9,0,0,35,1
+114,100,20260316,5,reviewer_04,intake validation,Approved with corrections,Needs Review,9,1,0,92,1
+115,101,20260316,3,reviewer_01,intake validation,Approved with corrections,Complete,9,1,0,92,1
+116,102,20260317,5,reviewer_03,intake validation,Approved with corrections,Needs Review,9,1,0,75,1
+117,103,20260317,8,reviewer_01,intake validation,Approved with corrections,Needs Review,9,1,0,67,1
+118,104,20260317,1,reviewer_03,intake validation,Approved,Complete,9,0,0,64,1
+119,54,20260318,6,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+120,105,20260318,3,reviewer_03,intake validation,Approved with corrections,Missing Information,9,4,0,136,1
+121,106,20260318,1,reviewer_02,intake validation,Approved,Complete,9,0,0,39,1
+122,107,20260318,1,reviewer_01,intake validation,Approved,Complete,9,0,0,73,1
+123,108,20260318,2,reviewer_02,intake validation,Approved,Complete,9,0,0,57,1
+124,109,20260319,10,reviewer_04,intake validation,Approved with corrections,Missing Information,9,5,0,175,1
+125,110,20260319,6,reviewer_03,intake validation,Approved,Complete,9,0,0,53,1
+126,57,20260319,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+127,8,20260319,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+128,111,20260319,6,reviewer_01,intake validation,Approved,Complete,9,0,0,59,1
+129,112,20260320,8,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,58,1
+130,49,20260320,2,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+131,23,20260321,1,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+132,31,20260321,1,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+133,113,20260323,10,reviewer_02,intake validation,Approved with corrections,Complete,9,2,0,96,1
+134,29,20260325,9,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+135,114,20260325,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,58,1
+136,115,20260325,6,reviewer_02,intake validation,Approved,Complete,9,0,0,66,1
+137,116,20260325,2,reviewer_04,intake validation,Approved,Complete,9,0,0,35,1
+138,117,20260326,3,reviewer_04,intake validation,Approved with corrections,Complete,9,1,0,60,1
+139,118,20260326,1,reviewer_02,intake validation,Approved,Complete,9,0,0,59,1
+140,119,20260327,6,reviewer_04,intake validation,Approved,Complete,9,0,0,69,1
+141,20,20260327,11,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+142,120,20260327,3,reviewer_01,intake validation,Approved with corrections,Missing Information,9,4,0,136,1
+143,28,20260327,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+144,48,20260329,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+145,121,20260330,11,reviewer_04,intake validation,Approved,Complete,9,0,0,52,1
+146,86,20260330,2,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+147,122,20260331,10,reviewer_03,intake validation,Approved with corrections,Missing Information,9,5,0,197,1
+148,41,20260331,6,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+149,32,20260331,1,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+150,123,20260331,5,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,61,1
+151,62,20260331,6,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+152,124,20260401,6,reviewer_01,intake validation,Approved,Complete,9,0,0,73,1
+153,56,20260401,6,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+154,125,20260401,1,reviewer_01,intake validation,Approved,Complete,9,0,0,74,1
+155,126,20260401,2,reviewer_03,intake validation,Approved,Complete,9,0,0,52,1
+156,127,20260401,6,reviewer_04,intake validation,Approved,Complete,9,0,0,37,1
+157,128,20260402,3,reviewer_03,intake validation,Approved with corrections,Missing Information,9,5,0,185,1
+158,129,20260402,6,reviewer_02,intake validation,Approved,Complete,9,0,0,59,1
+159,130,20260403,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,51,1
+160,131,20260403,1,reviewer_03,intake validation,Approved,Complete,9,0,0,51,1
+161,132,20260403,2,reviewer_01,intake validation,Approved,Complete,9,0,0,35,1
+162,79,20260404,10,reviewer_01,post creation edit,Approved,Needs Review,1,0,0,,0
+163,98,20260404,8,reviewer_04,post creation edit,Approved,Needs Review,1,0,0,,0
+164,90,20260405,3,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+165,133,20260406,7,reviewer_04,intake validation,Approved,Missing Information,9,0,0,64,1
+166,134,20260406,1,reviewer_01,intake validation,Approved,Complete,9,0,0,46,1
+167,135,20260407,2,reviewer_01,intake validation,Approved,Complete,9,0,0,60,1
+168,136,20260407,3,reviewer_02,intake validation,Approved with corrections,Missing Information,9,2,0,125,1
+169,137,20260407,6,reviewer_02,intake validation,Approved,Complete,9,0,0,63,1
+170,138,20260407,1,reviewer_04,intake validation,Approved,Complete,9,0,0,68,1
+171,139,20260407,6,reviewer_03,intake validation,Approved,Complete,9,0,0,43,1
+172,140,20260408,11,reviewer_02,intake validation,Approved,Complete,9,0,0,65,1
+173,35,20260408,1,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+174,65,20260409,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+175,141,20260409,6,reviewer_03,intake validation,Approved,Complete,9,0,0,36,1
+176,142,20260409,6,reviewer_02,intake validation,Approved,Complete,9,0,0,43,1
+177,143,20260410,1,reviewer_02,intake validation,Approved,Complete,9,0,0,70,1
+178,144,20260413,1,reviewer_03,intake validation,Approved,Complete,9,0,0,48,1
+179,74,20260413,1,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+180,145,20260414,6,reviewer_04,intake validation,Approved,Complete,9,0,0,66,1
+181,146,20260414,3,reviewer_04,intake validation,Approved with corrections,Missing Information,9,5,0,175,1
+182,147,20260414,1,reviewer_02,intake validation,Approved,Complete,9,0,0,65,1
+183,148,20260415,6,reviewer_03,intake validation,Approved,Complete,9,0,0,37,1
+184,149,20260415,9,reviewer_02,intake validation,Approved,Complete,9,0,0,36,1
+185,150,20260415,6,reviewer_02,intake validation,Approved,Complete,9,0,0,49,1
+186,151,20260416,9,reviewer_02,intake validation,Approved,Complete,9,0,0,65,1
+187,152,20260416,1,reviewer_01,intake validation,Approved,Complete,9,0,0,53,1
+188,113,20260418,10,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+189,51,20260419,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+190,60,20260420,1,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+191,153,20260421,4,reviewer_03,intake validation,Approved,Missing Information,9,0,0,81,1
+192,106,20260422,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+193,91,20260422,8,reviewer_01,post creation edit,Approved,Needs Review,1,0,0,,0
+194,96,20260422,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+195,154,20260423,2,reviewer_04,intake validation,Approved,Complete,9,0,0,46,1
+196,39,20260423,4,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+197,121,20260423,11,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+198,155,20260423,6,reviewer_01,intake validation,Approved,Complete,9,0,0,55,1
+199,156,20260423,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,74,1
+200,157,20260423,11,reviewer_01,intake validation,Approved,Complete,9,0,0,41,1
+201,64,20260424,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+202,158,20260424,3,reviewer_01,intake validation,Approved with corrections,Complete,9,3,0,138,1
+203,159,20260424,5,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,91,1
+204,160,20260424,1,reviewer_01,intake validation,Approved,Complete,9,0,0,67,1
+205,94,20260425,3,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+206,161,20260427,1,reviewer_02,intake validation,Approved,Complete,9,0,0,66,1
+207,78,20260427,11,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+208,116,20260427,2,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+209,162,20260427,10,reviewer_03,intake validation,Approved with corrections,Missing Information,9,4,0,168,1
+210,163,20260428,6,reviewer_03,intake validation,Approved,Complete,9,0,0,49,1
+211,77,20260428,8,reviewer_02,post creation edit,Approved,Needs Review,1,0,0,,0
+212,164,20260428,5,reviewer_03,intake validation,Approved with corrections,Needs Review,9,1,0,93,1
+213,85,20260428,6,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+214,165,20260429,10,reviewer_02,intake validation,Approved with corrections,Missing Information,9,3,0,156,1
+215,166,20260429,6,reviewer_02,intake validation,Approved,Complete,9,0,0,40,1
+216,167,20260430,6,reviewer_01,intake validation,Approved,Complete,9,0,0,48,1
+217,168,20260430,4,reviewer_02,intake validation,Approved,Missing Information,9,0,0,78,1
+218,169,20260430,11,reviewer_04,intake validation,Approved,Complete,9,0,0,40,1
+219,120,20260430,3,reviewer_02,post creation edit,Approved,Missing Information,1,0,0,,0
+220,170,20260501,1,reviewer_01,intake validation,Approved,Complete,9,0,0,70,1
+221,100,20260501,5,reviewer_02,post creation edit,Approved,Needs Review,1,0,0,,0
+222,82,20260501,6,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+223,171,20260501,11,reviewer_04,intake validation,Approved,Complete,9,0,0,45,1
+224,118,20260502,1,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+225,136,20260504,3,reviewer_02,post creation edit,Approved,Missing Information,1,0,0,,0
+226,147,20260504,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+227,172,20260505,1,reviewer_04,intake validation,Approved,Complete,9,0,0,44,1
+228,173,20260505,5,reviewer_03,intake validation,Approved with corrections,Needs Review,9,1,0,81,1
+229,174,20260506,6,reviewer_03,intake validation,Approved,Complete,9,0,0,59,1
+230,175,20260506,1,reviewer_02,intake validation,Approved,Complete,9,0,0,61,1
+231,176,20260506,3,reviewer_04,intake validation,Approved with corrections,Missing Information,9,2,0,110,1
+232,177,20260506,6,reviewer_03,intake validation,Approved,Complete,9,0,0,72,1
+233,75,20260506,8,reviewer_04,post creation edit,Approved,Needs Review,1,0,0,,0
+234,92,20260506,11,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+235,127,20260506,6,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+236,178,20260507,10,reviewer_04,intake validation,Approved with corrections,Missing Information,9,3,0,149,1
+237,179,20260507,6,reviewer_01,intake validation,Approved,Complete,9,0,0,44,1
+238,180,20260508,1,reviewer_04,intake validation,Approved,Complete,9,0,0,67,1
+239,181,20260511,1,reviewer_04,intake validation,Approved,Complete,9,0,0,60,1
+240,182,20260511,6,reviewer_02,intake validation,Approved,Complete,9,0,0,42,1
+241,84,20260511,1,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+242,183,20260511,10,reviewer_01,intake validation,Approved with corrections,Needs Review,9,4,0,147,1
+243,107,20260512,1,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+244,184,20260512,3,reviewer_04,intake validation,Approved with corrections,Missing Information,9,4,0,163,1
+245,185,20260512,6,reviewer_04,intake validation,Approved,Complete,9,0,0,63,1
+246,186,20260512,12,reviewer_01,intake validation,Approved with corrections,Missing Information,9,5,0,164,1
+247,141,20260513,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+248,187,20260513,7,reviewer_01,intake validation,Approved,Needs Review,9,0,0,57,1
+249,188,20260513,1,reviewer_04,intake validation,Approved,Complete,9,0,0,58,1
+250,89,20260513,11,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+251,189,20260514,4,reviewer_04,intake validation,Approved,Missing Information,9,0,0,82,1
+252,137,20260514,6,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+253,131,20260514,1,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+254,190,20260514,1,reviewer_04,intake validation,Approved,Complete,9,0,0,61,1
+255,191,20260514,1,reviewer_01,intake validation,Approved,Complete,9,0,0,40,1
+256,192,20260515,6,reviewer_02,intake validation,Approved,Complete,9,0,0,60,1
+257,193,20260515,12,reviewer_01,intake validation,Approved with corrections,Missing Information,9,5,0,205,1
+258,194,20260515,6,reviewer_02,intake validation,Approved,Complete,9,0,0,71,1
+259,195,20260515,1,reviewer_01,intake validation,Approved,Complete,9,0,0,70,1
+260,196,20260515,2,reviewer_02,intake validation,Approved,Complete,9,0,0,66,1
+261,111,20260517,6,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+262,146,20260518,3,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+263,154,20260519,2,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+264,133,20260519,7,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+265,197,20260519,6,reviewer_03,intake validation,Approved,Complete,9,0,0,54,1
+266,198,20260519,11,reviewer_01,intake validation,Approved,Complete,9,0,0,55,1
+267,199,20260520,6,reviewer_02,intake validation,Approved,Complete,9,0,0,56,1
+268,200,20260520,1,reviewer_03,intake validation,Approved,Complete,9,0,0,47,1
+269,201,20260520,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,74,1
+270,202,20260520,6,reviewer_04,intake validation,Approved,Complete,9,0,0,45,1
+271,110,20260520,6,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+272,203,20260520,1,reviewer_02,intake validation,Approved,Complete,9,0,0,45,1
+273,204,20260520,1,reviewer_03,intake validation,Approved,Complete,9,0,0,69,1
+274,97,20260520,6,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+275,205,20260521,6,reviewer_01,intake validation,Approved with corrections,Missing Information,9,1,0,104,1
+276,148,20260522,6,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+277,206,20260522,4,reviewer_04,intake validation,Approved,Missing Information,9,0,0,81,1
+278,126,20260523,2,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+279,112,20260525,8,reviewer_04,post creation edit,Approved,Needs Review,1,0,0,,0
+280,207,20260525,11,reviewer_02,intake validation,Approved,Complete,9,0,0,50,1
+281,208,20260526,1,reviewer_03,intake validation,Approved,Complete,9,0,0,54,1
+282,209,20260526,5,reviewer_01,intake validation,Approved with corrections,Needs Review,9,1,0,72,1
+283,130,20260526,7,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+284,210,20260526,1,reviewer_01,intake validation,Approved,Complete,9,0,0,44,1
+285,211,20260526,9,reviewer_04,intake validation,Approved,Complete,9,0,0,46,1
+286,212,20260526,3,reviewer_03,intake validation,Approved with corrections,Complete,9,3,0,132,1
+287,213,20260527,6,reviewer_01,intake validation,Approved,Complete,9,0,0,39,1
+288,214,20260527,10,reviewer_04,intake validation,Approved with corrections,Complete,9,1,0,67,1
+289,215,20260527,12,reviewer_02,intake validation,Approved with corrections,Needs Review,9,3,0,137,1
+290,216,20260528,6,reviewer_01,intake validation,Approved,Complete,9,0,0,42,1
+291,114,20260528,7,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+292,217,20260529,1,reviewer_02,intake validation,Approved,Complete,9,0,0,71,1
+293,218,20260529,11,reviewer_03,intake validation,Approved,Complete,9,0,0,57,1
+294,219,20260529,11,reviewer_01,intake validation,Approved,Complete,9,0,0,63,1
+295,220,20260601,1,reviewer_02,intake validation,Approved,Complete,9,0,0,41,1
+296,221,20260601,1,reviewer_01,intake validation,Approved,Complete,9,0,0,62,1
+297,222,20260601,8,reviewer_02,intake validation,Approved with corrections,Needs Review,9,1,0,59,1
+298,223,20260602,13,reviewer_02,intake validation,Approved,Missing Information,9,0,0,84,1
+299,224,20260602,13,reviewer_03,intake validation,Approved,Missing Information,9,0,0,96,1
+300,161,20260602,1,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+301,225,20260602,12,reviewer_04,intake validation,Approved with corrections,Missing Information,9,3,0,115,1
+302,226,20260603,6,reviewer_03,intake validation,Approved,Complete,9,0,0,63,1
+303,181,20260604,1,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+304,227,20260604,11,reviewer_01,intake validation,Approved,Complete,9,0,0,57,1
+305,228,20260605,1,reviewer_03,intake validation,Approved,Complete,9,0,0,36,1
+306,229,20260605,6,reviewer_04,intake validation,Approved,Complete,9,0,0,64,1
+307,158,20260606,3,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+308,193,20260607,12,reviewer_03,post creation edit,Approved,Missing Information,1,0,0,,0
+309,230,20260609,6,reviewer_04,intake validation,Approved,Complete,9,0,0,49,1
+310,129,20260609,6,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+311,231,20260609,6,reviewer_03,intake validation,Approved,Complete,9,0,0,37,1
+312,232,20260610,3,reviewer_01,intake validation,Approved with corrections,Missing Information,9,2,0,123,1
+313,132,20260610,2,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+314,233,20260610,1,reviewer_02,intake validation,Approved,Complete,9,0,0,63,1
+315,234,20260611,1,reviewer_02,intake validation,Approved,Complete,9,0,0,61,1
+316,235,20260611,6,reviewer_03,intake validation,Approved,Complete,9,0,0,37,1
+317,236,20260611,3,reviewer_04,intake validation,Approved with corrections,Missing Information,9,3,0,122,1
+318,237,20260611,11,reviewer_01,intake validation,Approved,Complete,9,0,0,59,1
+319,238,20260611,3,reviewer_01,intake validation,Approved with corrections,Missing Information,9,4,0,176,1
+320,139,20260612,6,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+321,172,20260614,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+322,239,20260615,1,reviewer_03,intake validation,Approved,Complete,9,0,0,45,1
+323,240,20260615,1,reviewer_04,intake validation,Approved,Complete,9,0,0,42,1
+324,241,20260615,6,reviewer_02,intake validation,Approved,Complete,9,0,0,46,1
+325,171,20260615,11,reviewer_04,post creation edit,Approved,Complete,1,0,0,,0
+326,180,20260616,1,reviewer_01,post creation edit,Approved,Complete,1,0,0,,0
+327,207,20260616,11,reviewer_03,post creation edit,Approved,Complete,1,0,0,,0
+328,242,20260616,9,reviewer_01,intake validation,Approved,Complete,9,0,0,50,1
+329,243,20260617,1,reviewer_04,intake validation,Approved,Complete,9,0,0,43,1
+330,244,20260617,6,reviewer_03,intake validation,Approved,Complete,9,0,0,40,1
+331,245,20260618,11,reviewer_03,intake validation,Approved,Complete,9,0,0,63,1
+332,246,20260618,6,reviewer_01,intake validation,Approved,Complete,9,0,0,36,1
+333,167,20260619,6,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+334,247,20260619,6,reviewer_03,intake validation,Approved,Complete,9,0,0,38,1
+335,204,20260619,1,reviewer_02,post creation edit,Approved,Complete,1,0,0,,0
+336,248,20260619,3,reviewer_02,intake validation,Approved with corrections,Missing Information,9,2,0,100,1
+337,156,20260620,7,reviewer_01,post creation edit,Approved,Missing Information,1,0,0,,0
+338,249,20260622,11,reviewer_03,intake validation,Approved,Complete,9,0,0,43,1
+339,201,20260622,7,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+340,250,20260622,12,reviewer_03,intake validation,Approved with corrections,Missing Information,9,6,0,202,1
+341,205,20260622,6,reviewer_01,post creation edit,Approved,Missing Information,1,0,0,,0
+342,162,20260622,10,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+343,251,20260623,1,reviewer_04,intake validation,Approved,Complete,9,0,0,41,1
+344,252,20260623,1,reviewer_03,intake validation,Approved,Complete,9,0,0,62,1
+345,224,20260624,13,reviewer_04,post creation edit,Approved,Missing Information,1,0,0,,0
+346,253,20260625,7,reviewer_04,intake validation,Approved,Missing Information,9,0,0,58,1
+347,254,20260625,1,reviewer_04,intake validation,Approved,Complete,9,0,0,35,1
+348,255,20260626,9,reviewer_04,intake validation,Approved,Complete,9,0,0,50,1
+349,256,20260626,7,reviewer_01,intake validation,Approved,Missing Information,9,0,0,57,1
+350,257,20260626,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,85,1
+351,258,20260626,6,reviewer_02,intake validation,Approved,Complete,9,0,0,58,1
+352,259,20260626,2,reviewer_02,intake validation,Approved,Complete,9,0,0,44,1
+353,260,20260626,7,reviewer_03,intake validation,Approved,Missing Information,9,0,0,60,1

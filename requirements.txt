@@ -1,0 +1,7 @@
+# The app itself uses the Python standard library + these two:
+pypdf>=4.0          # PDF text extraction
+pillow>=10.0        # image documents (simulated OCR text layer), proofs
+# Dataset exports, Power BI exports and the data-model proof:
+pandas>=2.2
+matplotlib>=3.8
+# Tests use the standard unittest module. Proof screenshots need Chrome or Edge installed.

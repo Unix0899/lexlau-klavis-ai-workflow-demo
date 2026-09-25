@@ -1,0 +1,62 @@
+table DimDocumentType
+	lineageTag: 28d8173f-340b-5aa3-86d7-db1965b3007d
+
+	column document_type_id
+		dataType: int64
+		isHidden
+		isKey
+		lineageTag: d8de150e-2433-5dbc-a888-05348d4806fe
+		summarizeBy: none
+		sourceColumn: document_type_id
+
+	column document_type
+		dataType: string
+		lineageTag: 568b66f7-3f7e-56f3-ac4e-3deaebfa215b
+		summarizeBy: none
+		sourceColumn: document_type
+		sortByColumn: document_type_id
+
+	column file_family
+		dataType: string
+		lineageTag: c5ae5b80-42be-5e92-8084-c6c7373a5c52
+		summarizeBy: none
+		sourceColumn: file_family
+		sortByColumn: family_order
+
+	column family_order
+		dataType: int64
+		isHidden
+		lineageTag: 57bfdff1-3388-51b8-82e5-0f476bd04a19
+		summarizeBy: none
+		sourceColumn: family_order
+
+	column detected_format
+		dataType: string
+		lineageTag: 92fb6796-c3fa-59ec-95d8-59c9466d3c56
+		summarizeBy: none
+		sourceColumn: detected_format
+
+	column sample_variant
+		dataType: string
+		lineageTag: d90c38d8-54c9-5d42-a9eb-475543f887da
+		summarizeBy: none
+		sourceColumn: sample_variant
+
+	column variant_order
+		dataType: int64
+		isHidden
+		lineageTag: f16b1c23-6669-5a10-aa8d-28221c23f8f1
+		summarizeBy: none
+		sourceColumn: variant_order
+
+	partition DimDocumentType = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "DimDocumentType.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    EmptyToNull = Table.ReplaceValue(Promoted, "", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"document_type_id", Int64.Type}, {"document_type", type text}, {"file_family", type text}, {"family_order", Int64.Type}, {"detected_format", type text}, {"sample_variant", type text}, {"variant_order", Int64.Type}}, "en-US")
+				in
+				    Typed
+
