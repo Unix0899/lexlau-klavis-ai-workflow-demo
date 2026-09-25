@@ -28,7 +28,7 @@ trail that never logs document content.
 
 ## Professional Context
 
-At **LexLau**, Harry Mulembwe worked as an **AI Engineer & Data Analyst Intern** on **Klavis.app /
+At **LexLau**, I worked as an **AI Engineer & Data Analyst Intern** on **Klavis.app /
 KlavIA**, a legal application with many AI-enabled features. Working under the supervision of the
 CTO / technical supervisor, he:
 
