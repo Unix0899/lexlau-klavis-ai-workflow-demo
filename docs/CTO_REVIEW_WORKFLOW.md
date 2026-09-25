@@ -13,9 +13,8 @@ supervision of the CTO / technical supervisor**:
 - tests could be replayed, and results (including failures) were reported to the supervisor;
 - a change was not considered finished just because it worked locally.
 
-Harry was not the CTO, the lead architect, the owner of the architecture, or the sole developer. He
-contributed to the development, testing and improvement of AI-enabled workflows under technical
-supervision.
+Harry worked as a contributor within the team, with technical review and supervision from the CTO, on
+the development, testing and improvement of AI-enabled workflows.
 
 ## How the public reconstruction simulates this
 

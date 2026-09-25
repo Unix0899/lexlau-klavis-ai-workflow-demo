@@ -47,8 +47,8 @@ LexLau/Klavis intellectual property or confidential client information.
 ## What this project does NOT claim
 
 - It is not Klavis, and not a copy of its code, prompts, schemas or architecture.
-- Harry did not build Klavis. He was not the CTO, the lead architect or the sole developer, and he did
-  not approve his own changes.
+- It does not present Klavis as Harry's product: he worked as a contributor within the team, with technical
+  review and supervision from the CTO.
 - The bugs are synthetic. They illustrate the *type* of issues investigated.
 - The metrics describe the synthetic dataset, not the production system.
 

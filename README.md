@@ -28,17 +28,17 @@ trail that never logs document content.
 
 ## Professional Context
 
-At **LexLau**, I worked as an **AI Engineer & Data Analyst Intern** on **Klavis.app /
-KlavIA**, a legal application with many AI-enabled features. Working under the supervision of the
-CTO / technical supervisor, he:
+At **LexLau**, I worked as an **AI Engineer & Data Analyst Intern** on **Klavis.app / KlavIA**, a
+legal application with many AI-enabled features, as a contributor within the team, with technical
+review and supervision from the CTO. My contributions included:
 
-- contributed to the development and testing of AI-enabled workflows;
-- analysed, structured and processed data used in those workflows;
-- tested AI features systematically and documented the observed behaviour;
-- reproduced bugs and analysed gaps between expected and actual behaviour;
-- turned test results into product and technical feedback;
-- worked with potentially confidential data and data-protection requirements;
-- worked in an environment with branches, Merge Requests, reviews and retests.
+- development and testing of AI-enabled workflows;
+- analysing, structuring and processing the data used in those workflows;
+- systematic testing of AI features and documentation of the observed behaviour;
+- bug reproduction and analysis of gaps between expected and actual behaviour;
+- turning test results into product and technical feedback;
+- working with potentially confidential data and data-protection requirements;
+- working with branches, Merge Requests, reviews and retests.
 
 > I contributed to the development, testing and improvement of AI-enabled workflows within Klavis
 > under technical supervision.
@@ -67,8 +67,8 @@ So the question is not *"Can AI extract information?"*. It is:
 | Work under CTO / technical supervision | Reproducible demo |
 
 The public project is a reconstruction designed to demonstrate the workflow without exposing
-LexLau/Klavis intellectual property or confidential client information. Harry was not the CTO, the lead
-architect or the sole developer, and did not approve his own changes (see
+LexLau/Klavis intellectual property or confidential client information. My changes went through
+technical review by the CTO before being considered done (see
 [CTO review workflow](docs/CTO_REVIEW_WORKFLOW.md)).
 
 ## Synthetic Reconstruction Disclosure
